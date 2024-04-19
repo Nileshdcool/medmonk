@@ -11,13 +11,18 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
       colors: {
         'white': '#ffffff',
         'darkBlue': "#003A5D",
         'darkOrange': "#BA3725",
-        'headerBG' : "#D4D4D4"
+        'headerBG' : "#D4D4D4",
+        'brownCust' : "#BB3300",
+        'orangeCust' : "#FF6C34"
+      },
+      fontFamily: {
+        openSans: ['"Open Sans"', "sans-serif"],  
       }
     },
   },
