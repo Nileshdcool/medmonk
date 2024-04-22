@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Toaster, toast } from 'sonner';
+import { Toaster, toast } from "sonner";
 import {
   CampaignFormData,
   validateField,
@@ -14,7 +14,8 @@ import {
   defaultCampaignCustomizations,
 } from "@/Models/CampaignModel";
 import { MetaProps } from "@/Models/MetaProps";
-import Meta from "../Meta";
+import Meta from "../../components/Meta";
+import CampaignSkelton from "@/components/CampaignSkelton";
 const defaultFormData: CampaignFormData = {
   Name: "",
   CompanyName: "",
@@ -34,6 +35,7 @@ const Campaign: React.FC = () => {
   const [customizations, SetCustomizations] =
     useState<CampaignCustomizationModel>(defaultCampaignCustomizations);
   const [submitting, setSubmitting] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
     const headers = {
       "Content-Type": "application/json",
@@ -44,6 +46,7 @@ const Campaign: React.FC = () => {
         { headers }
       )
       .then((response) => {
+        setIsLoading(false);
         if (
           response.data &&
           response.data &&
@@ -61,7 +64,11 @@ const Campaign: React.FC = () => {
           }
         }
       })
-      .catch((error) => {console.error("Error fetching posts:", error); toast.error("Failed to Fetch Customizations!");});
+      .catch((error) => {
+        setIsLoading(false);
+        console.error("Error fetching posts:", error);
+        toast.error("Failed to Fetch Customizations!");
+      });
   }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -72,7 +79,10 @@ const Campaign: React.FC = () => {
       if (isValid) {
         const submitFormData = new FormData();
         const transformedFormData = Object.fromEntries(
-          Object.entries(formData).map(([key, value]) => [key, value ? value : null])
+          Object.entries(formData).map(([key, value]) => [
+            key,
+            value ? value : null,
+          ])
         );
         submitFormData.append("data", JSON.stringify(transformedFormData));
         try {
@@ -85,7 +95,7 @@ const Campaign: React.FC = () => {
             },
           });
           console.log(response.data);
-          toast.success('Form is submitted Successfully');
+          toast.success("Form is submitted Successfully");
           setFormData(defaultFormData);
         } catch (error) {
           toast.error("Failed!");
@@ -122,10 +132,13 @@ const Campaign: React.FC = () => {
       customizations.Comments
     );
   };
+  if (isLoading) {
+    return <CampaignSkelton></CampaignSkelton>;
+  }
   return (
     <>
       <Meta {...metaData} />
-      <Toaster richColors expand={true} position="top-right"/>
+      <Toaster richColors expand={true} position="top-right" />
       <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-white">
         <div className="bg-campaign-background shadow-lg rounded-lg overflow-hidden w-full md:max-w-4xl">
           <div className="pt-2 pl-10 pr-10 pb-4">
@@ -209,16 +222,17 @@ const Campaign: React.FC = () => {
                   {getErrorMessage("Comments")}
                 </>
               )}
-              { !isAllRemoved() &&
-              <div className="flex justify-center">
-                <button
-                  type="submit"
-                  className="w-1/3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-purple-700 focus:outline-none transition duration-300"
-                  disabled={submitting}
-                >
-                  {customizations.CTA}
-                </button>
-              </div>}
+              {!isAllRemoved() && (
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    className="w-1/3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-purple-700 focus:outline-none transition duration-300"
+                    disabled={submitting}
+                  >
+                    {customizations.CTA}
+                  </button>
+                </div>
+              )}
             </form>
           </div>
         </div>
