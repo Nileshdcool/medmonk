@@ -95,18 +95,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-
+  
     font-family: "Open Sans", sans-serif;
 }
 
-h1{font-family: 'Meta Pro Cond';}
-h2{font-family: 'Meta Pro'; font-family: 700;}
+h1,h2{font-family: 'Meta Pro';}
+h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
 
 @layer utilities {
   .text-balance {
@@ -114,4 +108,15 @@ h2{font-family: 'Meta Pro'; font-family: 700;}
   }
 }
 
-.hreo-sec{height: 75vh;}
+.hreo-sec{height: 95vh;}
+.card-carsual .slick-slide > div{ margin:0 15px 30px;}
+.card-carsual .slick-dots li, .brand-logos .slick-dots li{margin: 0;}
+.card-carsual .slick-dots li button:before{font-size: 12px;}
+.card-carsual .slick-dots li.slick-active button:before{color:#BA3725;}
+.brand-logos .slick-dots li button:before{content: "" !important; display: block; opacity: 1; background-color: #D4D4D4; height: 7px; width: 97px; position: inherit;}
+.brand-logos .slick-dots li.slick-active button:before{background-color: #BA3725;}
+.brand-logos .slick-dots li, .brand-logos .slick-dots li button{width: auto !important; padding: 0;}
+
+.ssSkider .slick-slider .slick-list, .card-carsual:not(.ssSkider) .slick-slider .slick-list{margin-right: -35vw;}
+.social-ico li:hover img.hov{display: block;}
+.social-ico li:hover img:not(.hov){display: none;}
