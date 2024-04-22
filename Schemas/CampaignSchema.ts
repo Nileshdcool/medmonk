@@ -1,18 +1,23 @@
-import { CampaignCustomizationModel } from "@/Models/CampaignModel";
+import { ValidationErrors } from "@/Constants/Campaign/SchemaConstants";
+import { CampaignCustomizationModel } from "@/Interfaces/Campaign/CampaignCustomizationModel";
 import { MutableRefObject } from "react";
 import { z } from "zod";
 export const CampaignSchema = z.object({
-  Name: z.string().min(1, "Name is required"),
-  CompanyName: z.string().min(1, "Company name is required"),
-  ContactNumber: z.string().length(10, "Contact number must be 10 digits").regex(/^\d+$/, "Contact Number must contain only digits."),
-  CompanyEmailId: z.string().email("Invalid email address"),
-  Comments: z.string().min(1, "Comments are required!"),
+  Name: z.string().min(1, ValidationErrors.NameRequired),
+  CompanyName: z.string().min(1, ValidationErrors.CompanyNameRequired),
+  ContactNumber: z
+    .string()
+    .length(10, ValidationErrors.ContactNumberRequired)
+    .regex(/^\d+$/, ValidationErrors.ContactNumberAllowedCharacters),
+  CompanyEmailId: z.string().email(ValidationErrors.InvalidCompanyEmailId),
+  Comments: z.string().min(1, ValidationErrors.CommentsRequired),
 });
 
 export type CampaignFormData = z.infer<typeof CampaignSchema>;
 export const ValidateForm = (
   formData: CampaignFormData,
-  setErrors: React.Dispatch<React.SetStateAction<Partial<CampaignFormData>>>, customizations : CampaignCustomizationModel
+  setErrors: React.Dispatch<React.SetStateAction<Partial<CampaignFormData>>>,
+  customizations: CampaignCustomizationModel
 ) => {
   const result = CampaignSchema.safeParse(formData);
   if (!result.success) {
@@ -20,14 +25,17 @@ export const ValidateForm = (
     result.error.issues.forEach((issue) => {
       errorMap[issue.path[0] as keyof CampaignFormData] = issue.message;
     });
-    if(!((errorMap.Name && customizations.Name) || 
-    (errorMap.CompanyName && customizations.CompanyName) || 
-    (errorMap.ContactNumber && customizations.ContactNumber) || 
-    (errorMap.CompanyEmailId && customizations.CompanyEmailId) || 
-    (errorMap.Comments && customizations.Comments)))
-        {
-          return true;
-        }
+    if (
+      !(
+        (errorMap.Name && customizations.Name) ||
+        (errorMap.CompanyName && customizations.CompanyName) ||
+        (errorMap.ContactNumber && customizations.ContactNumber) ||
+        (errorMap.CompanyEmailId && customizations.CompanyEmailId) ||
+        (errorMap.Comments && customizations.Comments)
+      )
+    ) {
+      return true;
+    }
     setErrors(errorMap);
   } else {
     console.log("Form data is valid:", result.data);
