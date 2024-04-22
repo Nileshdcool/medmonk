@@ -7,7 +7,6 @@ import {
   ValidateForm,
 } from "../../Schemas/CampaignSchema";
 import axios from "axios";
-import { ApiUrls } from "@/Configurations/ApiUrls";
 import {
   CampaignCustomizationModel,
   CampaignCustomizationsModel,
@@ -38,11 +37,12 @@ const Campaign: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
     const headers = {
+      "Authorization": `Bearer ${process.env.NEXT_PUBLIC_READ_ACCESS_TOKEN}`,
       "Content-Type": "application/json",
     };
     axios
       .get<CampaignCustomizationsModel>(
-        `${ApiUrls.CampaignCustomizations}?populate=*`,
+        `${process.env.NEXT_PUBLIC_CAMPAIGN_CUSTOMIZATION_API}?populate=*`,
         { headers }
       )
       .then((response) => {
@@ -57,7 +57,7 @@ const Campaign: React.FC = () => {
           if (customizationAttribute) {
             if (customizationAttribute.Banner.data.attributes.url) {
               customizationAttribute.Banner.data.attributes.url =
-                ApiUrls.BaseAddress +
+                `${process.env.NEXT_PUBLIC_STRAPI_BASE_ADDRESS}` +
                 customizationAttribute.Banner.data.attributes.url;
             }
             SetCustomizations(customizationAttribute);
@@ -88,9 +88,10 @@ const Campaign: React.FC = () => {
         try {
           const response = await axios({
             method: "post",
-            url: `${ApiUrls.Campaigns}`,
+            url: `${process.env.NEXT_PUBLIC_CAMPAIGN_API}`,
             data: submitFormData,
             headers: {
+              "Authorization": `Bearer ${process.env.NEXT_PUBLIC_CREATE_ACCESS_TOKEN}`,
               "Content-Type": "multipart/form-data",
             },
           });
