@@ -143,7 +143,7 @@ const Campaign: React.FC = () => {
               onSubmit={handleSubmit}
               className="space-y-4 mt-4 text-gray-500 font-medium "
             >
-              {customizations && (customizations.Name || isAllRemoved()) && (
+              {customizations && customizations.Name && (
                 <>
                   <input
                     type="text"
@@ -209,6 +209,7 @@ const Campaign: React.FC = () => {
                   {getErrorMessage("Comments")}
                 </>
               )}
+              { !isAllRemoved() &&
               <div className="flex justify-center">
                 <button
                   type="submit"
@@ -217,7 +218,7 @@ const Campaign: React.FC = () => {
                 >
                   {customizations.CTA}
                 </button>
-              </div>
+              </div>}
             </form>
           </div>
         </div>

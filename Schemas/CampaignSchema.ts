@@ -26,10 +26,7 @@ export const ValidateForm = (
     (errorMap.CompanyEmailId && customizations.CompanyEmailId) || 
     (errorMap.Comments && customizations.Comments)))
         {
-          if(!errorMap.Name)
-            {
-              return true;
-            }
+          return true;
         }
     setErrors(errorMap);
   } else {
