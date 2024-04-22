@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { Toaster, toast } from 'sonner';
 import {
   CampaignFormData,
   validateField,
@@ -60,7 +61,7 @@ const Campaign: React.FC = () => {
           }
         }
       })
-      .catch((error) => console.error("Error fetching posts:", error));
+      .catch((error) => {console.error("Error fetching posts:", error); toast.error("Failed to Fetch Customizations!");});
   }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -70,7 +71,10 @@ const Campaign: React.FC = () => {
       let isValid = ValidateForm(formData, setErrors, customizations);
       if (isValid) {
         const submitFormData = new FormData();
-        submitFormData.append("data", JSON.stringify(formData));
+        const transformedFormData = Object.fromEntries(
+          Object.entries(formData).map(([key, value]) => [key, value ? value : null])
+        );
+        submitFormData.append("data", JSON.stringify(transformedFormData));
         try {
           const response = await axios({
             method: "post",
@@ -81,13 +85,15 @@ const Campaign: React.FC = () => {
             },
           });
           console.log(response.data);
-          alert("Form is submitted Successfully");
+          toast.success('Form is submitted Successfully');
           setFormData(defaultFormData);
         } catch (error) {
+          toast.error("Failed!");
           console.error("Error posting new data:", error);
         }
       }
     } catch (error) {
+      toast.error("Failed!");
     } finally {
       setSubmitting(false);
     }
@@ -118,8 +124,8 @@ const Campaign: React.FC = () => {
   };
   return (
     <>
-      {" "}
       <Meta {...metaData} />
+      <Toaster richColors expand={true} position="top-right"/>
       <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-white">
         <div className="bg-campaign-background shadow-lg rounded-lg overflow-hidden w-full md:max-w-4xl">
           <div className="pt-2 pl-10 pr-10 pb-4">

@@ -4,7 +4,7 @@ import { z } from "zod";
 export const CampaignSchema = z.object({
   Name: z.string().min(1, "Name is required"),
   CompanyName: z.string().min(1, "Company name is required"),
-  ContactNumber: z.string().length(10, "Contact number must be 10 digits"),
+  ContactNumber: z.string().length(10, "Contact number must be 10 digits").regex(/^\d+$/, "Contact Number must contain only digits."),
   CompanyEmailId: z.string().email("Invalid email address"),
   Comments: z.string().min(1, "Comments are required!"),
 });
