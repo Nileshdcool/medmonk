@@ -12,7 +12,22 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "home-hero":"url(/assets/home-hero.jpg)",
+          "get-started":"url(/assets/get-started-img.jpg)"
       },
+      colors: {
+        'white': '#ffffff',
+        'lightGray':'#636569',
+        'hBlack':'#222222',
+        'darkBlue': "#003A5D",
+        'darkOrange': "#BA3725",
+        'headerBG' : "#D4D4D4",
+        'brownCust' : "#BB3300",
+        'orangeCust' : "#FF6C34"
+      },
+      fontFamily: {
+        openSans: ['"Open Sans"', "sans-serif"],  
+      }
     },
   },
   plugins: [],
