@@ -492,782 +492,790 @@ export default function Home() {
               dedicated to advancing patient care and ensuring access to vital
               medications.
             </p>
-            <div className="flex mt-6 justify-center">
+            <div className="flex mt-6 justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
               <button
                 type="button"
                 className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
-              >
+                id="pp-tab" data-tabs-target="#pp" role="tab" aria-controls="pp" aria-selected="false">
                 Pharmaceutical Partners
               </button>
               <button
                 type="button"
                 className="text-brownCust hover:text-white border hover:border-brownCust border-lightGray hover:bg-gradient-to-b from-brownCust to-orangeCust focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
-              >
+                id="spp-tab" data-tabs-target="#spp" role="tab" aria-controls="spp" aria-selected="false">
                 Specialty Pharmacy Partners
               </button>
             </div>
           </div>
 
-          <Slider
-            {...settingsLogo}
-            className="brand-logos pb-6 max-w-4xl m-auto">
-            <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo1.png"
-                    alt=""
-                  />
+          <div className="hidden" id="pp" role="tabpanel" aria-labelledby="pp-tab">
+            <Slider
+              {...settingsLogo}
+              className="brand-logos pb-6 max-w-4xl m-auto">
+              
+              <div>
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo6.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo2.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo3.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo4.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo5.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo6.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo7.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo8.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo9.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo10.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo11.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo2.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo1.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo2.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo3.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo4.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo5.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo6.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo7.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo8.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo9.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo10.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo11.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo2.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo7.png"
-                    alt=""
-                  />
+              <div>
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo6.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo8.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo9.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo10.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo11.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo2.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </Slider>
-          <Slider {...settingsLogo} className="brand-logos pb-6 max-w-4xl m-auto">
-            <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo1-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo2-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo3-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo4-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo5-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo6-spp.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo7.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo8.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo9.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo10.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo11.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo2.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo7-spp.png"
-                    alt=""
-                  />
+            </Slider>
+          </div>
+
+          <div className="hidden" id="spp" role="tabpanel" aria-labelledby="spp-tab">
+            <Slider {...settingsLogo} className="brand-logos pb-6 max-w-4xl m-auto" >
+              
+              <div>
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo1-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo2-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo3-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo4-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo5-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo6-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo8-spp.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo7-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo8-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo9-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo10-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo11-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo12-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo9-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo10-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo11-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo12-spp.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo13-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo14-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo15-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo16-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo17-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo18-spp.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo19-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo20-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo3-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo21-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo22-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo23-spp.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo24-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo25-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo26-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo27-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo28-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo29-spp.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo13-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo14-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo15-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo16-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo17-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo18-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo30-spp.png"
-                    alt=""
-                  />
+              <div>
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo19-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo20-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo3-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo21-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo22-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo23-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo31-spp.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo24-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo25-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo26-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo27-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo28-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo29-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo32-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo33-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo34-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo35-spp.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo30-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo31-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo32-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo33-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo34-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo35-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo37-spp.png"
-                    alt=""
-                  />
+              <div>
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo37-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo38-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo39-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo40-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo41-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo42-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo38-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo39-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo40-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo41-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo42-spp.png"
-                    alt=""
-                  />
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo43-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo44-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo45-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo46-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto rounded-lg"
+                      src="/assets/logo47-spp.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="brand-logo">
+                    <Image
+                      width="0"
+                      height="0"
+                      sizes="100vw"
+                      className="h-12 w-auto  rounded-lg"
+                      src="/assets/logo48-spp.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo43-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo44-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo45-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo46-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto rounded-lg"
-                    src="/assets/logo47-spp.png"
-                    alt=""
-                  />
-                </div>
-                <div className="brand-logo">
-                  <Image
-                    width="0"
-                    height="0"
-                    sizes="100vw"
-                    className="h-12 w-auto  rounded-lg"
-                    src="/assets/logo48-spp.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </Slider>
+              
+            </Slider>
+          </div>
         </div>
       </section>
 
