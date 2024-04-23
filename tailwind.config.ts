@@ -16,6 +16,7 @@ const config: Config = {
           "get-started":"url(/assets/get-started-img.jpg)"
       },
       colors: {
+        'campaign-background': 'var(--campaign-background)',
         'white': '#ffffff',
         'lightGray':'#636569',
         'hBlack':'#222222',
@@ -24,11 +25,11 @@ const config: Config = {
         'headerBG' : "#D4D4D4",
         'brownCust' : "#BB3300",
         'orangeCust' : "#FF6C34"
-      },
+    },
       fontFamily: {
         openSans: ['"Open Sans"', "sans-serif"],  
       }
-    },
+  },
   },
   plugins: [],
 };
