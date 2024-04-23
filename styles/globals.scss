@@ -3,6 +3,83 @@
 @tailwind utilities;
 @import './variables';
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+  font-family: 'Meta Pro Cond';
+  src: url('./fonts/MetaPro-CondBold.eot');
+  src: url('./fonts/MetaPro-CondBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/MetaPro-CondBold.woff2') format('woff2'),
+      url('./fonts/MetaPro-CondBold.woff') format('woff'),
+      url('./fonts/MetaPro-CondBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Meta Pro';
+  src: url('./fonts/MetaPro-Black.eot');
+  src: url('./fonts/MetaPro-Black.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/MetaPro-Black.woff2') format('woff2'),
+      url('./fonts/MetaPro-Black.woff') format('woff'),
+      url('./fonts/MetaPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Meta Pro';
+  src: url('./fonts/MetaPro-Bold.eot');
+  src: url('./fonts/MetaPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/MetaPro-Bold.woff2') format('woff2'),
+      url('./fonts/MetaPro-Bold.woff') format('woff'),
+      url('./fonts/MetaPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('./fonts/Sora-ExtraBold.eot');
+  src: url('./fonts/Sora-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Sora-ExtraBold.woff2') format('woff2'),
+      url('./fonts/Sora-ExtraBold.woff') format('woff'),
+      url('./fonts/Sora-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Whitney';
+  src: url('./fonts/Whitney-Semibold.eot');
+  src: url('./fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Whitney-Semibold.woff2') format('woff2'),
+      url('./fonts/Whitney-Semibold.woff') format('woff'),
+      url('./fonts/Whitney-Semibold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('./fonts/Sora-SemiBold.eot');
+  src: url('./fonts/Sora-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Sora-SemiBold.woff2') format('woff2'),
+      url('./fonts/Sora-SemiBold.woff') format('woff'),
+      url('./fonts/Sora-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -20,13 +97,28 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  
+    font-family: "Open Sans", sans-serif;
 }
+
+h1,h2{font-family: 'Meta Pro';}
+h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+.hreo-sec{height: 95vh;}
+.card-carsual .slick-slide > div{ margin:0 15px 30px;}
+.card-carsual .slick-dots li, .brand-logos .slick-dots li{margin: 0;}
+.card-carsual .slick-dots li button:before{font-size: 12px;}
+.card-carsual .slick-dots li.slick-active button:before{color:#BA3725;}
+.brand-logos .slick-dots li button:before{content: "" !important; display: block; opacity: 1; background-color: #D4D4D4; height: 7px; width: 97px; position: inherit;}
+.brand-logos .slick-dots li.slick-active button:before{background-color: #BA3725;}
+.brand-logos .slick-dots li, .brand-logos .slick-dots li button{width: auto !important; padding: 0;}
+
+.ssSkider .slick-slider .slick-list, .card-carsual:not(.ssSkider) .slick-slider .slick-list{margin-right: -35vw;}
+.social-ico li:hover img.hov{display: block;}
+.social-ico li:hover img:not(.hov){display: none;}

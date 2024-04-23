@@ -3,7 +3,7 @@ export const defaultCampaignCustomizations: CampaignCustomizationModel = {
   Banner: {
     data: {
       attributes: {
-        url: "/Home.png",
+        url: "/assets/home-hero.jpg",
       },
     },
   },

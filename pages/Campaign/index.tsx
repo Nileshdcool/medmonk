@@ -119,7 +119,7 @@ const Campaign: React.FC = () => {
       (filedName) => filedName == fieldName
     ) as keyof CampaignFormData;
     return (
-      errors && field && <p className="text-red-500 text-sm">{errors[field]}</p>
+      errors && field && errors[field] && <p className="text-red-500 text-sm">{errors[field]}</p> || null
     );
   };
   const isAllRemoved = () => {
