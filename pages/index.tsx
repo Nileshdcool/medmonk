@@ -2,6 +2,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 export default function Home() {
   const settings = {
@@ -80,20 +81,12 @@ export default function Home() {
       <header className="bg-headerBG">
         <div className="container 2xl mx-auto">
           <div className="flex flex-row">
-            {/* <div className="basis-1/4">
-            <Image 
-              className="object-fill h-auto w-100"
-              width={220}
-              height={58}
-              src=/assets/medmonk-logo.png"
-              alt="MedMonk Logo" 
-            />
-            </div> */}
+          
             <div className="basis-3/4 bg-darkBlue">
               <nav className="bg-headerBG dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                  <a
-                    href="https://flowbite.com/"
+                  <Link
+                    href="/"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                   >
                     <Image
@@ -103,7 +96,7 @@ export default function Home() {
                       src="/assets/medmonk-logo.png"
                       alt="MedMonk Logo"
                     />
-                  </a>
+                  </Link>
 
                   <div className="flex">
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-6">
@@ -201,7 +194,7 @@ export default function Home() {
               <hr className=" h-1.5 w-36 bg-brownCust mb-5" />
               <p className="text-lg text-darkBlue mb-8  font-semibold">
                 At Medmonk, we strongly believe that a patient receiving their
-                medication without unnecessary delays is a collective win. It’s
+                medication without unnecessary delays is a collective win. It s
                 a win for the patient, a win for the healthcare provider, and a
                 win for the pharmaceutical brand. Together, enhance the process
                 that patients stay on track with their treatment, enabling them
@@ -389,7 +382,7 @@ export default function Home() {
                   </h3>
                   <p>
                     Our platform seamlessly integrates with 98% of US pharmacies
-                    and providers' billing terminals. This simplifies the hub,
+                    and providers billing terminals. This simplifies the hub,
                     co-pay, and patient assistance enrollment process, ensuring
                     a smooth experience for all users in both medical and
                     pharmacy benefits.
@@ -414,7 +407,7 @@ export default function Home() {
                     </h3>
                     <hr className=" h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
                     <p>
-                      Medmonk's automated system enables instant financial
+                      Medmonks automated system enables instant financial
                       assistance and patient enrollment into the hub, all within
                       a remarkable timeframe of under three seconds.
                     </p>
@@ -453,7 +446,7 @@ export default function Home() {
                     </h3>
                     <hr className=" h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
                     <p>
-                      Medmonk's automated system enables instant financial
+                      Medmonks automated system enables instant financial
                       assistance and patient enrollment into the hub, all within
                       a remarkable timeframe of under three seconds.
                     </p>
@@ -495,7 +488,7 @@ export default function Home() {
             <p>
               At Medmonk, collaboration is key. We partner with leading
               healthcare organizations, pharmaceutical companies, and patient
-              advocacy groups to expand our reach and impact. Together, we're
+              advocacy groups to expand our reach and impact. Together, we are
               dedicated to advancing patient care and ensuring access to vital
               medications.
             </p>
@@ -914,15 +907,15 @@ export default function Home() {
                   <div className="pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text
                     </h3>
                     <p className="pl-4 border-l-4 border-brownCust">
                       Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text ever since the 1500s Lorem Ipsum is
                       simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
+                      industry. Lorem Ipsum has been the industrys standard
                       dummy text ever since the 1500s
                     </p>
                   </div>
@@ -931,15 +924,15 @@ export default function Home() {
                   <div className="pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text
                     </h3>
                     <p className="pl-4 border-l-4 border-brownCust">
                       Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text ever since the 1500s Lorem Ipsum is
                       simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
+                      industry. Lorem Ipsum has been the industrys standard
                       dummy text ever since the 1500s
                     </p>
                   </div>
@@ -948,15 +941,15 @@ export default function Home() {
                   <div className="pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text
                     </h3>
                     <p className="pl-4 border-l-4 border-brownCust">
                       Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
+                      typesetting industry. Lorem Ipsum has been the industrys
                       standard dummy text ever since the 1500s Lorem Ipsum is
                       simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
+                      industry. Lorem Ipsum has been the industrys standard
                       dummy text ever since the 1500s
                     </p>
                   </div>
