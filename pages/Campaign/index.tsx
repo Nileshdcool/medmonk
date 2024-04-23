@@ -34,10 +34,6 @@ const Campaign: React.FC = () => {
   const [submitting, setSubmitting] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
-    const headers = {
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_READ_ACCESS_TOKEN}`,
-      "Content-Type": "application/json",
-    };
     let data = getCampaignCustomizations();
     data
       .then((response) => {
