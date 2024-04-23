@@ -510,7 +510,7 @@ export default function Home() {
               dedicated to advancing patient care and ensuring access to vital
               medications.
             </p>
-            <div className="flex mt-6 justify-center">
+            <div className="flex mt-6 justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
               <button
                 type="button"
                 //className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
