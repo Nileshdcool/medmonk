@@ -3,8 +3,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import React, { useState } from 'react';
 
 export default function Home() {
+
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
+  };
+
   const settings = {
     dots: true,
     arrows: true,
@@ -75,6 +83,16 @@ export default function Home() {
     arrows: true,
     focusOnSelect: true,
   };
+
+  const getTabContentClassName = (tabIndex:any) => {
+    // Define a base class and conditionally add additional classes based on activeTab
+    let baseClassName = 'text-brownCust hover:text-white border hover:border-brownCust border-lightGray hover:bg-gradient-to-b from-brownCust to-orangeCust focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full';
+    if (activeTab === tabIndex) {
+      baseClassName = 'text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full'; // Add 'active' class if it's the activeTab
+    }
+    return baseClassName;
+  };
+
 
   return (
     <main>
@@ -495,20 +513,24 @@ export default function Home() {
             <div className="flex mt-6 justify-center">
               <button
                 type="button"
-                className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
-              >
+                //className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
+                className={getTabContentClassName(1)}
+                onClick={() => handleTabClick(1)}
+             >
                 Pharmaceutical Partners
               </button>
               <button
                 type="button"
-                className="text-brownCust hover:text-white border hover:border-brownCust border-lightGray hover:bg-gradient-to-b from-brownCust to-orangeCust focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
+                //className="text-brownCust hover:text-white border hover:border-brownCust border-lightGray hover:bg-gradient-to-b from-brownCust to-orangeCust focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
+                className={getTabContentClassName(2)}
+                onClick={() => handleTabClick(2)}
               >
                 Specialty Pharmacy Partners
               </button>
             </div>
           </div>
 
-          <Slider
+          {activeTab === 1 &&  <Slider
             {...settingsLogo}
             className="brand-logos pb-6 max-w-4xl m-auto">
             <div>
@@ -764,7 +786,9 @@ export default function Home() {
               </div>
             </div>
           </Slider>
-          <Slider {...settingsLogo} className="brand-logos pb-6 max-w-4xl m-auto">
+          }
+         
+         {activeTab === 2 &&  <Slider {...settingsLogo} className="brand-logos pb-6 max-w-4xl m-auto">
             <div>
               <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
@@ -1268,6 +1292,7 @@ export default function Home() {
               </div>
             </div>
           </Slider>
+        }
         </div>
       </section>
 
