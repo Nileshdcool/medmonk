@@ -1,3 +1,5 @@
+import { CampaignCustomizationModel } from "./CampaignCustomizationModel";
+
 export interface CampaignCustomizationsModel {
-  data: [{ attributes: CampaignCustomizationsModel }];
+  data: [{ attributes: CampaignCustomizationModel }];
 }

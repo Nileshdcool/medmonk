@@ -7,11 +7,9 @@ import {
   ValidateForm,
 } from "../../Schemas/CampaignSchema";
 import axios from "axios";
-import {
-  CampaignCustomizationModel,
-  CampaignCustomizationsModel,
-  defaultCampaignCustomizations,
-} from "@/Models/CampaignModel";
+import { CampaignCustomizationModel } from "@/Interfaces/Campaign/CampaignCustomizationModel";
+import { CampaignCustomizationsModel } from "@/Interfaces/Campaign/CampaignCustomizationsModel";
+import { defaultCampaignCustomizations } from "@/Constants/Campaign/defaultCampaignCustomizations";
 import { MetaProps } from "@/Models/MetaProps";
 import Meta from "../../components/Meta";
 import CampaignSkelton from "@/components/CampaignSkelton";
@@ -57,8 +55,8 @@ const Campaign: React.FC = () => {
           if (customizationAttribute) {
             if (customizationAttribute.Banner.data.attributes.url) {
               customizationAttribute.Banner.data.attributes.url =
-                `${process.env.NEXT_PUBLIC_STRAPI_BASE_ADDRESS}` +
-                customizationAttribute.Banner.data.attributes.url;
+          `${process.env.NEXT_PUBLIC_STRAPI_BASE_ADDRESS}` +
+          customizationAttribute.Banner.data.attributes.url;
             }
             SetCustomizations(customizationAttribute);
           }
