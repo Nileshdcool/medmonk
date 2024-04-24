@@ -9,7 +9,7 @@ export default function Home() {
 
   const [activeTab, setActiveTab] = useState(1);
 
-  const handleTabClick = (tabIndex) => {
+  const handleTabClick = (tabIndex:any) => {
     setActiveTab(tabIndex);
   };
 
