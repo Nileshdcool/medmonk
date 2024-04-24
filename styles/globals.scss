@@ -122,3 +122,11 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
 .ssSkider .slick-slider .slick-list, .card-carsual:not(.ssSkider) .slick-slider .slick-list{margin-right: -35vw;}
 .social-ico li:hover img.hov{display: block;}
 .social-ico li:hover img:not(.hov){display: none;}
+.brand-logo{display: flex; align-items: center;}
+.brand-logo:not(:last-child){border-right:1px solid #cccccc;}
+.brand-logo img {
+  margin: 0 auto;
+  max-width: 130px;
+  max-height: 50px;
+  height: auto;
+}

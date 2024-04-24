@@ -1,11 +1,5 @@
 export interface CampaignCustomizationModel {
-  Banner: {
-    data: {
-      attributes: {
-        url: string;
-      };
-    };
-  };
+  Banner: string;
   Name: boolean;
   CompanyName: boolean;
   ContactNumber: boolean;
