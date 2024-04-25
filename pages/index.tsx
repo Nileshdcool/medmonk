@@ -202,7 +202,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="hreo-sec bg-center flex bg-no-repeat bg-home-hero bg-cover py-20 items-end lg:items-start">
+      <section className="hreo-sec bg-center flex bg-no-repeat bg-home-hero bg-cover py-20 items-end lg:items-center">
         <div className="container mx-auto justify-between items-center flex px-4">
           <div className="flex -mt-7">
             <div className="w-1/1 lg:w-1/2 pr-4">
