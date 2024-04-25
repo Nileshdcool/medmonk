@@ -58,14 +58,12 @@ const Campaign: React.FC = () => {
     try {
       let isValid = ValidateForm(formData, setErrors, customizations);
       if (isValid) {
-        const submitFormData = new FormData();
         const transformedFormData = Object.fromEntries(
           Object.entries(formData).map(([key, value]) => [
             key,
             value ? value : null,
           ])
         );
-        submitFormData.append("data", JSON.stringify(transformedFormData));
         try {
           const docRef = await addCampaign(transformedFormData);
           console.log("Document written with ID: ", docRef);
