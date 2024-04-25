@@ -1302,17 +1302,17 @@ export default function Home() {
 
       <section className="bg-center flex pt-24 pb-20 overflow-hidden">
         <div className="container mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-5xl font-bold text-darkOrange mb-2 px-8 xl:px-14">
+          <div className="text-center max-w-3xl mx-auto mb-2 md:mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14">
               Success Stories
             </h2>
             <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-6 xl:px-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-4 xl:px-14 items-center">
             <div className="partne-left grid grid-cols-1 gap-10">
               <Slider {...settingsSuccessStoriesNav} className="pb-6">
                 <div className="ssNav">
-                  <div className="pl-5 pr-0 lg:pr-20 w-full">
+                  <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
@@ -1329,7 +1329,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="ssNav">
-                  <div className="pl-5 pr-0 lg:pr-20 w-full">
+                  <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
@@ -1346,7 +1346,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="ssNav">
-                  <div className="pl-5 pr-0 lg:pr-20 w-full">
+                  <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
@@ -1364,7 +1364,7 @@ export default function Home() {
                 </div>
               </Slider>
             </div>
-            <div className="partne-right">
+            <div className="partne-right ml-4 md:ml-0">
               <div className="card-carsual ssSkider">
                 <Slider {...settingsSuccessStories} className="pb-6">
                   <div className="card-box bg-white rounded-md">
@@ -1407,11 +1407,11 @@ export default function Home() {
       <section className="get-started-sec bg-center flex bg-no-repeat bg-get-started bg-cover py-20 relative">
         {/* <div className="absolute inset-0 bg-gray-400 opacity-50"></div> */}
         <div className="container mx-auto px-4 z-1">
-          <div className="w-1/1 pr-4 text-center">
-            <h2 className="text-4xl font-extrabold text-darkBlue mb-2">
+          <div className="w-1/1 text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-darkBlue mb-2">
               READY TO EXPERIENCE THE MEDMONK DIFFERENCE?
             </h2>
-            <p className="text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto">
+            <p className="text-md md:text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto">
               Explore our innovative solutions that prioritize Speed to Therapy
               and Customization for Your Brand. Click here to get started.
             </p>
@@ -1428,8 +1428,8 @@ export default function Home() {
       <footer className="bg-headerBG pt-20 px-4">
         <div className="container mx-auto">
           <div className="mx-0 xl:mx-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
-              <div>
+            <div className="flex flex-wrap md:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
+              <div className="w-full">
                 <a
                   href="https://flowbite.com/"
                   className="flex items-center space-x-3 rtl:space-x-reverse mb-4"
@@ -1474,7 +1474,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className=" w-1/2 -mr-8">
                 <h3 className="font-semibold text-hBlack mb-2 text-lg">
                   Sitemap
                 </h3>
@@ -1501,7 +1501,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className=" w-1/2 border-l-2 md:border-l-0 border-darkBlue pl-8 md:pl-0">
                 <h3 className="font-semibold text-hBlack mb-2 text-lg">
                   Accredited by
                 </h3>
@@ -1518,14 +1518,14 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="w-full">
                 <h3 className="text-darkBlue mb-3 text-xl font-bold">
                   Get the latest updates
                 </h3>
 
                 <div className="mx-auto max-w-screen-md sm:text-center">
                   <form action="#">
-                    <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                    <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm flex space-y-0">
                       <div className="relative w-full">
                         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                           <svg
