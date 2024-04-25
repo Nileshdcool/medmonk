@@ -4,9 +4,7 @@ const Layout: React.FC<LayoutProps> = ({ children, metaData }) => {
   return (
     <>
       <Meta {...metaData} />
-      <div className="flex flex-col h-screen justify-between">
-        <main className="mb-auto">{children}</main>
-      </div>
+      <main className="mb-auto">{children}</main>
     </>
   );
 };
