@@ -3,9 +3,35 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
+declare global {
+  interface Window {
+    WOW: any; // Define the type of the WOW property
+  }
+}
 export default function Home() {
+
+  useEffect(() => {
+    const loadWow = async () => {
+      // Load the wow.min.js script dynamically
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js';
+      script.async = true;
+      document.body.appendChild(script);
+
+      // Wait for the script to load before initializing WOW
+      await new Promise(resolve => {
+        script.onload = resolve;
+      });
+
+      // Initialize WOW when the script is loaded
+      new window.WOW().init();
+    };
+    
+    loadWow();
+    
+  }, []);
 
   const [activeTab, setActiveTab] = useState(1);
 
@@ -96,6 +122,10 @@ export default function Home() {
 
   return (
     <main>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
       <header className="bg-headerBG">
         <div className="container 2xl mx-auto">
           <div className="flex flex-row">
@@ -206,11 +236,12 @@ export default function Home() {
         <div className="container mx-auto justify-between items-center flex px-4">
           <div className="flex -mt-7">
             <div className="w-1/1 lg:w-1/2 pr-4">
-              <h1 className="text-4xl md:text-6xl font-black text-darkBlue mb-4">
+              <h1 className="text-4xl md:text-6xl font-black text-darkBlue mb-4 animate__animated animate__fadeIn">
                 Revolutionizing Patient Access to Vital Therapies
               </h1>
+
               <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block" />
-              <p className="sm:text-lg text-md text-darkBlue mb-8  font-semibold">
+              <p className="sm:text-lg text-md text-darkBlue mb-8  font-semibold animate__animated animate__fadeIn">
                 At Medmonk, we strongly believe that a patient receiving their
                 medication without unnecessary delays is a collective win. It s
                 a win for the patient, a win for the healthcare provider, and a
@@ -220,7 +251,7 @@ export default function Home() {
               </p>
               <button
                 type="button"
-                className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
+                className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full animate__animated animate__fadeInDown"
               >
                 Watch Video
               </button>
@@ -232,7 +263,7 @@ export default function Home() {
       <section className="bg-center flex px-4 xl:px-0">
         <div className="container mx-auto justify-between items-center flex">
           <div className="grid text-center md:text-left sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8 py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md lg:-mt-36 -mt-10 mx-0 xl:mx-10">
-            <div>
+            <div className="animate__animated animate__slideInUp wow">
               <Image
                 width="0"
                 height="0"
@@ -250,7 +281,7 @@ export default function Home() {
                 the U.S.
               </p>
             </div>
-            <div>
+            <div className="animate__animated animate__slideInUp wow">
               <Image
                 width="0"
                 height="0"
@@ -265,7 +296,7 @@ export default function Home() {
               </h3>
               <p>2.3 million patients supported with $2 billion in claims</p>
             </div>
-            <div>
+            <div className="animate__animated animate__slideInUp wow">
               <Image
                 width="0"
                 height="0"
@@ -280,7 +311,7 @@ export default function Home() {
               </h3>
               <p>Brands stay with us for an average of 7 years</p>
             </div>
-            <div>
+            <div className="animate__animated animate__slideInUp wow">
               <Image
                 width="0"
                 height="0"
@@ -295,7 +326,7 @@ export default function Home() {
               </h3>
               <p>Patient enrollment completed within an average of 3 minutes</p>
             </div>
-            <div>
+            <div className="animate__animated animate__slideInUp wow">
               <Image
                 width="0"
                 height="0"
@@ -310,7 +341,7 @@ export default function Home() {
               </h3>
               <p>Access to copay support typically under 3 seconds</p>
             </div>
-            <div>
+            <div className="animate__animated animate__slideInUp wow">  
               <Image
                 width="0"
                 height="0"
@@ -331,13 +362,13 @@ export default function Home() {
 
       <section className="bg-center flex pt-24 pb-20 overflow-hidden">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-5 md:mb-8 px-4 md:px-8 xl:px-14 text-center md:text-left">
+          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-5 md:mb-8 px-4 md:px-8 xl:px-14 text-center md:text-left animate__animated animate__fadeIn wow">
             Medmonk As Your Partner
           </h2>
           <hr className=" h-1.5 w-36 bg-brownCust mb-8 md:hidden block ml-auto mr-auto" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8 px-4 xl:px-14">
             <div className="partne-left grid grid-cols-1 gap-10">
-              <div className="flex md:flex-row flex-col text-center md:text-left">
+              <div className="flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow wow">
                 <div className="w-full md:w-36 flex md:flex-row flex-col md:justify-start justify-center">
                   <Image
                     width="0"
@@ -362,7 +393,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex md:flex-row flex-col text-center md:text-left">
+              <div className="flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow wow">
                 <div className="w-full md:w-36 flex md:flex-row flex-col md:justify-start justify-center">
                   <Image
                     width="0"
@@ -386,7 +417,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex md:flex-row flex-col text-center md:text-left">
+              <div className="flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow  wow">
                 <div className="w-full md:w-36 flex md:flex-row flex-col md:justify-start justify-center">
                   <Image
                     width="0"
@@ -412,7 +443,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="partne-right">
+            <div className="partne-right animate__animated animate__fadeInRight animate__slow wow">
               <div className="card-carsual">
                 <Slider {...settings} className="pb-6">
                   <div className="card-box bg-white shadow-xl rounded-md p-6 text-center">
@@ -503,18 +534,18 @@ export default function Home() {
       <section className="pt-10 pb-20">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14">
+            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeIn animate__slow wow">
               Partners
             </h2>
             <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
-            <p>
+            <p className="animate__animated animate__fadeInLeft animate__slow wow">
               At Medmonk, collaboration is key. We partner with leading
               healthcare organizations, pharmaceutical companies, and patient
               advocacy groups to expand our reach and impact. Together, we are
               dedicated to advancing patient care and ensuring access to vital
               medications.
             </p>
-            <div className="flex mt-6 justify-center flex-col md:flex-row" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+            <div className="flex mt-6 justify-center flex-col md:flex-row animate__animated animate__fadeIn wow" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
               <button
                 type="button"
                 //className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
@@ -1303,13 +1334,13 @@ export default function Home() {
       <section className="bg-center flex pt-24 pb-20 overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-2 md:mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14">
+            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeIn animate__slow wow">
               Success Stories
             </h2>
             <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-4 xl:px-14 items-center">
-            <div className="partne-left grid grid-cols-1 gap-10">
+            <div className="partne-left grid grid-cols-1 gap-10 animate__animated animate__fadeInLeft animate__slow wow">
               <Slider {...settingsSuccessStoriesNav} className="pb-6">
                 <div className="ssNav">
                   <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
@@ -1365,7 +1396,7 @@ export default function Home() {
               </Slider>
             </div>
             <div className="partne-right ml-4 md:ml-0">
-              <div className="card-carsual ssSkider">
+              <div className="card-carsual ssSkider animate__animated animate__fadeInRight animate__slow wow">
                 <Slider {...settingsSuccessStories} className="pb-6">
                   <div className="card-box bg-white rounded-md">
                     <Image
@@ -1408,16 +1439,16 @@ export default function Home() {
         {/* <div className="absolute inset-0 bg-gray-400 opacity-50"></div> */}
         <div className="container mx-auto px-4 z-1">
           <div className="w-1/1 text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-darkBlue mb-2">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-darkBlue mb-2 animate__animated animate__fadeInLeft animate__slow wow">
               READY TO EXPERIENCE THE MEDMONK DIFFERENCE?
             </h2>
-            <p className="text-md md:text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto">
+            <p className="text-md md:text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto animate__animated animate__fadeInLeft animate__slow wow">
               Explore our innovative solutions that prioritize Speed to Therapy
               and Customization for Your Brand. Click here to get started.
             </p>
             <button
               type="button"
-              className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center mt-1.5 rounded-full"
+              className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center mt-1.5 rounded-full animate__animated animate__fadeInLeft animate__slow wow"
             >
               Get Started
             </button>
