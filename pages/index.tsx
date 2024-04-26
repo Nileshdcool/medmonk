@@ -86,9 +86,9 @@ export default function Home() {
 
   const getTabContentClassName = (tabIndex:any) => {
     // Define a base class and conditionally add additional classes based on activeTab
-    let baseClassName = 'text-brownCust hover:text-white border hover:border-brownCust border-lightGray hover:bg-gradient-to-b from-brownCust to-orangeCust focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full';
+    let baseClassName = 'text-brownCust hover:text-white border hover:border-brownCust border-lightGray hover:bg-gradient-to-b from-brownCust to-orangeCust focus:outline-none font-medium text-md px-5 py-2.5 text-center me-0 ms:me-2 mb-2 rounded-full';
     if (activeTab === tabIndex) {
-      baseClassName = 'text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full'; // Add 'active' class if it's the activeTab
+      baseClassName = 'text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-0 md:me-2 mb-2 rounded-full'; // Add 'active' class if it's the activeTab
     }
     return baseClassName;
   };
@@ -202,15 +202,15 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="hreo-sec bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
+      <section className="hreo-sec bg-center flex bg-no-repeat bg-home-hero bg-cover py-20 items-end lg:items-center">
         <div className="container mx-auto justify-between items-center flex px-4">
           <div className="flex -mt-7">
             <div className="w-1/1 lg:w-1/2 pr-4">
-              <h1 className="text-4xl sm:text-6xl font-black text-darkBlue mb-4">
+              <h1 className="text-4xl md:text-6xl font-black text-darkBlue mb-4">
                 Revolutionizing Patient Access to Vital Therapies
               </h1>
-              <hr className=" h-1.5 w-36 bg-brownCust mb-5" />
-              <p className="text-lg text-darkBlue mb-8  font-semibold">
+              <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block" />
+              <p className="sm:text-lg text-md text-darkBlue mb-8  font-semibold">
                 At Medmonk, we strongly believe that a patient receiving their
                 medication without unnecessary delays is a collective win. It s
                 a win for the patient, a win for the healthcare provider, and a
@@ -229,19 +229,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-center flex">
+      <section className="bg-center flex px-4 xl:px-0">
         <div className="container mx-auto justify-between items-center flex">
-          <div className="grid grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8  py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md -mt-0 sm:-mt-36 mx-0 xl:mx-10">
+          <div className="grid text-center md:text-left sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8 py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md lg:-mt-36 -mt-10 mx-0 xl:mx-10">
             <div>
               <Image
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="h-16 w-auto rounded-lg"
+                className="h-16 w-auto rounded-lg inline-block"
                 src="/assets/Medmonk-Network.png"
                 alt=""
               />
-              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4" />
+              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4 block ml-auto mr-auto md:ml-0" />
               <h3 className="font-semibold text-hBlack mb-2 text-lg">
                 Medmonk Network:
               </h3>
@@ -255,11 +255,11 @@ export default function Home() {
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="h-16 max-w-full rounded-lg w-auto"
+                className="h-16 max-w-full rounded-lg w-auto inline-block" 
                 src="/assets/Support-Provided.png"
                 alt=""
               />
-              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4" />
+              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4 block ml-auto mr-auto md:ml-0" />
               <h3 className="font-semibold text-hBlack mb-2 text-1xl">
                 Support Provided:
               </h3>
@@ -270,11 +270,11 @@ export default function Home() {
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="h-16 max-w-full rounded-lg w-auto"
+                className="h-16 max-w-full rounded-lg w-auto inline-block"
                 src="/assets/Brand-Loyalty.png"
                 alt=""
               />
-              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4" />
+              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4 block ml-auto mr-auto md:ml-0" />
               <h3 className="font-semibold text-hBlack mb-2 text-lg">
                 Brand Loyalty:
               </h3>
@@ -285,11 +285,11 @@ export default function Home() {
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="h-16 max-w-full rounded-lg w-auto"
+                className="h-16 max-w-full rounded-lg w-auto inline-block"
                 src="/assets/Enrollment-Efficiency.png"
                 alt=""
               />
-              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4" />
+              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4 block ml-auto mr-auto md:ml-0" />
               <h3 className="font-semibold text-hBlack mb-2 text-lg">
                 Enrollment Efficiency:
               </h3>
@@ -300,11 +300,11 @@ export default function Home() {
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="h-16 max-w-full rounded-lg w-auto"
+                className="h-16 max-w-full rounded-lg w-auto inline-block"
                 src="/assets/Quick-Financial-Assistance.png"
                 alt=""
               />
-              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4" />
+              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4 block ml-auto mr-auto md:ml-0" />
               <h3 className="font-semibold text-hBlack mb-2 text-lg">
                 Quick Financial Assistance:
               </h3>
@@ -315,11 +315,11 @@ export default function Home() {
                 width="0"
                 height="0"
                 sizes="100vw"
-                className="h-16 max-w-full rounded-lg w-auto"
+                className="h-16 max-w-full rounded-lg w-auto inline-block"
                 src="/assets/Patient-Approval.png"
                 alt=""
               />
-              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4" />
+              <hr className=" h-0.5 w-24 bg-brownCust mb-2 mt-4 block ml-auto mr-auto md:ml-0" />
               <h3 className="font-semibold text-hBlack mb-2 text-lg">
                 Patient Approval:
               </h3>
@@ -331,24 +331,26 @@ export default function Home() {
 
       <section className="bg-center flex pt-24 pb-20 overflow-hidden">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-darkOrange mb-8 px-8 xl:px-14">
+          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-5 md:mb-8 px-4 md:px-8 xl:px-14 text-center md:text-left">
             Medmonk As Your Partner
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8 px-8 xl:px-14">
+          <hr className=" h-1.5 w-36 bg-brownCust mb-8 md:hidden block ml-auto mr-auto" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8 px-4 xl:px-14">
             <div className="partne-left grid grid-cols-1 gap-10">
-              <div className="flex">
-                <div className="w-36 flex">
+              <div className="flex md:flex-row flex-col text-center md:text-left">
+                <div className="w-full md:w-36 flex md:flex-row flex-col md:justify-start justify-center">
                   <Image
                     width="0"
                     height="0"
                     sizes="100vw"
-                    className="w-24 h-auto m-auto ml-0"
+                    className="w-24 h-auto m-auto ml-auto md:ml-0"
                     src="/assets/Medmon-Partner1.png"
                     alt=""
                   />
+                  <hr className=" h-0.5 w-24 bg-darkBlue mb-4 mt-8 md:hidden ml-auto mr-auto md:ml-0" />
                 </div>
-                <div className="pl-5 border-l-4 border-darkBlue w-full">
-                  <h3 className="text-darkBlue mb-1.5 text-2xl font-extrabold">
+                <div className="pl-0 md:pl-5 border-l-0 md:border-l-4 border-darkBlue w-full">
+                  <h3 className="text-darkBlue mb-1.5 text-xl md:text-2xl font-extrabold ">
                     EXPERTISE IN RARE DISEASES
                   </h3>
                   <p>
@@ -360,19 +362,20 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex">
-                <div className="w-36 flex">
+              <div className="flex md:flex-row flex-col text-center md:text-left">
+                <div className="w-full md:w-36 flex md:flex-row flex-col md:justify-start justify-center">
                   <Image
                     width="0"
                     height="0"
                     sizes="100vw"
-                    className="w-24 h-auto m-auto ml-0"
+                    className="w-24 h-auto m-auto ml-auto md:ml-0"
                     src="/assets/Medmon-Partner2.png"
                     alt=""
                   />
+                  <hr className=" h-0.5 w-24 bg-darkBlue mb-4 mt-8 md:hidden ml-auto mr-auto md:ml-0" />
                 </div>
-                <div className="pl-5 border-l-4 border-darkBlue w-full">
-                  <h3 className="text-darkBlue mb-1.5 text-2xl font-extrabold">
+                <div className="pl-0 md:pl-5 border-l-0 md:border-l-4 border-darkBlue w-full">
+                  <h3 className="text-darkBlue mb-1.5 text-xl md:text-2xl font-extrabold">
                     EXTENSIVE SPECIALTY PHARMACIES NETWORK
                   </h3>
                   <p>
@@ -383,19 +386,20 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="flex">
-                <div className="w-36 flex ">
+              <div className="flex md:flex-row flex-col text-center md:text-left">
+                <div className="w-full md:w-36 flex md:flex-row flex-col md:justify-start justify-center">
                   <Image
                     width="0"
                     height="0"
                     sizes="100vw"
-                    className="w-24 h-auto m-auto ml-0"
+                    className="w-24 h-auto m-auto ml-auto md:ml-0"
                     src="/assets/Medmon-Partner3.png"
                     alt=""
                   />
+                  <hr className=" h-0.5 w-24 bg-darkBlue mb-4 mt-8 md:hidden ml-auto mr-auto md:ml-0" />
                 </div>
-                <div className="pl-5 border-l-4 border-darkBlue w-full">
-                  <h3 className="text-darkBlue mb-1.5 text-2xl font-extrabold">
+                <div className="pl-0 md:pl-5 border-l-0 md:border-l-4 border-darkBlue w-full">
+                  <h3 className="text-darkBlue mb-1.5 text-xl md:text-2xl font-extrabold">
                     EFFORTLESS INTEGRATION
                   </h3>
                   <p>
@@ -420,7 +424,7 @@ export default function Home() {
                       src="/assets/speed.png"
                       alt=""
                     />
-                    <h3 className="text-darkBlue mt-2 text-2xl font-extrabold">
+                    <h3 className="text-darkBlue mt-2 md:text-2xl text-xl font-extrabold">
                       SPEED
                     </h3>
                     <hr className=" h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
@@ -439,7 +443,7 @@ export default function Home() {
                       src="/assets/customization.png"
                       alt=""
                     />
-                    <h3 className="text-darkBlue mt-2 text-2xl font-extrabold">
+                    <h3 className="text-darkBlue mt-2 md:text-2xl text-xl font-extrabold">
                       CUSTOMIZATION
                     </h3>
                     <hr className=" h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
@@ -459,7 +463,7 @@ export default function Home() {
                       src="/assets/customization1.png"
                       alt=""
                     />
-                    <h3 className="text-darkBlue mt-2 text-2xl font-extrabold">
+                    <h3 className="text-darkBlue mt-2 md:text-2xl text-xl font-extrabold">
                       SPEED
                     </h3>
                     <hr className=" h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
@@ -478,7 +482,7 @@ export default function Home() {
                       src="/assets/customization.png"
                       alt=""
                     />
-                    <h3 className="text-darkBlue mt-2 text-2xl font-extrabold">
+                    <h3 className="text-darkBlue mt-2 md:text-2xl text-xl font-extrabold">
                       CUSTOMIZATION
                     </h3>
                     <hr className=" h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
@@ -499,7 +503,7 @@ export default function Home() {
       <section className="pt-10 pb-20">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto px-4">
-            <h2 className="text-5xl font-bold text-darkOrange mb-2 px-8 xl:px-14">
+            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14">
               Partners
             </h2>
             <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
@@ -510,7 +514,7 @@ export default function Home() {
               dedicated to advancing patient care and ensuring access to vital
               medications.
             </p>
-            <div className="flex mt-6 justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+            <div className="flex mt-6 justify-center flex-col md:flex-row" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
               <button
                 type="button"
                 //className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
@@ -534,7 +538,7 @@ export default function Home() {
             {...settingsLogo}
             className="brand-logos pb-6 max-w-4xl m-auto">
             <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -596,7 +600,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -660,7 +664,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -722,7 +726,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -790,7 +794,7 @@ export default function Home() {
          
          {activeTab === 2 &&  <Slider {...settingsLogo} className="brand-logos pb-6 max-w-4xl m-auto">
             <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -852,7 +856,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -914,7 +918,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -978,7 +982,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -1040,7 +1044,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -1102,7 +1106,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -1166,7 +1170,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -1228,7 +1232,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto">
                 <div className="brand-logo">
                   <Image
                     width="0"
@@ -1298,17 +1302,17 @@ export default function Home() {
 
       <section className="bg-center flex pt-24 pb-20 overflow-hidden">
         <div className="container mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-5xl font-bold text-darkOrange mb-2 px-8 xl:px-14">
+          <div className="text-center max-w-3xl mx-auto mb-2 md:mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14">
               Success Stories
             </h2>
             <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-6 xl:px-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-4 xl:px-14 items-center">
             <div className="partne-left grid grid-cols-1 gap-10">
               <Slider {...settingsSuccessStoriesNav} className="pb-6">
                 <div className="ssNav">
-                  <div className="pl-5 pr-0 lg:pr-20 w-full">
+                  <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
@@ -1325,7 +1329,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="ssNav">
-                  <div className="pl-5 pr-0 lg:pr-20 w-full">
+                  <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
@@ -1342,7 +1346,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="ssNav">
-                  <div className="pl-5 pr-0 lg:pr-20 w-full">
+                  <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
                     <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry. Lorem Ipsum has been the industrys
@@ -1360,7 +1364,7 @@ export default function Home() {
                 </div>
               </Slider>
             </div>
-            <div className="partne-right">
+            <div className="partne-right ml-4 md:ml-0">
               <div className="card-carsual ssSkider">
                 <Slider {...settingsSuccessStories} className="pb-6">
                   <div className="card-box bg-white rounded-md">
@@ -1403,11 +1407,11 @@ export default function Home() {
       <section className="get-started-sec bg-center flex bg-no-repeat bg-get-started bg-cover py-20 relative">
         {/* <div className="absolute inset-0 bg-gray-400 opacity-50"></div> */}
         <div className="container mx-auto px-4 z-1">
-          <div className="w-1/1 pr-4 text-center">
-            <h2 className="text-4xl font-extrabold text-darkBlue mb-2">
+          <div className="w-1/1 text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-darkBlue mb-2">
               READY TO EXPERIENCE THE MEDMONK DIFFERENCE?
             </h2>
-            <p className="text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto">
+            <p className="text-md md:text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto">
               Explore our innovative solutions that prioritize Speed to Therapy
               and Customization for Your Brand. Click here to get started.
             </p>
@@ -1424,8 +1428,8 @@ export default function Home() {
       <footer className="bg-headerBG pt-20 px-4">
         <div className="container mx-auto">
           <div className="mx-0 xl:mx-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
-              <div>
+            <div className="flex flex-wrap md:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
+              <div className="w-full">
                 <a
                   href="https://flowbite.com/"
                   className="flex items-center space-x-3 rtl:space-x-reverse mb-4"
@@ -1470,7 +1474,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className=" w-1/2 -mr-8">
                 <h3 className="font-semibold text-hBlack mb-2 text-lg">
                   Sitemap
                 </h3>
@@ -1497,7 +1501,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className=" w-1/2 border-l-2 md:border-l-0 border-darkBlue pl-8 md:pl-0">
                 <h3 className="font-semibold text-hBlack mb-2 text-lg">
                   Accredited by
                 </h3>
@@ -1514,14 +1518,14 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className="w-full">
                 <h3 className="text-darkBlue mb-3 text-xl font-bold">
                   Get the latest updates
                 </h3>
 
                 <div className="mx-auto max-w-screen-md sm:text-center">
                   <form action="#">
-                    <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                    <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm flex space-y-0">
                       <div className="relative w-full">
                         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                           <svg
