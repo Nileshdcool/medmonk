@@ -5,7 +5,7 @@ import {
   settingsSuccessStories,
   settingsSuccessStoriesNav,
   successStories,
-} from "@/Constants/HopePage/SuccessStory";
+} from "@/Constants/HomePage/SuccessStory";
 
 const SuccessStories = () => {
   return (

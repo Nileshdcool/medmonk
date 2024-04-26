@@ -1,5 +1,5 @@
 import React from "react";
-import { SiteMaps } from "@/Constants/HopePage/Footer/SiteMaps";
+import { SiteMaps } from "@/Constants/HomePage/Footer/SiteMaps";
 
 const SiteMap = () => {
   return (

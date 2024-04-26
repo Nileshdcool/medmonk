@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { SocialIconsList } from "@/Constants/HopePage/Footer/SocialIconsList";
+import { SocialIconsList } from "@/Constants/HomePage/Footer/SocialIconsList";
 
 const SocialIcons = () => {
   return (

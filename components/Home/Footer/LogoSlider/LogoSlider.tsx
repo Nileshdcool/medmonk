@@ -3,7 +3,7 @@ import Partner from "./Partner";
 import Slider from "react-slick";
 import TabButton from "./TabButton";
 import React, { useState } from "react";
-import { logoTabs, settingsLogo } from "@/Constants/HopePage/Logos";
+import { logoTabs, settingsLogo } from "@/Constants/HomePage/Logos";
 
 const LogoSlider = () => {
   const [activeTab, setActiveTab] = useState(0);

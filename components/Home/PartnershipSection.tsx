@@ -4,7 +4,7 @@ import {
   offersToPartners,
   partners,
   partnershipSliderSettings,
-} from "@/Constants/HopePage/PartnerShip";
+} from "@/Constants/HomePage/PartnerShip";
 
 const PartnershipSection = () => {
   return (

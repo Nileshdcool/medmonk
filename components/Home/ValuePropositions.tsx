@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ValuePropositionsData } from "@/Constants/HopePage/ValuePropositionsData";
+import { ValuePropositionsData } from "@/Constants/HomePage/ValuePropositionsData";
 
 const ValuePropositions = () => {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { HeaderMenuItems } from "@/Constants/HopePage/HeaderMenuItems";
+import { HeaderMenuItems } from "@/Constants/HomePage/HeaderMenuItems";
 const Header = () => {
   return (
     <header className="bg-headerBG">
