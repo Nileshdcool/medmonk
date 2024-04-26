@@ -130,3 +130,20 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   max-height: 50px;
   height: auto;
 }
+
+@media(min-width:666px) and (max-width:991px){
+.brand-logo{margin-top: 10px; margin-bottom: 10px;}
+.brand-logo:nth-child(3n + 3){border: none;}
+}
+
+@media(max-width:665px){
+  .brand-logo{margin-top: 10px; margin-bottom: 10px;}
+  .ssSkider .slick-slider .slick-list, .card-carsual:not(.ssSkider) .slick-slider .slick-list{margin-right: -75vw;}
+  .brand-logo:nth-child(even){border: none;}
+  .brand-logo img {
+    max-width: 100px;
+    max-height: 120px;
+    height: auto;
+    width: 100%;
+}
+}
