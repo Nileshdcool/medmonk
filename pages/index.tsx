@@ -5,25 +5,32 @@ import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
-
+declare global {
+  interface Window {
+    WOW: any; // Define the type of the WOW property
+  }
+}
 export default function Home() {
 
   useEffect(() => {
-    // Load the wow.min.js script
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js';
-    script.async = true;
-    document.body.appendChild(script);
+    const loadWow = async () => {
+      // Load the wow.min.js script dynamically
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js';
+      script.async = true;
+      document.body.appendChild(script);
 
-    // Initialize WOW when the script is loaded
-    script.onload = () => {
+      // Wait for the script to load before initializing WOW
+      await new Promise(resolve => {
+        script.onload = resolve;
+      });
+
+      // Initialize WOW when the script is loaded
       new window.WOW().init();
     };
-
-    // Cleanup
-    return () => {
-      document.body.removeChild(script);
-    };
+    
+    loadWow();
+    
   }, []);
 
   const [activeTab, setActiveTab] = useState(1);
