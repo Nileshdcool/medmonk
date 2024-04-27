@@ -14,14 +14,23 @@ const metaData: MetaProps = {
 const PostPage = ({ posts }: PostPageProps) => {
   return (
     <Layout metaData={metaData}>
-      <div className="container mx-auto px-8 py-12 text-black">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-8">
+      <section className=" h-60 bg-center flex bg-no-repeat bg-home-hero bg-cover items-center">
+        <div className="container mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-black -mb-2 text-darkBlue animate__animated animate__fadeInDown animate__slow"> News</h1>
+            <hr className=" h-1.5 w-24 md:w-36 bg-brownCust inline-block animate__animated animate__fadeInDown animate__slow" />
+        </div>
+      </section>
+
+      <div className="container mx-auto px-4 md:px-8 py-12 text-black">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 lg:gap-8">
           {posts.map((post) => (
             <PostCard key={post.headerTitle} post={post}></PostCard>
           ))}
         </div>
       </div>
     </Layout>
+
+    
   );
 };
 
