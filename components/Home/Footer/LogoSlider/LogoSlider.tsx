@@ -11,20 +11,25 @@ const LogoSlider = () => {
     setActiveTab(tabIndex);
   };
   return (
-    <section className="pt-10 pb-20">
+    <section className="pt-10 pb-20 overflow-hidden">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14">
+          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
             Partners
           </h2>
-          <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
-          <p>
+          <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" />
+          <p className="animate__animated animate__fadeInDown animate__slow wow">
             At Medmonk, collaboration is key. We partner with leading healthcare
             organizations, pharmaceutical companies, and patient advocacy groups
             to expand our reach and impact. Together, we are dedicated to
             advancing patient care and ensuring access to vital medications.
           </p>
-          <div className="flex mt-6 justify-center flex-col md:flex-row" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+          <div
+            className="flex mt-6 justify-center flex-col md:flex-row animate__animated animate__fadeInUp animate__slow wow"
+            id="default-tab"
+            data-tabs-toggle="#default-tab-content"
+            role="tablist"
+          >
             {logoTabs.map((tab, index) => (
               <TabButton
                 key={index}
@@ -40,7 +45,11 @@ const LogoSlider = () => {
           {logoTabs[activeTab].logos.map((logosTab, index) => (
             <div key={index}>
               {logosTab.map((logos, tabIndex) => (
-                <Partner key={tabIndex} logos={logos} />
+                <Partner
+                  key={tabIndex}
+                  containerClass={logos.containerClass}
+                  images={logos.images}
+                />
               ))}
             </div>
           ))}

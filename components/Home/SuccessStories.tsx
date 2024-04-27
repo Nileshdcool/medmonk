@@ -12,10 +12,10 @@ const SuccessStories = () => {
     <section className="bg-center flex pt-24 pb-20 overflow-hidden">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-2 md:mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeIn animate__slow wow">
+          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
             Success Stories
           </h2>
-          <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
+          <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-4 xl:px-14 items-center">
           <div className="partne-left grid grid-cols-1 gap-10 animate__animated animate__fadeInLeft animate__slow wow">

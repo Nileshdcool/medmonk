@@ -6,9 +6,10 @@ const LatestUpdates = () => {
       <h3 className="text-darkBlue mb-3 text-xl font-bold">
         Get the latest updates
       </h3>
+
       <div className="mx-auto max-w-screen-md sm:text-center">
         <form action="#">
-          <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm flex space-y-0">
+          <div className="items-center mx-auto mb-3 max-w-screen-sm flex">
             <div className="relative w-full">
               <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                 <svg

@@ -1,8 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
+import { ContactsList } from "@/Constants/HomePage/Footer/contactsList";
 const Contacts = () => {
   return (
     <div className="w-full">
-      <a
+      <Link
         href="https://flowbite.com/"
         className="flex items-center space-x-3 rtl:space-x-reverse mb-4"
       >
@@ -13,35 +15,24 @@ const Contacts = () => {
           src="/assets/medmonk-logo.png"
           alt="MedMonk Logo"
         />
-      </a>
+      </Link>
       <h3 className="font-semibold text-hBlack mb-2 text-lg">Contact us</h3>
       <ul className="flex flex-col gap-2">
-        <li>
-          <a href="#" className="hover:text-brownCust">
-            <Image
-              width="0"
-              height="0"
-              sizes="100vw"
-              className="w-6 inline-block align-middle mr-1"
-              src="/assets/phone-ico.png"
-              alt=""
-            />{" "}
-            +91-999999999
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:text-brownCust">
-            <Image
-              width="0"
-              height="0"
-              sizes="100vw"
-              className="w-6 inline-block align-middle mr-1"
-              src="/assets/email-ico.png"
-              alt=""
-            />{" "}
-            demogmail.com
-          </a>
-        </li>
+        {ContactsList.map((contact, index) => (
+          <li key={index}>
+            <Link href="#" className="hover:text-brownCust">
+              <Image
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-6 inline-block align-middle mr-1"
+                src={contact.image}
+                alt=""
+              />{" "}
+              {contact.contact}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

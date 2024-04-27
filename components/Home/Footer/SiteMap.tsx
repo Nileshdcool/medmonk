@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { SiteMaps } from "@/Constants/HomePage/Footer/SiteMaps";
 
 const SiteMap = () => {
@@ -8,13 +9,9 @@ const SiteMap = () => {
       <ul className="flex flex-col gap-1">
         {SiteMaps.map((menuItem, index) => (
           <li key={index}>
-            <a
-              href={menuItem.href}
-              className="hover:text-brownCust"
-              aria-current="page"
-            >
+            <Link href={menuItem.href} className="hover:text-brownCust">
               {menuItem.text}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

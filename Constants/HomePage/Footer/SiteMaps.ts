@@ -1,8 +1,8 @@
-import { SiteMapType } from "@/Interfaces/Home/SiteMapType";
+import { SiteMapType } from "@/Interfaces/Home/Footer/SiteMapType";
 
-export const SiteMaps : SiteMapType[] = [
-    { text: "About us", href: "#" },
-    { text: "Product", href: "#" },
-    { text: "Services", href: "#" },
-    { text: "News & Trends", href: "#" },
-  ];
+export const SiteMaps: SiteMapType[] = [
+  { text: "About us", href: "#" },
+  { text: "Product", href: "#" },
+  { text: "Services", href: "#" },
+  { text: "News & Trends", href: "#" },
+];

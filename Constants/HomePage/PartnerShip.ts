@@ -1,8 +1,10 @@
-import { OfferToPartnerType } from "@/Interfaces/Home/OfferToPartnerType";
 import { PartnershipType } from "@/Interfaces/Home/PartnershipType";
+import { OfferToPartnerType } from "@/Interfaces/Home/OfferToPartnerType";
 
 export const partners: PartnershipType[] = [
   {
+    containerClass:
+      "flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow wow",
     heading: "EXPERTISE IN RARE DISEASES",
     description: `Medmonk specializes in managing therapies that treat rare
         diseases, bringing unparalleled expertise to the patient
@@ -12,6 +14,8 @@ export const partners: PartnershipType[] = [
     logo: "/assets/Medmon-Partner1.png",
   },
   {
+    containerClass:
+      "flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow wow",
     heading: "EXTENSIVE SPECIALTY PHARMACIES NETWORK",
     description: `Medmonk is connected and contracted with 98% of specialty
     pharmacies, buy & bill facilities, and infusion centers
@@ -20,6 +24,8 @@ export const partners: PartnershipType[] = [
     logo: "/assets/Medmon-Partner2.png",
   },
   {
+    containerClass:
+      "flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow  wow",
     heading: "EFFORTLESS INTEGRATION",
     description: `Our platform seamlessly integrates with 98% of US pharmacies
     and providers billing terminals. This simplifies the hub,
@@ -63,23 +69,23 @@ export const offersToPartners: OfferToPartnerType[] = [
 ];
 
 export const partnershipSliderSettings = {
-    dots: true,
-    arrows: true,
-    slide: ".card-box",
-    slidesToShow: 2,
-    autoplay: true,
-    centerMode: false,
-    adaptiveHeight: true,
-    centerPadding: "0",
+  dots: true,
+  arrows: true,
+  slide: ".card-box",
+  slidesToShow: 2,
+  autoplay: true,
+  centerMode: false,
+  adaptiveHeight: true,
+  centerPadding: "0",
 
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {},
-      },
-      {
-        breakpoint: 480,
-        settings: {},
-      },
-    ],
-  };
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {},
+    },
+    {
+      breakpoint: 480,
+      settings: {},
+    },
+  ],
+};
