@@ -3,35 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
-import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
-declare global {
-  interface Window {
-    WOW: any; // Define the type of the WOW property
-  }
-}
+import React, { useState } from 'react';
+import Header from "@/components/Header";
+
+
 export default function Home() {
-
-  useEffect(() => {
-    const loadWow = async () => {
-      // Load the wow.min.js script dynamically
-      const script = document.createElement('script');
-      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js';
-      script.async = true;
-      document.body.appendChild(script);
-
-      // Wait for the script to load before initializing WOW
-      await new Promise(resolve => {
-        script.onload = resolve;
-      });
-
-      // Initialize WOW when the script is loaded
-      new window.WOW().init();
-    };
-    
-    loadWow();
-    
-  }, []);
 
   const [activeTab, setActiveTab] = useState(1);
 
@@ -119,129 +95,22 @@ export default function Home() {
     return baseClassName;
   };
 
+  
 
   return (
     <main>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
-      <header className="bg-headerBG">
-        <div className="container 2xl mx-auto">
-          <div className="flex flex-row">
-          
-            <div className="basis-3/4 bg-darkBlue">
-              <nav className="bg-headerBG dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                  <Link
-                    href="/"
-                    className="flex items-center space-x-3 rtl:space-x-reverse"
-                  >
-                    <Image
-                      className="object-fill h-auto w-auto xl:w-54"
-                      width={220}
-                      height={58}
-                      src="/assets/medmonk-logo.png"
-                      alt="MedMonk Logo"
-                    />
-                  </Link>
-
-                  <div className="flex">
-                    <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-6">
-                      <button
-                        type="button"
-                        className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-sm px-5 py-2 text-center rounded-full"
-                      >
-                        CONTACT US
-                      </button>
-                      <button
-                        data-collapse-toggle="navbar-sticky"
-                        type="button"
-                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 roun  ded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-sticky"
-                        aria-expanded="false"
-                      >
-                        <span className="sr-only">Open main menu</span>
-                        <svg
-                          className="w-5 h-5"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 17 14"
-                        >
-                          <path
-                            stroke="currentColor"
-                            d="M1 1h15M1 7h15M1 13h15"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-                      id="navbar-sticky"
-                    >
-                      <ul className="font-openSans text-sm flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                          <a
-                            href="#"
-                            className="block py-2 px-3 text-white bg-brownCust rounded md:bg-transparent md:text-brownCust md:p-0 md:dark:text-brownCust"
-                            aria-current="page"
-                          >
-                            HOME
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brownCust md:p-0 md:dark:hover:text-brownCust dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                          >
-                            ABOUT US
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brownCust md:p-0 md:dark:hover:text-brownCust dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                          >
-                            PRODUCT
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brownCust md:p-0 md:dark:hover:text-brownCust dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                          >
-                            SERVICES
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brownCust md:p-0 md:dark:hover:text-brownCust dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                          >
-                            NEWS & TRENDS
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      
+      <Header/>
       <section className="hreo-sec bg-center flex bg-no-repeat bg-home-hero bg-cover py-20 items-end lg:items-center">
         <div className="container mx-auto justify-between items-center flex px-4">
           <div className="flex -mt-7">
             <div className="w-1/1 lg:w-1/2 pr-4">
-              <h1 className="text-4xl md:text-6xl font-black text-darkBlue mb-4 animate__animated animate__fadeIn">
+              <h1 className="text-4xl md:text-6xl font-black text-darkBlue mb-4 animate__animated animate__fadeInDown animate__slow">
                 Revolutionizing Patient Access to Vital Therapies
               </h1>
 
-              <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block" />
-              <p className="sm:text-lg text-md text-darkBlue mb-8  font-semibold animate__animated animate__fadeIn">
+              <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block animate__animated animate__fadeInDown animate__slow" />
+              <p className="sm:text-lg text-md text-darkBlue mb-8  font-semibold animate__animated animate__fadeInUp animate__slow">
                 At Medmonk, we strongly believe that a patient receiving their
                 medication without unnecessary delays is a collective win. It s
                 a win for the patient, a win for the healthcare provider, and a
@@ -251,7 +120,7 @@ export default function Home() {
               </p>
               <button
                 type="button"
-                className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full animate__animated animate__fadeInDown"
+                className="animate__animated animate__fadeInUp animate__slow text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full animate__animated animate__fadeInDown"
               >
                 Watch Video
               </button>
@@ -263,7 +132,7 @@ export default function Home() {
       <section className="bg-center flex px-4 xl:px-0">
         <div className="container mx-auto justify-between items-center flex">
           <div className="grid text-center md:text-left sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8 py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md lg:-mt-36 -mt-10 mx-0 xl:mx-10">
-            <div className="animate__animated animate__slideInUp wow">
+            <div className="animate__animated animate__slideInUp wow animate__slow">
               <Image
                 width="0"
                 height="0"
@@ -281,7 +150,7 @@ export default function Home() {
                 the U.S.
               </p>
             </div>
-            <div className="animate__animated animate__slideInUp wow">
+            <div className="animate__animated animate__slideInDown wow animate__slow">
               <Image
                 width="0"
                 height="0"
@@ -296,7 +165,7 @@ export default function Home() {
               </h3>
               <p>2.3 million patients supported with $2 billion in claims</p>
             </div>
-            <div className="animate__animated animate__slideInUp wow">
+            <div className="animate__animated animate__slideInUp wow animate__slow">
               <Image
                 width="0"
                 height="0"
@@ -311,7 +180,7 @@ export default function Home() {
               </h3>
               <p>Brands stay with us for an average of 7 years</p>
             </div>
-            <div className="animate__animated animate__slideInUp wow">
+            <div className="animate__animated animate__slideInDown wow animate__slow">
               <Image
                 width="0"
                 height="0"
@@ -326,7 +195,7 @@ export default function Home() {
               </h3>
               <p>Patient enrollment completed within an average of 3 minutes</p>
             </div>
-            <div className="animate__animated animate__slideInUp wow">
+            <div className="animate__animated animate__slideInUp wow animate__slow">
               <Image
                 width="0"
                 height="0"
@@ -341,7 +210,7 @@ export default function Home() {
               </h3>
               <p>Access to copay support typically under 3 seconds</p>
             </div>
-            <div className="animate__animated animate__slideInUp wow">  
+            <div className="animate__animated animate__slideInDown wow animate__slow">  
               <Image
                 width="0"
                 height="0"
@@ -362,7 +231,7 @@ export default function Home() {
 
       <section className="bg-center flex pt-24 pb-20 overflow-hidden">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-5 md:mb-8 px-4 md:px-8 xl:px-14 text-center md:text-left animate__animated animate__fadeIn wow">
+          <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-5 md:mb-8 px-4 md:px-8 xl:px-14 text-center md:text-left animate__animated animate__fadeInDown animate__slow wow">
             Medmonk As Your Partner
           </h2>
           <hr className=" h-1.5 w-36 bg-brownCust mb-8 md:hidden block ml-auto mr-auto" />
@@ -531,21 +400,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pt-10 pb-20">
+      <section className="pt-10 pb-20 overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeIn animate__slow wow">
+            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
               Partners
             </h2>
-            <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
-            <p className="animate__animated animate__fadeInLeft animate__slow wow">
+            <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" />
+            <p className="animate__animated animate__fadeInDown animate__slow wow">
               At Medmonk, collaboration is key. We partner with leading
               healthcare organizations, pharmaceutical companies, and patient
               advocacy groups to expand our reach and impact. Together, we are
               dedicated to advancing patient care and ensuring access to vital
               medications.
             </p>
-            <div className="flex mt-6 justify-center flex-col md:flex-row animate__animated animate__fadeIn wow" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+            <div className="flex mt-6 justify-center flex-col md:flex-row animate__animated animate__fadeInUp animate__slow wow" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
               <button
                 type="button"
                 //className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 mb-2 rounded-full"
@@ -1334,10 +1203,10 @@ export default function Home() {
       <section className="bg-center flex pt-24 pb-20 overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-2 md:mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeIn animate__slow wow">
+            <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
               Success Stories
             </h2>
-            <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block" />
+            <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-4 xl:px-14 items-center">
             <div className="partne-left grid grid-cols-1 gap-10 animate__animated animate__fadeInLeft animate__slow wow">
@@ -1439,16 +1308,16 @@ export default function Home() {
         {/* <div className="absolute inset-0 bg-gray-400 opacity-50"></div> */}
         <div className="container mx-auto px-4 z-1">
           <div className="w-1/1 text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-darkBlue mb-2 animate__animated animate__fadeInLeft animate__slow wow">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-darkBlue mb-2 animate__animated animate__fadeInDown animate__slow wow">
               READY TO EXPERIENCE THE MEDMONK DIFFERENCE?
             </h2>
-            <p className="text-md md:text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto animate__animated animate__fadeInLeft animate__slow wow">
+            <p className="text-md md:text-xl text-hBlack my-6 font-semibold max-w-3xl ml-auto mr-auto animate__animated animate__fadeInDown animate__slow wow">
               Explore our innovative solutions that prioritize Speed to Therapy
               and Customization for Your Brand. Click here to get started.
             </p>
             <button
               type="button"
-              className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center mt-1.5 rounded-full animate__animated animate__fadeInLeft animate__slow wow"
+              className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center mt-1.5 rounded-full animate__animated animate__fadeInUp animate__slow wow"
             >
               Get Started
             </button>
@@ -1461,7 +1330,7 @@ export default function Home() {
           <div className="mx-0 xl:mx-10">
             <div className="flex flex-wrap md:grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
               <div className="w-full">
-                <a
+                <Link
                   href="https://flowbite.com/"
                   className="flex items-center space-x-3 rtl:space-x-reverse mb-4"
                 >
@@ -1472,13 +1341,13 @@ export default function Home() {
                     src="/assets/medmonk-logo.png"
                     alt="MedMonk Logo"
                   />
-                </a>
+                </Link>
                 <h3 className="font-semibold text-hBlack mb-2 text-lg">
                   Contact us
                 </h3>
                 <ul className="flex flex-col gap-2">
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       <Image
                         width="0"
                         height="0"
@@ -1488,10 +1357,10 @@ export default function Home() {
                         alt=""
                       />{" "}
                       +91-999999999
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       <Image
                         width="0"
                         height="0"
@@ -1501,7 +1370,7 @@ export default function Home() {
                         alt=""
                       />{" "}
                       demogmail.com
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1511,24 +1380,24 @@ export default function Home() {
                 </h3>
                 <ul className="flex flex-col gap-1">
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       About us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       Product
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       Services
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       New & Trends
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1538,14 +1407,14 @@ export default function Home() {
                 </h3>
                 <ul className="flex flex-col gap-1">
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       Text/Logo?
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-brownCust">
+                    <Link href="#" className="hover:text-brownCust">
                       Text/Logo?
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1556,7 +1425,7 @@ export default function Home() {
 
                 <div className="mx-auto max-w-screen-md sm:text-center">
                   <form action="#">
-                    <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm flex space-y-0">
+                    <div className="items-center mx-auto mb-3 max-w-screen-sm flex">
                       <div className="relative w-full">
                         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                           <svg
@@ -1593,7 +1462,7 @@ export default function Home() {
                 </h3>
                 <ul className="flex gap-4 social-ico mt-3">
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1610,10 +1479,10 @@ export default function Home() {
                         src="/assets/Telegram-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1630,10 +1499,10 @@ export default function Home() {
                         src="/assets/Instagram-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1650,10 +1519,10 @@ export default function Home() {
                         src="/assets/Medium-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1670,10 +1539,10 @@ export default function Home() {
                         src="/assets/Linkedin-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1690,10 +1559,10 @@ export default function Home() {
                         src="/assets/Facebook-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1710,10 +1579,10 @@ export default function Home() {
                         src="/assets/Twitter-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1730,10 +1599,10 @@ export default function Home() {
                         src="/assets/YouTub-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <Image
                         width="0"
                         height="0"
@@ -1750,7 +1619,7 @@ export default function Home() {
                         src="/assets/Twitch-h.png"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1759,21 +1628,21 @@ export default function Home() {
           <div className="footer-links mt-8">
             <ul className="flex flex-row gap-3 justify-center">
               <li>
-                <a href="#" className="hover:text-brownCust">
+                <Link href="#" className="hover:text-brownCust">
                   Privacy policy
-                </a>
+                </Link>
               </li>
               |
               <li>
-                <a href="#" className="hover:text-brownCust">
+                <Link href="#" className="hover:text-brownCust">
                   Legal statement
-                </a>
+                </Link>
               </li>
               |
               <li>
-                <a href="#" className="hover:text-brownCust">
+                <Link href="#" className="hover:text-brownCust">
                   Cookies
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
