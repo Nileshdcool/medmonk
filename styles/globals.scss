@@ -142,8 +142,9 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   .brand-logo:nth-child(even){border: none;}
   .brand-logo img {
     max-width: 100px;
-    max-height: 120px;
-    height: auto;
-    width: 100%;
+    max-height: 60px;
+    min-height: 20px;
+    width: auto;
 }
+.brand-logos .slick-dots li button{margin: 0 3px;}
 }
