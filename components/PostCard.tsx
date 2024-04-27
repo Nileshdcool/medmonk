@@ -4,7 +4,7 @@ import { PostCardProps } from "@/Models/Post/PostCardProps";
 const PostCard: FunctionComponent<PostCardProps> = ({ post }) => {
   return (
     <>
-      <div className="flex flex-col border border-gray-200 border-solid bg-gray-50 rounded-xl overflow-hidden animate__animated animate__fadeInDown animate__slow wow">
+      <div className="flex flex-col border border-gray-200 border-solid bg-gray-50 rounded-xl overflow-hidden animate__animated animate__fadeIn animate__slow wow">
         <a
           href={post.redirectLink}
           target="_blank"

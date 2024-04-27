@@ -14,7 +14,7 @@ const metaData: MetaProps = {
 const PostPage = ({ posts }: PostPageProps) => {
   return (
     <Layout metaData={metaData}>
-      <section className=" h-60 bg-center flex bg-no-repeat bg-home-hero bg-cover items-center">
+      <section className=" h-48 xl:h-60 bg-center flex bg-no-repeat bg-home-hero bg-cover items-center mt-16 xl:mt-20">
         <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-black -mb-2 text-darkBlue animate__animated animate__fadeInDown animate__slow"> News</h1>
             <hr className=" h-1.5 w-24 md:w-36 bg-brownCust inline-block animate__animated animate__fadeInDown animate__slow" />

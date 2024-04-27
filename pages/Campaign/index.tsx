@@ -12,6 +12,7 @@ import { MetaProps } from "@/Models/MetaProps";
 import Meta from "../../components/Meta";
 import CampaignSkelton from "@/components/CampaignSkelton";
 import { addCampaign, getCampaignCustomizations } from "@/services/campaign";
+import Header from "@/components/Header";
 const defaultFormData: CampaignFormData = {
   Name: "",
   CompanyName: "",
@@ -118,7 +119,8 @@ const Campaign: React.FC = () => {
 
       {/* <section className="h-screen bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
       </section> */}
-      <div className="bg-gray-50 min-h-screen py-10">
+      <Header />
+      <div className="bg-gray-50 min-h-screen pt-14 pb-10 h-48 xl:h-60 mt-16 xl:mt-20">
         <div className="container mx-auto justify-between items-center fle flex-col px-4">
           <div className="md:max-w-4xl ml-auto mr-auto">
           <Image
