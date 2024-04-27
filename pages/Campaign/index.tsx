@@ -12,6 +12,7 @@ import { MetaProps } from "@/Models/MetaProps";
 import Meta from "../../components/Meta";
 import CampaignSkelton from "@/components/CampaignSkelton";
 import { addCampaign, getCampaignCustomizations } from "@/services/campaign";
+import Header from "@/components/Header";
 const defaultFormData: CampaignFormData = {
   Name: "",
   CompanyName: "",
@@ -116,12 +117,22 @@ const Campaign: React.FC = () => {
       <Meta {...metaData} />
       <Toaster richColors expand={true} position="top-right" />
 
-      <section className="h-screen bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
-        <div className="container mx-auto justify-between items-center flex px-4">
-          <div className="flex -mt-7">
-            <div className="w-1/1 lg:w-1/2 pr-4">
-            <div className="bg-campaign-background bg-white shadow-lg rounded-lg overflow-hidden w-full md:max-w-4xl">
-              <div className="pt-8 pl-10 pr-10 pb-10">
+      {/* <section className="h-screen bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
+      </section> */}
+      <Header />
+      <div className="bg-gray-50 min-h-screen pt-14 pb-10 h-48 xl:h-60 mt-16 xl:mt-20">
+        <div className="container mx-auto justify-between items-center fle flex-col px-4">
+          <div className="md:max-w-4xl ml-auto mr-auto">
+          <Image
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="h-96 hov w-full object-cover"
+                src="/assets/home-hero.jpg"
+                alt=""
+              />
+            <div className="relative">
+              <div className="pt-4 md:pt-8 pb-6 md:pb-10 px-6 md:px-10 bg-campaign-background bg-white border-1 border-gray-400 border-solid rounded-b-lg overflow-hidden w-full">
                 {/* <div className="pt-2 pl-10 pr-10 pb-4 relative h-56">
                   <Image
                     src={customizations.Banner.data.attributes.url}
@@ -221,10 +232,10 @@ const Campaign: React.FC = () => {
                 </form>
               </div>
             </div>
-            </div>
+            
           </div>
         </div>
-      </section>
+        </div>
 
     </>
   );
