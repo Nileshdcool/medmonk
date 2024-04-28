@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ContactsList } from "@/Constants/HomePage/Footer/ContactsList";
+import { ContactsList } from "@/Constants/HomePage/Footer/contactsList";
 const Contacts = () => {
   return (
     <div className="w-full">
