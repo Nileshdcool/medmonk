@@ -12,7 +12,7 @@ import { MetaProps } from "@/Models/MetaProps";
 import Meta from "../../components/Meta";
 import CampaignSkelton from "@/components/CampaignSkelton";
 import { addCampaign, getCampaignCustomizations } from "@/services/campaign";
-import Header from "@/components/Header";
+import Header from "@/components/Home/Header";
 const defaultFormData: CampaignFormData = {
   Name: "",
   CompanyName: "",
