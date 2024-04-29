@@ -5,7 +5,7 @@ const Copyright = () => {
         <p className="text-xl mb-3 font-medium">
           © 2024 MEDMONK. All Rights Reserved
         </p>
-        <p className="text-sm">
+        <p className="hidden text-sm">
           Lorem ipsum is a placeholder text commonly used to demonstrate the
           visual form of a document or a typeface without relying on meaningful
           content

@@ -39,12 +39,12 @@ const PartnershipSection = () => {
             ))}
           </div>
           <div className="partne-right animate__animated animate__fadeInRight animate__slow wow">
-            <div className="card-carsual">
+            <div className="card-carsual h-96">
               <Slider {...partnershipSliderSettings} className="pb-6">
                 {offersToPartners.map((offer, index) => (
                   <div
                     key={index}
-                    className="card-box bg-white shadow-xl rounded-md p-6 text-center"
+                    className="card-box bg-white shadow-xl rounded-md p-6 text-center min-h-[450px]"
                   >
                     <Image
                       width="0"

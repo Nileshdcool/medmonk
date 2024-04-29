@@ -9,7 +9,7 @@ import {
 
 const SuccessStories = () => {
   return (
-    <section className="bg-center flex pt-24 pb-20 overflow-hidden">
+    <section className="hidden bg-center flex pt-24 pb-20 overflow-hidden">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-2 md:mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
