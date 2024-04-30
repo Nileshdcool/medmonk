@@ -5,6 +5,6 @@ export const HeaderMenuItems: HeaderMenuItemType[] = [
     { text: "ABOUT US", href: "/AboutUs" },
     { text: "PRODUCT", href: "/Product" },
     { text: "SERVICES", href: "/Services" },
-    { text: "NEWS & TRENDS", href: "/Post" },
+    { text: "NEWS & TRENDS", href: "/News" },
   ];
   

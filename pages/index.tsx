@@ -24,7 +24,6 @@ export default function Home() {
       <LogoSlider />
       <SuccessStories />
       <CallToAction />
-      <Footer />
     </Layout>
   );
 }
