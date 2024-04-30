@@ -15,7 +15,7 @@ const PartnershipSection = () => {
         </h2>
         <hr className=" h-1.5 w-36 bg-brownCust mb-8 md:hidden block ml-auto mr-auto" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8 px-4 xl:px-14">
-          <div className="partne-left grid grid-cols-1 gap-10">
+          <div className="partne-left grid grid-cols-1 gap-10 mb-10 md:mb-0">
             {partners.map((partner, index) => (
               <div key={index} className={partner.containerClass}>
                 <div className="w-full md:w-36 flex md:flex-row flex-col md:justify-start justify-center">
@@ -33,7 +33,7 @@ const PartnershipSection = () => {
                   <h3 className="text-darkBlue mb-1.5 text-xl md:text-2xl font-extrabold">
                     {partner.heading}
                   </h3>
-                  <p>{partner.description}</p>
+                  <p className="text-darkBlue">{partner.description}</p>
                 </div>
               </div>
             ))}
@@ -58,7 +58,7 @@ const PartnershipSection = () => {
                       {offer.heading}
                     </h3>
                     <hr className="h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
-                    <p>{offer.description}</p>
+                    <p className="text-darkBlue">{offer.description}</p>
                   </div>
                 ))}
               </Slider>
