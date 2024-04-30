@@ -13,6 +13,7 @@ import Meta from "../../components/Meta";
 import CampaignSkelton from "@/components/CampaignSkelton";
 import { addCampaign, getCampaignCustomizations } from "@/services/campaign";
 import Header from "@/components/Home/Header";
+import Layout from "../Layout";
 const defaultFormData: CampaignFormData = {
   Name: "",
   CompanyName: "",
@@ -113,17 +114,14 @@ const Campaign: React.FC = () => {
   }
   return (
     <>
-    
-      <Meta {...metaData} />
-      <Toaster richColors expand={true} position="top-right" />
-
-      {/* <section className="h-screen bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
+      <Layout metaData={metaData}>
+        <Toaster richColors expand={true} position="top-right" />
+        {/* <section className="h-screen bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
       </section> */}
-      <Header />
-      <div className="bg-gray-50 min-h-screen pt-14 pb-10 h-48 xl:h-60 mt-16 xl:mt-20">
-        <div className="container mx-auto justify-between items-center fle flex-col px-4">
-          <div className="md:max-w-4xl ml-auto mr-auto">
-          <Image
+        <div className="bg-gray-50 min-h-screen pt-14 pb-10 h-48 xl:h-60 mt-16 xl:mt-20">
+          <div className="container mx-auto justify-between items-center fle flex-col px-4">
+            <div className="md:max-w-4xl ml-auto mr-auto">
+              <Image
                 width="0"
                 height="0"
                 sizes="100vw"
@@ -131,9 +129,9 @@ const Campaign: React.FC = () => {
                 src="/assets/home-hero.jpg"
                 alt=""
               />
-            <div className="relative">
-              <div className="pt-4 md:pt-8 pb-6 md:pb-10 px-6 md:px-10 bg-campaign-background bg-white border-1 border-gray-400 border-solid rounded-b-lg overflow-hidden w-full">
-                {/* <div className="pt-2 pl-10 pr-10 pb-4 relative h-56">
+              <div className="relative">
+                <div className="pt-4 md:pt-8 pb-6 md:pb-10 px-6 md:px-10 bg-campaign-background bg-white border-1 border-gray-400 border-solid rounded-b-lg overflow-hidden w-full">
+                  {/* <div className="pt-2 pl-10 pr-10 pb-4 relative h-56">
                   <Image
                     src={customizations.Banner.data.attributes.url}
                     alt="Header Image"
@@ -143,100 +141,99 @@ const Campaign: React.FC = () => {
                     className="rounded-lg"
                   />
                 </div> */}
-                <form
-                  onSubmit={handleSubmit}
-                  className="space-y-4 mt-4 text-gray-500 font-medium "
-                >
-                  {customizations && customizations.Name && (
-                    <>
-                      <input
-                        type="text"
-                        name="Name"
-                        placeholder="Name"
-                        onChange={handleChange}
-                        value={formData.Name}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
-                      />
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-4 mt-4 text-gray-500 font-medium "
+                  >
+                    {customizations && customizations.Name && (
+                      <>
+                        <input
+                          type="text"
+                          name="Name"
+                          placeholder="Name"
+                          onChange={handleChange}
+                          value={formData.Name}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
+                        />
 
-                      {getErrorMessage("Name")}
-                    </>
-                  )}
-                  {customizations && customizations.CompanyName && (
-                    <>
-                      <input
-                        type="text"
-                        name="CompanyName"
-                        placeholder="Company Name"
-                        onChange={handleChange}
-                        value={formData.CompanyName}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
-                      />
-                      {getErrorMessage("CompanyName")}
-                    </>
-                  )}
-                  {customizations && customizations.ContactNumber && (
-                    <>
-                      <input
-                        type="text"
-                        name="ContactNumber"
-                        placeholder="Contact Number"
-                        onChange={handleChange}
-                        value={formData.ContactNumber}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
-                      />
-                      {getErrorMessage("ContactNumber")}
-                    </>
-                  )}
-                  {customizations && customizations.CompanyEmailId && (
-                    <>
-                      <input
-                        type="text"
-                        name="CompanyEmailId"
-                        placeholder="Company Email Id"
-                        onChange={handleChange}
-                        value={formData.CompanyEmailId}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
-                      />
-                      {getErrorMessage("CompanyEmailId")}
-                    </>
-                  )}
-                  {customizations && customizations.Comments && (
-                    <>
-                      <input
-                        type="text"
-                        name="Comments"
-                        placeholder="Comments"
-                        onChange={handleChange}
-                        value={formData.Comments}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
-                      />
-                      {getErrorMessage("Comments")}
-                    </>
-                  )}
-                  {!isAllRemoved() && (
-                    <div className="flex">
-                      {/* <button
+                        {getErrorMessage("Name")}
+                      </>
+                    )}
+                    {customizations && customizations.CompanyName && (
+                      <>
+                        <input
+                          type="text"
+                          name="CompanyName"
+                          placeholder="Company Name"
+                          onChange={handleChange}
+                          value={formData.CompanyName}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
+                        />
+                        {getErrorMessage("CompanyName")}
+                      </>
+                    )}
+                    {customizations && customizations.ContactNumber && (
+                      <>
+                        <input
+                          type="text"
+                          name="ContactNumber"
+                          placeholder="Contact Number"
+                          onChange={handleChange}
+                          value={formData.ContactNumber}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
+                        />
+                        {getErrorMessage("ContactNumber")}
+                      </>
+                    )}
+                    {customizations && customizations.CompanyEmailId && (
+                      <>
+                        <input
+                          type="text"
+                          name="CompanyEmailId"
+                          placeholder="Company Email Id"
+                          onChange={handleChange}
+                          value={formData.CompanyEmailId}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
+                        />
+                        {getErrorMessage("CompanyEmailId")}
+                      </>
+                    )}
+                    {customizations && customizations.Comments && (
+                      <>
+                        <input
+                          type="text"
+                          name="Comments"
+                          placeholder="Comments"
+                          onChange={handleChange}
+                          value={formData.Comments}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 bg-slate-100 focus:ring-brownCust"
+                        />
+                        {getErrorMessage("Comments")}
+                      </>
+                    )}
+                    {!isAllRemoved() && (
+                      <div className="flex">
+                        {/* <button
                         type="submit"
                         className="w-1/3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-purple-700 focus:outline-none transition duration-300"
                         disabled={submitting}
                       > */}
-                      <button
-                        type="submit"
-                        className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 rounded-full"
-                        disabled={submitting}
-                      >
-                        {customizations.CTA}
-                      </button>
-                    </div>
-                  )}
-                </form>
+                        <button
+                          type="submit"
+                          className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center me-2 rounded-full"
+                          disabled={submitting}
+                        >
+                          {customizations.CTA}
+                        </button>
+                      </div>
+                    )}
+                  </form>
+                </div>
               </div>
             </div>
-            
           </div>
         </div>
-        </div>
-
+      </Layout>
     </>
   );
 };
