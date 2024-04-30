@@ -118,7 +118,7 @@ const Campaign: React.FC = () => {
         <Toaster richColors expand={true} position="top-right" />
         {/* <section className="h-screen bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
       </section> */}
-        <div className="bg-gray-50 min-h-screen pt-14 pb-10 h-48 xl:h-60 mt-16 xl:mt-20">
+        <div className="bg-gray-50 min-h-screen pt-14 pb-10 h-min xl:h-min mt-16 xl:mt-20">
           <div className="container mx-auto justify-between items-center fle flex-col px-4">
             <div className="md:max-w-4xl ml-auto mr-auto">
               <Image
