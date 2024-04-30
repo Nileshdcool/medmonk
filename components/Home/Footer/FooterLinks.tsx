@@ -1,15 +1,23 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { Links } from "@/Constants/HomePage/Footer/Links";
 
 const FooterLinks = () => {
+  const router = useRouter();
   return (
     <div className="footer-links mt-8">
       <ul className="flex flex-row gap-3 justify-center">
         {Links.map((link, index) => (
           <>
             <li key={index}>
-              <a href={link.href} className="hover:text-brownCust">
+              <Link
+                href={link.href}
+                className={`hover:text-brownCust ${
+                  router.pathname == link.href ? "text-brownCust" : ""
+                }`}
+              >
                 {link.text}
-              </a>
+              </Link>
             </li>
             {link.separator}
           </>

@@ -1,9 +1,10 @@
 // components/Header.jsx
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import React, { useState, useEffect } from "react";
 import { HeaderMenuItems } from "@/Constants/HomePage/HeaderMenuItems";
+
 
 // declare global {
 //   interface Window {
@@ -13,7 +14,7 @@ import { HeaderMenuItems } from "@/Constants/HomePage/HeaderMenuItems";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const router = useRouter();
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -85,12 +86,12 @@ export default function Header() {
                               <Link
                                 href={item.href}
                                 className={
-                                  item.isActive
+                                  router.pathname === item.href
                                     ? "block py-2 px-3 text-white bg-brownCust rounded md:bg-transparent md:text-brownCust md:p-0 md:dark:text-brownCust"
                                     : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-brownCust md:p-0 md:dark:hover:text-brownCust dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 }
                                 aria-current={
-                                  item.isActive ? "page" : undefined
+                                  router.pathname === item.href ? "page" : undefined
                                 }
                               >
                                 {item.text}
