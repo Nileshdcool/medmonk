@@ -10,7 +10,6 @@ export const seedSeo = async () => {
     try {
       let page = DbCollections.Seo[index] as keyof ICollections;
       emptyDocument.Title = formatTitle(DbCollections.Seo[index]);
-      console.log(emptyDocument);
       Seed(
         DbCollections.Collections.SEO,
         DbCollections.Collections[page],
