@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
-import { PostCardProps } from "@/Models/Post/PostCardProps";
+import { NewsCardProps } from "@/Interfaces/News/NewsCardProps";
 
-const PostCard: FunctionComponent<PostCardProps> = ({ post }) => {
+const PostCard: FunctionComponent<NewsCardProps> = ({ post }) => {
   return (
     <>
       <div className="flex flex-col border border-gray-200 border-solid bg-gray-50 rounded-xl overflow-hidden animate__animated animate__fadeIn animate__slow wow">

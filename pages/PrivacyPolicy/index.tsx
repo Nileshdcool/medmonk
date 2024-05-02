@@ -1,21 +1,22 @@
 import Layout from "../Layout";
-import { MetaProps } from "@/Models/MetaProps";
+import { GetServerSideProps } from "next";
+import { getMetaTags } from "@/services/SeoService";
 import PageNotFound from "@/components/PageNotFound";
+import { MetaProps } from "@/Interfaces/SEO/MetaProps";
 
-const metaData: MetaProps = {
-  title: "Privacy Policy Page",
-  description: "Our Privacy Policy",
-  keywords: "medmonk, privacy-policy",
-};
-
-const PrivacyPolicy: React.FC = () => {
+const PrivacyPolicy = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
-      <Layout metaData={metaData}>
+      <Layout metaData={metaTags}>
         <PageNotFound />
       </Layout>
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const meta: MetaProps | null = await getMetaTags("PrivacyPolicyPage");
+  return { props: { metaTags: meta } };
 };
 
 export default PrivacyPolicy;

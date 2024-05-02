@@ -1,4 +1,4 @@
-import { MetaProps } from "../MetaProps";
+import { MetaProps } from "./SEO/MetaProps";
 
 export interface LayoutProps {
   children: React.ReactNode;

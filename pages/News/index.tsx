@@ -1,17 +1,12 @@
 import Layout from "../Layout";
 import { GetServerSideProps } from "next";
-import PostCard from "@/components/PostCard";
-import { MetaProps } from "@/Models/MetaProps";
+import PostCard from "@/components/NewsCard";
 import { getPosts } from "@/services/postsService";
-import { PostPageProps } from "@/Models/Post/PostPageProps";
+import { getMetaTags } from "@/services/SeoService";
+import { MetaProps } from "@/Interfaces/SEO/MetaProps";
+import { NewsPageProps } from "@/Interfaces/News/NewsPageProps";
 
-const metaData: MetaProps = {
-  title: "Blogs Landing Page",
-  description: "All the blogs from medmonk",
-  keywords: "medmonk, blogs",
-};
-
-const NewsPage = ({ posts }: PostPageProps) => {
+const NewsPage = ({ posts, metaData }: NewsPageProps) => {
   return (
     <Layout metaData={metaData}>
       <section className=" h-48 xl:h-60 bg-center flex bg-no-repeat bg-home-hero bg-cover items-center mt-16 xl:mt-20">
@@ -59,8 +54,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       day: "numeric",
     }),
   }));
+  const meta: MetaProps | null = await getMetaTags("NewsPage");
   return {
-    props: { posts: serializedPosts },
+    props: { posts: serializedPosts, metaData: meta },
   };
 };
 

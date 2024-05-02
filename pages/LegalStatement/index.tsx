@@ -1,21 +1,20 @@
 import Layout from "../Layout";
-import { MetaProps } from "@/Models/MetaProps";
+import { GetServerSideProps } from "next";
+import { MetaProps } from "@/Interfaces/SEO/MetaProps";
 import PageNotFound from "@/components/PageNotFound";
+import { getMetaTags } from "@/services/SeoService";
 
-const metaData: MetaProps = {
-  title: "Legal Statement Page",
-  description: "All the Legal Statements",
-  keywords: "medmonk, legal-statements",
-};
-
-const LegalStatement: React.FC = () => {
+const LegalStatement = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
-      <Layout metaData={metaData}>
+      <Layout metaData={metaTags}>
         <PageNotFound />
       </Layout>
     </>
   );
 };
-
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const meta: MetaProps | null = await getMetaTags("LegalStatementPage");
+  return { props: { metaTags: meta } };
+};
 export default LegalStatement;
