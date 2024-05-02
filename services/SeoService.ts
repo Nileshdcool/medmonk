@@ -1,5 +1,6 @@
 import db from "../configurations/firebase";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
+import { DbCollections } from "@/Constants/DBCollections";
 import {
   DocumentSnapshot,
   DocumentData,
@@ -11,7 +12,7 @@ export const getMetaTags = async (
   pageId: string
 ): Promise<MetaProps | null> => {
   try {
-    const pageRef = doc(db, "SEO", pageId);
+    const pageRef = doc(db, DbCollections.Collections.SEO, pageId);
     const pageDoc: DocumentSnapshot<DocumentData> = await getDoc(pageRef);
 
     if (pageDoc.exists()) {

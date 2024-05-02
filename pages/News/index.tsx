@@ -23,7 +23,7 @@ const NewsPage = ({ posts, metaData }: NewsPageProps) => {
         {posts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 lg:gap-8">
             {posts.map((post) => (
-              <PostCard key={post.headerTitle} post={post}></PostCard>
+              <PostCard key={post.HeaderTitle} post={post}></PostCard>
             ))}
           </div>
         ) : (
@@ -47,8 +47,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const posts = await getNews();
   const serializedPosts = posts.map((post) => ({
     ...post,
-    shortDescription: post.shortDescription.substring(0, 100) + "...",
-    articleDate: post.articleDate.toLocaleDateString("en-US", {
+    shortDescription: post.ShortDescription ? post.ShortDescription.substring(0, 100) + "..." : "...",
+    articleDate:  new Date(post.ArticleDate).toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
       day: "numeric",

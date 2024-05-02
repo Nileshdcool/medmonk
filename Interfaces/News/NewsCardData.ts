@@ -1,7 +1,7 @@
 export interface NewsCardData {
-  image: string;
-  headerTitle: string;
-  shortDescription: string;
-  articleDate: Date;
-  redirectLink: string;
+  Image: string;
+  HeaderTitle: string;
+  ShortDescription: string;
+  ArticleDate: Date;
+  RedirectLink: string;
 }
