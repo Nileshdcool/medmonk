@@ -2,7 +2,7 @@ import db from "../configurations/firebase";
 import { NewsCardData } from "@/Interfaces/News/NewsCardData";
 import { collection, getDocs, Timestamp } from "firebase/firestore";
 
-export const getPosts = async (): Promise<NewsCardData[]> => {
+export const getNews = async (): Promise<NewsCardData[]> => {
   const postsCollection = collection(db, "News");
   const postSnapshot = await getDocs(postsCollection);
   const postData = postSnapshot.docs.map((doc) => {

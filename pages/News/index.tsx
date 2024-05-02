@@ -1,7 +1,7 @@
 import Layout from "../Layout";
 import { GetServerSideProps } from "next";
 import PostCard from "@/components/NewsCard";
-import { getPosts } from "@/services/postsService";
+import { getNews } from "@/services/NewsService";
 import { getMetaTags } from "@/services/SeoService";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
 import { NewsPageProps } from "@/Interfaces/News/NewsPageProps";
@@ -44,7 +44,7 @@ const NewsPage = ({ posts, metaData }: NewsPageProps) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const posts = await getPosts();
+  const posts = await getNews();
   const serializedPosts = posts.map((post) => ({
     ...post,
     shortDescription: post.shortDescription.substring(0, 100) + "...",
