@@ -1,21 +1,21 @@
 import Layout from "../Layout";
-import { MetaProps } from "@/Models/MetaProps";
+import { GetServerSideProps } from "next";
+import { getMetaTags } from "@/services/SeoService";
 import PageNotFound from "@/components/PageNotFound";
+import { MetaProps } from "@/Interfaces/SEO/MetaProps";
 
-const metaData: MetaProps = {
-  title: "Cookies Page",
-  description: "About cookies concents",
-  keywords: "medmonk, cookies",
-};
-
-const Cookies: React.FC = () => {
+const Cookies = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
-      <Layout metaData={metaData}>
+      <Layout metaData={metaTags}>
         <PageNotFound />
       </Layout>
     </>
   );
 };
 
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const meta: MetaProps | null = await getMetaTags("CookiesPage");
+  return { props: { metaTags: meta } };
+};
 export default Cookies;

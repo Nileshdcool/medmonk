@@ -1,21 +1,20 @@
 import Layout from "../Layout";
-import { MetaProps } from "@/Models/MetaProps";
+import { GetServerSideProps } from "next";
+import { getMetaTags } from "@/services/SeoService";
 import PageNotFound from "@/components/PageNotFound";
+import { MetaProps } from "@/Interfaces/SEO/MetaProps";
 
-const metaData: MetaProps = {
-  title: "Services Page",
-  description: "What are the services we offer",
-  keywords: "medmonk, services",
-};
-
-const Services: React.FC = () => {
+const Services = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
-      <Layout metaData={metaData}>
+      <Layout metaData={metaTags}>
         <PageNotFound />
       </Layout>
     </>
   );
 };
-
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const meta: MetaProps | null = await getMetaTags("ServicesPage");
+  return { props: { metaTags: meta } };
+};
 export default Services;

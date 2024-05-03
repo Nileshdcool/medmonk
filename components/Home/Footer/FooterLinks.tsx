@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Links } from "@/Constants/HomePage/Footer/Links";
@@ -8,8 +9,8 @@ const FooterLinks = () => {
     <div className="footer-links mt-8">
       <ul className="flex flex-row gap-3 justify-center">
         {Links.map((link, index) => (
-          <>
-            <li key={index}>
+          <React.Fragment key={index}>
+            <li>
               <Link
                 href={link.href}
                 className={`hover:text-brownCust ${
@@ -20,7 +21,7 @@ const FooterLinks = () => {
               </Link>
             </li>
             {link.separator}
-          </>
+          </React.Fragment>
         ))}
       </ul>
     </div>
