@@ -9,7 +9,7 @@ import {
 
 const SuccessStories = () => {
   return (
-    <section className="hidden bg-center flex pt-24 pb-20 overflow-hidden">
+    <section className="bg-center flex pt-24 pb-20 overflow-hidden">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-2 md:mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
@@ -19,7 +19,7 @@ const SuccessStories = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 xl:gap-3 px-4 xl:px-14 items-center">
           <div className="partne-left grid grid-cols-1 gap-10 animate__animated animate__fadeInLeft animate__slow wow">
-            <Slider {...settingsSuccessStoriesNav} className="pb-6">
+            <Slider {...settingsSuccessStoriesNav} className="pb-6 text-darkBlue">
               {successStories.map((story, index) => (
                 <div key={index} className="ssNav">
                   <div className="pl-0 md:pl-5 pr-0 lg:pr-20 w-full">
