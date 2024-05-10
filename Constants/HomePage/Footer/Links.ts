@@ -2,6 +2,6 @@ import { LinkType } from "@/Interfaces/Home/Footer/LinkType";
 
 export const Links: LinkType[] = [
   { text: "Privacy policy", href: "/PrivacyPolicy", separator: "|" },
-  { text: "Legal statement", href: "/LegalStatement", separator: "|" },
-  { text: "Cookies", href: "/Cookies", separator: "" },
+  { text: "Terms & Conditions", href: "/TermsAndConditions", separator: "|" },
+  { text: "Cookies Policy", href: "/CookiesPolicy", separator: "" },
 ];

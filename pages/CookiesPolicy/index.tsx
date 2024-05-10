@@ -4,7 +4,7 @@ import { getMetaTags } from "@/services/SeoService";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
 import Cookies from "@/components/Home/Footer/Cookies";
 
-const CookiesPage = ({ metaTags }: { metaTags: MetaProps }) => {
+const CookiesPolicyPage = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
       <Layout metaData={metaTags}>
@@ -18,4 +18,4 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   const meta: MetaProps | null = await getMetaTags("CookiesPage");
   return { props: { metaTags: meta } };
 };
-export default CookiesPage;
+export default CookiesPolicyPage;
