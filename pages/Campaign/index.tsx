@@ -1,19 +1,20 @@
-import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import { Toaster, toast } from "sonner";
 import {
   CampaignFormData,
   validateField,
   ValidateForm,
 } from "../../Schemas/CampaignSchema";
-import { CampaignCustomizationModel } from "@/Interfaces/Campaign/CampaignCustomizationModel";
-import { defaultCampaignCustomizations } from "@/Constants/Campaign/defaultCampaignCustomizations";
-import { MetaProps } from "@/Models/MetaProps";
-import Meta from "../../components/Meta";
+import Layout from "../Layout";
+import Image from "next/image";
+import { Toaster, toast } from "sonner";
+import { GetServerSideProps } from "next";
+import { getMetaTags } from "@/services/SeoService";
+import { MetaProps } from "@/Interfaces/SEO/MetaProps";
+import React, { useEffect, useRef, useState } from "react";
 import CampaignSkelton from "@/components/CampaignSkelton";
 import { addCampaign, getCampaignCustomizations } from "@/services/campaign";
-import Header from "@/components/Home/Header";
-import Layout from "../Layout";
+import { CampaignCustomizationModel } from "@/Interfaces/Campaign/CampaignCustomizationModel";
+import { defaultCampaignCustomizations } from "@/Constants/Campaign/defaultCampaignCustomizations";
+
 const defaultFormData: CampaignFormData = {
   Name: "",
   CompanyName: "",
@@ -21,13 +22,8 @@ const defaultFormData: CampaignFormData = {
   CompanyEmailId: "",
   Comments: "",
 };
-const metaData: MetaProps = {
-  title: "Campaign Landing Page",
-  description: "To Submit the Campaign Form Data",
-  keywords: "medmonk, campaign",
-};
 
-const Campaign: React.FC = () => {
+const Campaign = ({ metaTags }: { metaTags: MetaProps }) => {
   const timerRef = useRef<any>(null);
   const [formData, setFormData] = useState<CampaignFormData>(defaultFormData);
   const [errors, setErrors] = useState<Partial<CampaignFormData>>({});
@@ -114,7 +110,7 @@ const Campaign: React.FC = () => {
   }
   return (
     <>
-      <Layout metaData={metaData}>
+      <Layout metaData={metaTags}>
         <Toaster richColors expand={true} position="top-right" />
         {/* <section className="h-screen bg-center flex bg-no-repeat bg-home-hero bg-cover py-20">
       </section> */}
@@ -237,4 +233,10 @@ const Campaign: React.FC = () => {
     </>
   );
 };
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const meta: MetaProps | null = await getMetaTags("CampaignPage");
+  return { props: { metaTags: meta } };
+};
+
 export default Campaign;
