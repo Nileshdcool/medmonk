@@ -7,7 +7,7 @@ const SocialIcons = () => {
     <ul className="flex gap-4 social-ico mt-3">
       {SocialIconsList.map((icon, index) => (
         <li key={index}>
-          <a href={icon.link}>
+          <a href={icon.link} target='_blank'>
             <Image
               width="0"
               height="0"
