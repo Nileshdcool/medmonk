@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 const CallToAction = () => {
   return (
@@ -12,12 +13,11 @@ const CallToAction = () => {
             Explore our innovative solutions that prioritize Speed to Therapy
             and Customization for Your Brand. Click here to get started.
           </p>
-          <button
-            type="button"
+          <Link href="/Campaign"
             className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-md px-5 py-2.5 text-center mt-1.5 rounded-full animate__animated animate__fadeInUp animate__slow wow"
           >
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
     </section>
