@@ -1,14 +1,14 @@
 import Layout from "../Layout";
 import { GetServerSideProps } from "next";
 import { getMetaTags } from "@/services/SeoService";
-import PageNotFound from "@/components/PageNotFound";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
+import PrivacyPolicy from "@/components/Home/Footer/PrivacyPolicy";
 
-const PrivacyPolicy = ({ metaTags }: { metaTags: MetaProps }) => {
+const PrivacyPolicyPage = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
       <Layout metaData={metaTags}>
-        <PageNotFound />
+       <PrivacyPolicy/>
       </Layout>
     </>
   );
@@ -19,4 +19,5 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return { props: { metaTags: meta } };
 };
 
-export default PrivacyPolicy;
+export default PrivacyPolicyPage;
+  

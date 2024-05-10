@@ -3,12 +3,13 @@ import { GetServerSideProps } from "next";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
 import PageNotFound from "@/components/PageNotFound";
 import { getMetaTags } from "@/services/SeoService";
+import TermsAndConditions from "@/components/Home/Footer/LegalStatement";
 
 const LegalStatement = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
       <Layout metaData={metaTags}>
-        <PageNotFound />
+        <TermsAndConditions/>
       </Layout>
     </>
   );
