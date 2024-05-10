@@ -26,6 +26,5 @@ export default function Home({ metaTags }: { metaTags: MetaProps }) {
 }
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const meta: MetaProps | null = await getMetaTags("HomePage");
-  console.log("Metadata fetched for HomePage:", JSON.stringify(meta));
   return { props: { metaTags: meta } };
 };
