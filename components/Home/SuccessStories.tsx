@@ -135,7 +135,7 @@ class SlideSlider extends Component<SlideSliderProps, SlideSliderState> {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-3 items-center">
               <div className="partne-left arrow-style grid grid-cols-1 gap-10 animate__animated animate__fadeInLeft animate__slow wow">
-              <Slider {...settings} ref={this.mainSliderRef} beforeChange={this.beforeSlideChange} asNavFor={this.thumbSliderRef.current} className=" pb-14 text-darkBlue">
+              <Slider {...settings} ref={this.mainSliderRef} beforeChange={this.beforeSlideChange} asNavFor={this.thumbSliderRef.current as Slider} className=" pb-14 text-darkBlue">
                   {successStories.map((story, index) => (
                       <div key={index} className="ssNav">
                         <div className="pl-5 md:pl-5 pr-0 lg:pr-20 w-full">
@@ -161,7 +161,7 @@ class SlideSlider extends Component<SlideSliderProps, SlideSliderState> {
                   focusOnSelect={true}
                   ref={this.thumbSliderRef}
                   beforeChange={this.beforeSlideChange}
-                  asNavFor={this.mainSliderRef.current}
+                  asNavFor={this.mainSliderRef.current as Slider}
                   className="pb-6"
                   >
                   
