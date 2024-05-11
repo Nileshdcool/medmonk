@@ -130,6 +130,24 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   max-height: 50px;
   height: auto;
 }
+.arrow-style .slick-arrow {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #bbb;
+  bottom: -40px !important;
+  left: 0;
+  top: inherit;
+  border-radius: 50px;
+}
+
+.arrow-style .slick-arrow.slick-prev {
+  left: 20px;
+}
+.arrow-style .slick-arrow.slick-next {
+  left: 80px;
+}
+.arrow-style .slick-arrow:before{opacity:1; color:#003A5D;}
 
 @media(min-width:666px) and (max-width:991px){
 .brand-logo{margin-top: 10px; margin-bottom: 10px;}
