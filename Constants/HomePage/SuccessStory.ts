@@ -19,29 +19,29 @@ export const successStories: SuccessStoryType[] =
     }
 ];
 
-export const settingsSuccessStories = {
-  dots: false,
-  arrows: false,
-  slidesToShow: 2,
-  autoplay: true,
-  centerMode: false,
-  adaptiveHeight: true,
-  centerPadding: "0",
+// export const settingsSuccessStories = {
+//   dots: false,
+//   arrows: false,
+//   slidesToShow: 2,
+//   autoplay: true,
+//   centerMode: false,
+//   adaptiveHeight: true,
+//   centerPadding: "0",
 
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {},
-    },
-    {
-      breakpoint: 480,
-      settings: {},
-    },
-  ],
-};
-export const settingsSuccessStoriesNav = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    focusOnSelect: true,
-  };
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {},
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {},
+//     },
+//   ],
+// };
+// export const settingsSuccessStoriesNav = {
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     focusOnSelect: true,
+//   };
