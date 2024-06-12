@@ -148,6 +148,22 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   left: 80px;
 }
 .arrow-style .slick-arrow:before{opacity:1; color:#003A5D;}
+.journy-step li::before{background-image: url(..//public/assets/find-w.png); width: 25px; height: 40px; display:block; content: ""; background-size: contain; margin: 5px 0;}
+.journy-step li{display: flex; flex-wrap: wrap; justify-content: center;}
+.journy-step li:nth-child(odd):before{order: 1; transform: rotate(180deg);}
+.journy-step li:nth-child(odd){margin-bottom: 140px;}
+.journy-step li:nth-child(even){margin-top: 140px;}
+.journy-step{position: relative;}
+.journy-step:before {
+  content: "";
+  height: 51px;
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  border-radius: 50px;
+  background-color: #003A5D;
+  z-index: -1;
+}
 
 @media(min-width:666px) and (max-width:991px){
 .brand-logo{margin-top: 10px; margin-bottom: 10px;}
