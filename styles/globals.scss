@@ -148,26 +148,47 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   left: 80px;
 }
 .arrow-style .slick-arrow:before{opacity:1; color:#003A5D;}
-.journy-step li::before{background-image: url(..//public/assets/find-w.png); width: 25px; height: 40px; display:block; content: ""; background-size: contain; margin: 5px 0;}
-.journy-step li{display: flex; flex-wrap: wrap; justify-content: center;}
-.journy-step li:nth-child(odd):before{order: 1; transform: rotate(180deg);}
-.journy-step li:nth-child(odd){margin-bottom: 140px;}
-.journy-step li:nth-child(even){margin-top: 140px;}
-.journy-step{position: relative;}
-.journy-step:before {
-  content: "";
-  height: 51px;
-  position: absolute;
-  left: -20px;
-  right: -20px;
-  border-radius: 50px;
-  background-color: #003A5D;
-  z-index: -1;
+.journy-step li{display: flex; flex-wrap: wrap; justify-content: center; margin: 0 -24px;}
+.journy-step li:nth-child(odd){margin-bottom: 150px;}
+.journy-step li:nth-child(even){margin-top: 150px;}
+.journy-step{position: relative; padding-right: 40px; padding-left: 5px; background-image: url(..//public/assets/journey-bar.png); background-size: contain; background-repeat: no-repeat; background-position: center;}
+// .journy-step li::before{background-image: url(..//public/assets/find-w.png); width: 25px; height: 40px; display:block; content: ""; background-size: contain; margin: 5px 0;}
+// .journy-step li:nth-child(odd):before{order: 1; transform: rotate(180deg);}
+// .journy-step:before {
+//   content: "";
+//   height: 51px;
+//   position: absolute;
+//   left: -20px;
+//   right: -20px;
+//   border-radius: 50px;
+//   background-color: #003A5D;
+//   z-index: -1;
+// }
+
+
+@media(max-width:1025px){
+  .journy-step{padding-right: 30px;}
+  .journy-step li:nth-child(odd) {
+    margin-bottom: 180px;}
+  .journy-step li:nth-child(even) {
+      margin-top: 180px;
+  }
 }
 
 @media(min-width:666px) and (max-width:991px){
 .brand-logo{margin-top: 10px; margin-bottom: 10px;}
 .brand-logo:nth-child(3n + 3){border: none;}
+}
+
+@media(max-width:767px){
+  .journy-step{
+    padding: 0 0 30px;
+    background-image: url(..//public/assets/journey-bar-m.png);
+    max-width: 320px; margin: 0 auto;
+  }
+  .journy-step li{margin-top: 0 !important; margin-bottom: 0 !important;}
+  .journy-step li:nth-child(odd){margin-left: 50%; padding-left: 30px; text-align: left;}
+  .journy-step li:nth-child(even){margin-right: 50%; padding-right: 30px; text-align: right ;}
 }
 
 @media(max-width:665px){

@@ -1,21 +1,32 @@
+import React, { useState } from 'react';
+import Popup from '@/components/teamPopup';
 import Layout from "../Layout";
 import Image from "next/image";
 import { GetServerSideProps } from "next";
 import { getMetaTags } from "@/services/SeoService";
 //import PageNotFound from "@/components/PageNotFound";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
-import compassion from "@/public/assets/Medmonk-Network.png";
-import find from "@/public/assets/find-w.png";
+import compassion from "@/public/assets/compassion.png";
+import innovation from "@/public/assets/innovation.png";
+import integrity from "@/public/assets/integrity.png";
+//import find from "@/public/assets/find-w.png";
 import teamMember from "@/public/assets/team-member.jpg";
 import Link from "next/link";
 
 const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const togglePopup = () => {
+      setIsPopupOpen(!isPopupOpen);
+  };
+
   return (
     <>
       <Layout metaData={metaTags}>
         {/* <PageNotFound /> */}
         <>
-        <section className="pt-36 pb-20 overflow-hidden">
+        <section className="pt-28 xl:pt-36 pb-16 xl:pb-20 overflow-hidden">
           <div className="container mx-auto">
             <div className="text-center max-w-7xl max-w- mx-auto px-4">
               <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">MedMonk As A Team</h2>
@@ -29,7 +40,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
             </div>
           </div>
         </section>
-        <section className="pb-20 overflow-hidden">
+        <section className="pb-16 xl:pb-20 overflow-hidden">
           <div className="container mx-auto">
             <div className="text-center max-w-4xl mx-auto px-4">
               <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Meet The Leadership Team</h2>
@@ -38,9 +49,10 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                 <p>At Medmonk, we're more than just a company; we're a passionate team of professionals committed to making a meaningful impact in the lives of patients. Our founding members, comprised of pharmacists and technologists, bring decades of collective experience in patient care and support.</p>
               </div>
             </div>
-            <div className="pt-6 max-w-7xl mx-auto">
-                <div className="grid grid-cols-4 gap-3">
-                  <div className="card-box bg-white rounded-md p-6">
+            <Popup isOpen={isPopupOpen} onClose={togglePopup} />
+            <div className="pt-6 max-w-7xl mx-auto px-2 lg:px-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+                  <div className="card-box bg-white rounded-md p-2 xl:p-6">
                     <Image
                         alt=""
                         loading="lazy"
@@ -48,7 +60,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         height="0"
                         decoding="async"
                         data-nimg="1"
-                        className="w-auto max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
+                        className=" max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
                         sizes="100vw"
                         src={teamMember}
                     />
@@ -56,9 +68,9 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>Ph, MBA.</small></h4>
                     <p className="text-lightGray font-bold text-sm mt-1">Chief Executive Officer</p>
                     <p className="text-lightGray my-3">Transitioned from Chief Business Development Officer to Chief Executive Officer, bringing over a decade of experience in strategic innovation and business growth at Medmonk...</p>
-                    <Link href="" className="text-darkBlue font-bold">READ MORE</Link>
+                    <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
-                  <div className="card-box bg-white rounded-md p-6">
+                  <div className="card-box bg-white rounded-md p-2 xl:p-6">
                     <Image
                         alt=""
                         loading="lazy"
@@ -66,7 +78,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         height="0"
                         decoding="async"
                         data-nimg="1"
-                        className="w-auto max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
+                        className="max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
                         sizes="100vw"
                         src={teamMember}
                     />
@@ -74,9 +86,9 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>BASc.</small></h4>
                     <p className="text-lightGray font-bold text-sm mt-1">Chief Executive Officer</p>
                     <p className="text-lightGray my-3">Abbas Mehdi recently transitioned to the role of Chief Product Officer after serving as CEO of Medmonk for eleven years. Under his visionary leadership...</p>
-                    <Link href="" className="text-darkBlue font-bold">READ MORE</Link>
+                    <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
-                  <div className="card-box bg-white rounded-md p-6">
+                  <div className="card-box bg-white rounded-md p-2 xl:p-6">
                     <Image
                         alt=""
                         loading="lazy"
@@ -84,7 +96,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         height="0"
                         decoding="async"
                         data-nimg="1"
-                        className="w-auto max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
+                        className="max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
                         sizes="100vw"
                         src={teamMember}
                     />
@@ -92,9 +104,9 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>PharmD</small></h4>
                     <p className="text-lightGray font-bold text-sm mt-1">Chief Medical Officer & Co-Founder</p>
                     <p className="text-lightGray my-3">Somaira Punjwani, co-founder of Medmonk, brings over 15 years of pharmacy experience to the organization. Holding a Doctorate in Pharmaceutical Sciences, she has dedicated...</p>
-                    <Link href="" className="text-darkBlue font-bold">READ MORE</Link>
+                    <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
-                  <div className="card-box bg-white rounded-md p-6">
+                  <div className="card-box bg-white rounded-md p-2 xl:p-6">
                     <Image
                         alt=""
                         loading="lazy"
@@ -102,7 +114,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         height="0"
                         decoding="async"
                         data-nimg="1"
-                        className="w-auto max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
+                        className="max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
                         sizes="100vw"
                         src={teamMember}
                     />
@@ -110,9 +122,9 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>BASc</small></h4>
                     <p className="text-lightGray font-bold text-sm mt-1">Chief Technology Officer</p>
                     <p className="text-lightGray my-3">Bryan Li, Chief Technology Officer at Medmonk, brings a wealth of experience from leading technology companies to his role, where he spearheads Medmonk’s technology initiatives...</p>
-                    <Link href="" className="text-darkBlue font-bold">READ MORE</Link>
+                    <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
-                  <div className="card-box bg-white rounded-md p-6">
+                  <div className="card-box bg-white rounded-md p-2 xl:p-6">
                     <Image
                         alt=""
                         loading="lazy"
@@ -120,7 +132,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         height="0"
                         decoding="async"
                         data-nimg="1"
-                        className="w-auto max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
+                        className="max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
                         sizes="100vw"
                         src={teamMember}
                     />
@@ -128,9 +140,9 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     {/* <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>PharmD</small></h4> */}
                     <p className="text-lightGray font-bold text-sm mt-1">Sr. Vice President Business Development</p>
                     <p className="text-lightGray my-3">Courtney spearheads Medmonk's business development initiatives, meticulously tracking industry trends and collaborating with biotechnology and pharmaceutical manufacturers...</p>
-                    <Link href="" className="text-darkBlue font-bold">READ MORE</Link>
+                    <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
-                  <div className="card-box bg-white rounded-md p-6">
+                  <div className="card-box bg-white rounded-md p-2 xl:p-6">
                     <Image
                         alt=""
                         loading="lazy"
@@ -138,7 +150,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         height="0"
                         decoding="async"
                         data-nimg="1"
-                        className="w-auto max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
+                        className="max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
                         sizes="100vw"
                         src={teamMember}
                     />
@@ -146,20 +158,20 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     {/* <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>BASc</small></h4> */}
                     <p className="text-lightGray font-bold text-sm mt-1">Director of Sales Support & Patient Services</p>
                     <p className="text-lightGray my-3">Mary Jercich brings over a decade of specialized experience in the pharmacy realm, making her an indispensable asset to Medmonk's mission. Since starting with...</p>
-                    <Link href="" className="text-darkBlue font-bold">READ MORE</Link>
+                    <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
                 </div>
               </div>
           </div>
         </section>
-        <section className="pb-20 overflow-hidden">
+        <section className="pb-16 xl:pb-20 overflow-hidden">
           <div className="container mx-auto">
             <div className="text-center mx-auto px-4">
               <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Our Journey</h2>
               <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated"/>
             </div>
-            <div className="max-w-7xl mx-auto">
-              <ul className="flex align-middle text-center gap-3 journy-step text-sm">
+            <div className="max-w-7xl mx-auto pt-4 xl:pt-8 px-6 lg:px-0">
+              <ul className="block md:flex items-center align-middle text-center gap-3 journy-step text-sm">
                 <li>Lorem ipsum is a placeholder text commonly used</li>
                 <li>Lorem ipsum is a placeholder text commonly used</li>
                 <li>Lorem ipsum is a placeholder text commonly used</li>
@@ -178,14 +190,14 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
             </div>
           </div>
         </section>
-        <section className="pb-20 pt-12 overflow-hidden">
+        <section className="pb-16 xl:pb-20 pt-6 xl:pt-12 overflow-hidden">
           <div className="container mx-auto">
             <div className="text-center mx-auto px-4">
               <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Founding Values</h2>
               <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated"/>
-              <div className="px-14">
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="card-box bg-white rounded-md p-6 text-center">
+              <div className="px-0 xl:px-14">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="card-box bg-white rounded-md p-2 sm:p-2 lg:p-6 text-center">
                     <Image
                         alt=""
                         loading="lazy"
@@ -201,7 +213,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     <hr className="h-1 w-24 bg-darkBlue mb-1 mt-1 inline-block" />
                     <p className="text-darkBlue">We approach every interaction with empathy and understanding, recognizing the unique challenges patients face.</p>
                   </div>
-                  <div className="card-box bg-white rounded-md p-6 text-center">
+                  <div className="card-box bg-white rounded-md p-2 lg:p-6 text-center">
                     <Image
                         alt=""
                         loading="lazy"
@@ -211,13 +223,13 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         data-nimg="1"
                         className="h-16 w-auto max-w-full rounded-lg mx-auto mb-5"
                         sizes="100vw"
-                        src={compassion}
+                        src={innovation}
                     />
                     <h3 className="text-brownCust mt-1 md:text-2xl text-xl font-extrabold">INNOVATION</h3>
                     <hr className="h-1 w-24 bg-darkBlue mb-1 mt-1 inline-block" />
                     <p className="text-darkBlue">Our team thrives on pushing boundaries, constantly seeking innovative solutions to enhance patient support.</p>
                   </div>
-                  <div className="card-box bg-white rounded-md p-6 text-center">
+                  <div className="card-box bg-white rounded-md p-2 lg:p-6 text-center">
                     <Image
                         alt=""
                         loading="lazy"
@@ -227,7 +239,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                         data-nimg="1"
                         className="h-16 w-auto max-w-full rounded-lg mx-auto mb-5"
                         sizes="100vw"
-                        src={compassion}
+                        src={integrity}
                     />
                     <h3 className="text-brownCust mt-1 md:text-2xl text-xl font-extrabold">INTEGRITY</h3>
                     <hr className="h-1 w-24 bg-darkBlue mb-1 mt-1 inline-block" />
