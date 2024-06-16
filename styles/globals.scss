@@ -165,6 +165,10 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
 //   z-index: -1;
 // }
 
+.chartslider .slick-prev, .chartslider .slick-next {
+  width: 60px;
+  height: 60px;
+}
 
 @media(max-width:1025px){
   .journy-step{padding-right: 30px;}
