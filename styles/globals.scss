@@ -165,10 +165,7 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
 //   z-index: -1;
 // }
 
-.chartslider .slick-prev, .chartslider .slick-next {
-  width: 60px;
-  height: 60px;
-}
+.chartslider .slick-prev, .chartslider .slick-next {width: 60px;height: 60px;}
 
 @media(max-width:1025px){
   .journy-step{padding-right: 30px;}
@@ -193,6 +190,8 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   .journy-step li{margin-top: 0 !important; margin-bottom: 0 !important;}
   .journy-step li:nth-child(odd){margin-left: 50%; padding-left: 30px; text-align: left;}
   .journy-step li:nth-child(even){margin-right: 50%; padding-right: 30px; text-align: right ;}
+  .chartslider .slick-prev, .chartslider .slick-next {width: 25px;height: 25px;}
+
 }
 
 @media(max-width:665px){

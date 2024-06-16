@@ -103,7 +103,7 @@ const Product = ({ metaTags }: { metaTags: MetaProps }) => {
     </section>
     <div className="container mx-auto px-4 md:px-8 py-12 text-black">
       <div className="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-col-2 gap-4 lg:gap-8">
-        <section className="pt-28 xl:pt-6 pb-16 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
+        <section className="pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
             <div className="container mx-auto">
               <div className="text-left max-w-7xl max-w- mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 pr-4 xl:pr-14 animate__ animate__fadeInDown animate__slow wow animated">Direct Connectivity with Payers and Providers</h2>
@@ -117,7 +117,7 @@ const Product = ({ metaTags }: { metaTags: MetaProps }) => {
               </div>
             </div>
           </section>
-          <section className="pt-28 xl:pt-6 pb-16 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
+          <section className="pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
             <div className="container mx-auto">
               <div className="text-center max-w-7xl max-w- mx-auto px-4">
                 <div className="animate__ animate__fadeInDown animate__slow wow animated">
@@ -138,7 +138,7 @@ const Product = ({ metaTags }: { metaTags: MetaProps }) => {
           </section>
       </div>
       <div className="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-col-2 gap-4 lg:gap-8">
-          <section className="pt-28 xl:pt-6 pb-16 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
+          <section className="pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
             <div className="container mx-auto">
               <div className="text-center max-w-7xl max-w- mx-auto px-4">
                 <div className="animate__ animate__fadeInDown animate__slow wow animated">
@@ -157,7 +157,7 @@ const Product = ({ metaTags }: { metaTags: MetaProps }) => {
               </div>
             </div>
           </section>
-          <section className="pt-28 xl:pt-6 pb-16 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
+          <section className="pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
             <div className="container mx-auto">
               <div className="text-left max-w-7xl max-w- mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 pr-4 xl:pr-14 animate__ animate__fadeInDown animate__slow wow animated">Advanced Algorithms and Machine Learning</h2>
@@ -172,7 +172,7 @@ const Product = ({ metaTags }: { metaTags: MetaProps }) => {
       </div>
     </div>
 
-    <section className="pt-8 xl:pt-6 pb-16 xl:pb-20 overflow-hidden">
+    <section className="pt-8 xl:pt-6 pb-2 xl:pb-20 overflow-hidden">
           <div className="container mx-auto">
             <div className="text-center max-w-7xl max-w- mx-auto px-4">
               <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Data-Driven Decision-Making</h2>
@@ -224,7 +224,7 @@ const Product = ({ metaTags }: { metaTags: MetaProps }) => {
 
     <div className="container mx-auto px-4 md:px-8 py-12 text-black">
       <div className="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-col-2 gap-4 lg:gap-8">
-        <section className="pt-28 xl:pt-6 pb-16 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
+        <section className="pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
             <div className="container mx-auto">
               <div className="text-left max-w-7xl max-w- mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 pr-4 xl:pr-14 animate__ animate__fadeInDown animate__slow wow animated">Cost Reduction</h2>
@@ -236,7 +236,7 @@ const Product = ({ metaTags }: { metaTags: MetaProps }) => {
               </div>
             </div>
           </section>
-          <section className="pt-28 xl:pt-6 pb-16 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
+          <section className="pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow"> 
             <div className="container mx-auto">
               <div className="text-center max-w-7xl max-w- mx-auto px-4">
                 <div className="animate__ animate__fadeInDown animate__slow wow animated">
