@@ -71,7 +71,7 @@ const Services = ({ metaTags }: { metaTags: MetaProps }) => {
                 This ensures swift access to therapy, enhancing the patient experience. For healthcare providers, 
                 we seamlessly connect patients to hub services and copay support directly through their e-Rx workflow.</p>
               </div>
-              <div className="container mx-auto px-4 md:px-8 py-12 text-black"> 
+              <div className="container mx-auto px-4 md:px-8 py-12 text-black hidden"> 
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-col-3 gap-4 lg:gap-8">
                     <div className="flex flex-col border border-gray-200 border-solid bg-gray-50 shadow-2xl rounded-xl overflow-hidden animate__animated animate__fadeIn animate__slow wow">
                         Electronically Receive enrollment form from provider’s office
