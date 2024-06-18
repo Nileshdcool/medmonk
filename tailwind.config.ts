@@ -14,7 +14,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "home-hero":"url(/assets/home-hero.jpg)",
           "tech-hero":"url(/assets/tech-hero-min.png)",
-          "get-started":"url(/assets/get-started-img.jpg)"
+          "get-started":"url(/assets/get-started-img.jpg)",
+          "contact-hero":"url(/assets/contact-banner.jpg)",
       },
       colors: {
         'campaign-background': 'var(--campaign-background)',
