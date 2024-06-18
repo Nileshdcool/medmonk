@@ -33,9 +33,9 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
               <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated"/>
               <div className="animate__ animate__fadeInDown animate__slow wow animated">
                 <p className="mb-5">At Medmonk, we take pride in our long history of patient advocacy. From the very beginning, our focus has always been clear: patients are our top priority.</p>
-                <p className="mb-5">Medmonk's story began in 2009 when co-founder Somaira Punjwani, an HIV specialty pharmacist, developed a unique process to help patients struggling with their co-pays instead of turning them away. For over three years, she managed this manually, receiving tremendous positive feedback. This innovative approach led to the founding of Medmonk in 2012. As a Silicon Valley-based company incubated by Y Combinator, we have leveraged our innovative roots to build a robust and impactful patient support system.</p>
-                <p className="mb-5">Our team is composed of dedicated pharmacists, nurses, patient advocates, and reimbursement specialists who bring extensive experience and a shared passion for supporting patients with their life-saving medications. We understand the unique challenges faced by patients with rare diseases and are committed to going the extra mile to assist them. This dedication is reflected in Medmonk's impressive average brand retention of seven years.</p>
-                <p>At Medmonk, patient care is not just a commitment—it's our mission. Join us in making a difference in patients' lives.</p>
+                <p className="mb-5">Medmonks story began in 2009 when co-founder Somaira Punjwani, an HIV specialty pharmacist, developed a unique process to help patients struggling with their co-pays instead of turning them away. For over three years, she managed this manually, receiving tremendous positive feedback. This innovative approach led to the founding of Medmonk in 2012. As a Silicon Valley-based company incubated by Y Combinator, we have leveraged our innovative roots to build a robust and impactful patient support system.</p>
+                <p className="mb-5">Our team is composed of dedicated pharmacists, nurses, patient advocates, and reimbursement specialists who bring extensive experience and a shared passion for supporting patients with their life-saving medications. We understand the unique challenges faced by patients with rare diseases and are committed to going the extra mile to assist them. This dedication is reflected in Medmonks impressive average brand retention of seven years.</p>
+                <p>At Medmonk, patient care is not just a commitment—its our mission. Join us in making a difference in patients lives.</p>
               </div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
               <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Meet The Leadership Team</h2>
               <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated"/>
               <div className="animate__ animate__fadeInDown animate__slow wow animated">
-                <p>At Medmonk, we're more than just a company; we're a passionate team of professionals committed to making a meaningful impact in the lives of patients. Our founding members, comprised of pharmacists and technologists, bring decades of collective experience in patient care and support.</p>
+                <p>At Medmonk, were more than just a company; were a passionate team of professionals committed to making a meaningful impact in the lives of patients. Our founding members, comprised of pharmacists and technologists, bring decades of collective experience in patient care and support.</p>
               </div>
             </div>
             <Popup isOpen={isPopupOpen} onClose={togglePopup} />
@@ -139,7 +139,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     <h3 className="text-darkBlue mt-1 md:text-2xl text-xl font-extrabold">COURTNEY SMILEY</h3>
                     {/* <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>PharmD</small></h4> */}
                     <p className="text-lightGray font-bold text-sm mt-1">Sr. Vice President Business Development</p>
-                    <p className="text-lightGray my-3">Courtney spearheads Medmonk's business development initiatives, meticulously tracking industry trends and collaborating with biotechnology and pharmaceutical manufacturers...</p>
+                    <p className="text-lightGray my-3">Courtney spearheads Medmonks business development initiatives, meticulously tracking industry trends and collaborating with biotechnology and pharmaceutical manufacturers...</p>
                     <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
                   <div className="card-box bg-white rounded-md p-2 xl:p-6">
@@ -157,7 +157,7 @@ const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
                     <h3 className="text-darkBlue mt-1 md:text-2xl text-xl font-extrabold">MARY JERCICH</h3>
                     {/* <h4 className="text-darkBlue md:text-2xl text-md font-extrabold -mt-1"><small>BASc</small></h4> */}
                     <p className="text-lightGray font-bold text-sm mt-1">Director of Sales Support & Patient Services</p>
-                    <p className="text-lightGray my-3">Mary Jercich brings over a decade of specialized experience in the pharmacy realm, making her an indispensable asset to Medmonk's mission. Since starting with...</p>
+                    <p className="text-lightGray my-3">Mary Jercich brings over a decade of specialized experience in the pharmacy realm, making her an indispensable asset to Medmonks mission. Since starting with...</p>
                     <Link href="javascript:void(0)" onClick={togglePopup} className="text-darkBlue font-bold">READ MORE</Link>
                   </div>
                 </div>
