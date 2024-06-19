@@ -40,7 +40,7 @@ const ContactUs = ({ metaTags }: { metaTags: MetaProps }) => {
       <section className="px-4 py-10 sm:py-16">
           <div className="container mx-auto">
             <div className="text-center max-w-4xl mx-auto px-4">
-              <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Let's Connect!</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Lets Connect!</h2>
               <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated"/>
               <div className="animate__ animate__fadeInDown animate__slow wow animated">
                 <p className="mb-5">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content</p>
