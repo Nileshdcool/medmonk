@@ -1,14 +1,21 @@
+import React from "react";
 import Layout from "../Layout";
 import { GetServerSideProps } from "next";
+import AsATeam from "@/components/AboutUs/AsATeam";
 import { getMetaTags } from "@/services/SeoService";
-import PageNotFound from "@/components/PageNotFound";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
+import OurJourney from "@/components/AboutUs/OurJourney";
+import FoundingValues from "@/components/AboutUs/FoundingValues";
+import LeadershipTeam from "@/components/AboutUs/LeadershipTeam";
 
 const AboutUs = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
     <>
       <Layout metaData={metaTags}>
-        <PageNotFound />
+        <AsATeam />
+        <LeadershipTeam />
+        <OurJourney />
+        <FoundingValues />
       </Layout>
     </>
   );
