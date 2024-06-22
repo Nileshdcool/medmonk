@@ -14,6 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "home-hero":"url(/assets/home-hero.jpg)",
           "tech-hero":"url(/assets/tech-hero-min.png)",
+          "service-hero":"url(/assets/service-banner.jpg)",
           "get-started":"url(/assets/get-started-img.jpg)",
           "contact-hero":"url(/assets/contact-banner.jpg)",
       },
@@ -30,7 +31,11 @@ const config: Config = {
     },
       fontFamily: {
         openSans: ['"Open Sans"', "sans-serif"],  
-      }
+      },
+      boxShadow: {
+        'custom': 'inset 3px 3px 6px 0 rgba(0,0,0,0.20), 15px 15px 15px 0 rgba(0,0,0,0.20)',
+                    
+      },
   },
   },
   plugins: [],
