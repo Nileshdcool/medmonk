@@ -49,7 +49,7 @@ const Services = ({ metaTags }: { metaTags: MetaProps }) => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="card-box ">
                       <h3 className="text-darkBlue mt-1 mb-2 md:text-2xl text-xl font-extrabold">Assistance Programs</h3>
-                      <p className="text-darkBlue">Medmonk’s co-pay, voucher, and patient assistance programs improve patient access to medications. Delivered electronically and traditionally, our programs allow patients to stay on therapy and prevent disruptions to care regardless of the site of administration.</p>
+                      <p className="text-darkBlue">Medmonks co-pay, voucher, and patient assistance programs improve patient access to medications. Delivered electronically and traditionally, our programs allow patients to stay on therapy and prevent disruptions to care regardless of the site of administration.</p>
                     </div>
                     <div className="card-box">
                       <h3 className="text-darkBlue mt-1 mb-2 md:text-2xl text-xl font-extrabold">Patient and Provider Support Services</h3>
@@ -57,7 +57,7 @@ const Services = ({ metaTags }: { metaTags: MetaProps }) => {
                     </div>
                     <div className="card-box">
                       <h3 className="text-darkBlue mt-1 mb-2 md:text-2xl text-xl font-extrabold">Distribution and Adherence</h3>
-                      <p className="text-darkBlue">Depending on the brand's strategy, we use a wide variety of electronic and traditional communication channels, specialized for prescribers, pharmacies, and patients. These keep the conversation flowing with continuous in-coming feedback, while keeping programs top of mind.</p>
+                      <p className="text-darkBlue">Depending on the brands strategy, we use a wide variety of electronic and traditional communication channels, specialized for prescribers, pharmacies, and patients. These keep the conversation flowing with continuous in-coming feedback, while keeping programs top of mind.</p>
                     </div>
                     <div className="card-box">
                       <h3 className="text-darkBlue mt-1 mb-2 md:text-2xl text-xl font-extrabold">Analytics and Custom Reports</h3>
@@ -138,7 +138,7 @@ const Services = ({ metaTags }: { metaTags: MetaProps }) => {
                         />
                       </div>
                       <div className="max-w-60 m-auto">
-                          Electronically Receive enrollment form from provider’s office
+                          Electronically Receive enrollment form from providers office
                       </div>
                     </div>
                     <div className="card-box relative bg-white text-center pb-12 pt-32 px-6 mt-32 flex-col border border-gray-200 border-solid shadow-custom rounded-xl animate__animated animate__fadeIn animate__slow wow">
@@ -156,7 +156,7 @@ const Services = ({ metaTags }: { metaTags: MetaProps }) => {
                         />
                       </div>
                       <div className="max-w-60 m-auto">
-                        Verify coverage of benefits with the patient's primary and secondary payers
+                        Verify coverage of benefits with the patients primary and secondary payers
                       </div>
                     </div>
                     <div className="card-box relative bg-white text-center pb-12 pt-32 px-6 mt-32 flex-col border border-gray-200 border-solid shadow-custom rounded-xl animate__animated animate__fadeIn animate__slow wow">
