@@ -1,0 +1,4 @@
+interface DecisionMakingType
+{
+    ImageUrl: string;
+}
