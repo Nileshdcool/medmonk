@@ -1,9 +1,10 @@
 import SocialIcons from "./SocialIcons";
+import AccreditedBy from "./AccreditedBy";
 
 const LatestUpdates = () => {
   return (
     <div className="w-full">
-      <h3 className="text-darkBlue mb-3 text-xl font-bold">
+      {/* <h3 className="text-darkBlue mb-3 text-xl font-bold">
         Get the latest updates
       </h3>
 
@@ -39,9 +40,10 @@ const LatestUpdates = () => {
             </div>
           </div>
         </form>
-      </div>
+      </div> */}
       <h3 className="text-darkBlue mb-1.5 text-xl font-bold">Follow us on:</h3>
       <SocialIcons />
+      <AccreditedBy />
     </div>
   );
 };

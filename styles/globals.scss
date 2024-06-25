@@ -164,7 +164,7 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   left: 80px;
 }
 .arrow-style .slick-arrow:before{opacity:1; color:#003A5D;}
-.journy-step li{display: flex; flex-wrap: wrap; justify-content: center; margin: 0 -24px;}
+.journy-step li{display: flex; flex-wrap: wrap; justify-content: center; /*margin: 0 -24px;*/ margin: 0 -42px;}
 .journy-step li:nth-child(odd){margin-bottom: 150px;}
 .journy-step li:nth-child(even){margin-top: 150px;}
 .journy-step{position: relative; padding-right: 40px; padding-left: 5px; background-image: url(..//public/assets/journey-bar.png); background-size: contain; background-repeat: no-repeat; background-position: center;}
@@ -205,6 +205,7 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   .journy-step li:nth-child(even) {
       margin-top: 180px;
   }
+  .journy-step li{margin: 0 -22px;}
 }
 
 @media(min-width:666px) and (max-width:991px){

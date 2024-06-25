@@ -22,7 +22,7 @@ const PatientSupport = () => {
             </div>
           </div>
           <div className=" text-center mt-20 max-w-6xl m-auto">
-            <h2 className="text-darkBlue mt-1 mb-2 md:text-3xl text-2xl font-extrabold quote-text flex">
+            <h2 className="text-darkBlue mt-1 mb-2 md:text-2xl text-1xl font-extrabold quote-text flex justify-center">
               <Image
                 alt=""
                 loading="lazy"
@@ -30,7 +30,7 @@ const PatientSupport = () => {
                 height="50"
                 decoding="async"
                 data-nimg="1"
-                className="h-8 w-auto rounded-lg ml-4"
+                className="h-8 w-auto rounded-lg mr-4"
                 sizes="100vw"
                 src={quoteIco}
               />

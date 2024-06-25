@@ -22,7 +22,7 @@ const TeamSection = () => {
               key={index}
               className="card-box bg-white rounded-md p-2 xl:p-6"
             >
-              {member.image}
+              {/* {member.image} */}
               <Image
                 alt={member.name}
                 loading="lazy"

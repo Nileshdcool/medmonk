@@ -2,8 +2,8 @@ const servicesInfo : ServiceType =
 {
     Hero: {
         Heading: 'Our Complete Patient Support Solution',
-        Content: `In the complex landscape of healthcare, patients often struggle with navigating complex systems. Medmonk recognizes that navigating insurance, 
-                    understanding out-of-pocket costs, and coordinating treatment plans can be overwhelming. Our mission is to shift the focus back to what truly matters  - patient health.`,
+        Content: `At Medmonk, we are your partners in simplifying and streamlining the patient support process by providing comprehensive solutions to brands, healthcare providers, and patients nationwide. Our dedication stems from a deep comprehension of the critical importance of access to specialty medications, and we strive to ensure that it happens seamlessly.
+`,
         BackgroundImage: ''       
     },
     PatientSupport:
