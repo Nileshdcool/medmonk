@@ -3,7 +3,7 @@ import Image from 'next/image';
 const AccreditedBy = () => {
   return (
     <div className="w-1/4 flex flex-col items-center justify-center">
-      <h3 className="font-semibold text-gray-800 mb-3 text-lg whitespace-nowrap">Accredited by</h3>
+      <h3 className="font-semibold text-gray-800 mb-2 text-lg whitespace-nowrap">Accredited by</h3>
       <div className="relative w-full h-24 flex justify-center items-center">
         <Image
           src="/assets/AccreditedBy.jpg"
