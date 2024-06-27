@@ -69,7 +69,7 @@ export default function Header() {
                   <div className="flex items-center">
                     <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ml-6">
                       <Link
-                       href="/Campaign"
+                       href="/ContactUs"
                         className="text-white bg-gradient-to-b from-brownCust to-orangeCust hover:bg-gradient-to-br focus:outline-none font-medium text-sm px-5 py-2 text-center rounded-full"
                       >
                         CONTACT US

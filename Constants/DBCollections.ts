@@ -12,6 +12,8 @@ const Collections : ICollections = {
   PrivacyPolicyPage: "PrivacyPolicyPage",
   ProductPage: "ProductPage",
   ServicesPage: "ServicesPage",
+  ContactUsPage: "ContactUsPage",
+  ContactUs: "ContactUsSubmissions"
 };
 const AllCollections = () => {
   return Object.values(Collections);
@@ -47,4 +49,6 @@ export interface ICollections {
     PrivacyPolicyPage: string;
     ProductPage: string;
     ServicesPage: string;
+    ContactUsPage: string;
+    ContactUs: string;
 }
