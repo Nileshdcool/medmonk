@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 const CallToAction = () => {
   return (
-    <section className="get-started-sec bg-center flex bg-no-repeat bg-get-started bg-cover py-20 relative">
+    <section className="get-started-sec bg-center flex bg-no-repeat bg-cover py-20 relative bg-LGray">
       {/* <div className="absolute inset-0 bg-gray-400 opacity-50"></div> */}
       <div className="container mx-auto px-4 z-1">
         <div className="w-1/1 text-center">

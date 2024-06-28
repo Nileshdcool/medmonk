@@ -26,6 +26,7 @@ const config: Config = {
         'darkBlue': "#003A5D",
         'darkOrange': "#BA3725",
         'headerBG' : "#D4D4D4",
+        'LGray' : "rgba(212,212,212,0.74)",
         'brownCust' : "#BB3300",
         'orangeCust' : "#FF6C34"
     },
