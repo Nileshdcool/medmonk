@@ -25,19 +25,19 @@ export const productPageInfo: ProductPageInfoType = {
   DecisionMaking:
  [
     {
-        ImageUrl: "/assets/chart-min.jpg"
+        ImageUrl: "/assets/product/decisionMaking/claims.png"
     },
     {
-        ImageUrl: "/assets/chart-min.jpg"
+        ImageUrl: "/assets/product/decisionMaking/counts.png"
     },
     {
-        ImageUrl: "/assets/chart-min.jpg"
+        ImageUrl: "/assets/product/decisionMaking/enrolees.png"
     },
     {
-        ImageUrl: "/assets/chart-min.jpg"
+        ImageUrl: "/assets/product/decisionMaking/patients_claims.png"
     },
     {
-        ImageUrl: "/assets/chart-min.jpg"
+        ImageUrl: "/assets/product/decisionMaking/pharmacy_medical.png"
     }
  ],
  CostReduction:
