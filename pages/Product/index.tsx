@@ -4,12 +4,13 @@ import { GetServerSideProps } from "next";
 import "slick-carousel/slick/slick-theme.css";
 import { getMetaTags } from "@/services/SeoService";
 import { MetaProps } from "@/Interfaces/SEO/MetaProps";
+import { DbCollections } from "@/Constants/DBCollections";
 import ProductHero from "@/components/Product/ProductHero";
 import CostReduction from "@/components/Product/CostReduction";
 import DecisionMaking from "@/components/Product/DecisionMaking";
 import ProductAdvancement from "@/components/Product/ProductAdvancement";
 import ProductConnectivity from "@/components/Product/ProductConnectivity";
-import { DbCollections } from "@/Constants/DBCollections";
+
 
 const Product = ({ metaTags }: { metaTags: MetaProps }) => {
   return (
