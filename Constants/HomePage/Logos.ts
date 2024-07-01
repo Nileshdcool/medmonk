@@ -6,34 +6,34 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo1.png",
-        "/assets/logo2.png",
-        "/assets/logo3.png",
-        "/assets/logo4.png",
+        "/assets/Rock-Health.png",
+        "/assets/Y-Combinator.png",
+        //"/assets/logo3.png",
+        //"/assets/logo4.png",
         
       ],
     },
-    {
-      containerClass:
-        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto",
-      images: [
-        "/assets/logo5.png",
-        "/assets/logo6.png",
-        "/assets/logo7.png",
-        "/assets/logo8.png",
+    // {
+    //   containerClass:
+    //     "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto",
+    //   images: [
+    //     "/assets/logo5.png",
+    //     "/assets/logo6.png",
+    //     "/assets/logo7.png",
+    //     "/assets/logo8.png",
         
-      ],
-    },
-    {
-      containerClass:
-        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto",
-      images: [
-        "/assets/logo9.png",
-        "/assets/logo10.png",
-        "/assets/logo11.png",
-        "/assets/logo2.png",
-      ],
-    },
+    //   ],
+    // },
+    // {
+    //   containerClass:
+    //     "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto",
+    //   images: [
+    //     "/assets/logo9.png",
+    //     "/assets/logo10.png",
+    //     "/assets/logo11.png",
+    //     "/assets/logo2.png",
+    //   ],
+    // },
   ],
  /* [
     {
@@ -198,17 +198,27 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
       ],
     },
   ],
+  [
+    {
+      containerClass:
+        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
+      images: [
+        "/assets/logo49-spp.png",
+      ],
+    },
+  ]
   
 ];
 export const logoTabs: LogoTabType[] = [
   {
-    name: "Pharmaceutical Partners",
-    logos: pharmaceuticalPartners,
-  },
-  {
-    name: "Specialty Pharmacy Partners",
+    name: "Speciality Pharmacy Partners",
     logos: specialtyPharmacyPartners,
   },
+  {
+    name: "Institutional Partners",
+    logos: pharmaceuticalPartners,
+  },
+  
 ];
 export const settingsLogo = {
   dots: true,

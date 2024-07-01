@@ -156,7 +156,10 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   top: inherit;
   border-radius: 50px;
 }
-
+.slick-prev
+{
+  z-index: 10;
+}
 .arrow-style .slick-arrow.slick-prev {
   left: 20px;
 }

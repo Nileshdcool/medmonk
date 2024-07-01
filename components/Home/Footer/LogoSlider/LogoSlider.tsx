@@ -43,7 +43,9 @@ const LogoSlider = () => {
         </div>
         <Slider {...settingsLogo} className="brand-logos pb-6 max-w-4xl m-auto">
           {logoTabs[activeTab].logos.map((logosTab, index) => (
+            
             <div key={index}>
+
               {logosTab.map((logos, tabIndex) => (
                 <Partner
                   key={tabIndex}
