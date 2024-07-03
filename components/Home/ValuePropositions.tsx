@@ -5,7 +5,7 @@ const ValuePropositions = () => {
   return (
     <section className="bg-center flex px-4 xl:px-0">
       <div className="container mx-auto justify-between items-center flex">
-        <div className="grid text-center md:text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8 py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md lg:-mt-36 -mt-10 mx-0 xl:mx-10">
+        <div className="w-full grid text-center md:text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8 py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md lg:-mt-36 -mt-10 mx-0 xl:mx-10">
           {ValuePropositionsData.map((value, index) => (
             <div key={index} className={value.containerClass}>
               <Image
@@ -17,7 +17,9 @@ const ValuePropositions = () => {
                 alt=""
               />
               <hr className=" h-1 w-24 bg-brownCust mb-2 mt-4 block ml-auto mr-auto md:ml-auto" />
+              <div className="max-w-none mx-auto">
               <h3 className={value.headingClass}>{value.heading}</h3>
+              </div>
               {/* <p>{value.description}</p> */}
             </div>
           ))}
