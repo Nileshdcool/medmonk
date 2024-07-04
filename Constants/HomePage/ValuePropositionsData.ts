@@ -3,7 +3,7 @@ import { ValuePropositionsType } from "@/Interfaces/Home/ValuePropositionsType";
 export const ValuePropositionsData: ValuePropositionsType[] = [
   {
     containerClass: "animate__animated animate__fadeInLeft wow animate__slow",
-    image: "/assets/Medmonk-Network.png",
+    image: "/assets/Medmonk-Network1.png",
     imageClass: "h-16 w-auto rounded-lg inline-block",
     heading: "Hub Services",
     headingClass: "font-semibold text-hBlack mb-2 text-lg max-w-24 mx-auto",

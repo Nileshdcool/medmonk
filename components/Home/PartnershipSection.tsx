@@ -44,7 +44,7 @@ const PartnershipSection = () => {
                 {offersToPartners.map((offer, index) => (
                   <div
                     key={index}
-                    className="card-box bg-white shadow-xl rounded-md p-6 text-center min-h-[450px]"
+                    className="card-box bg-white shadow-xl rounded-md p-6 text-center min-h-[380px]"
                   >
                     <Image
                       width="0"
@@ -54,7 +54,7 @@ const PartnershipSection = () => {
                       src={offer.logo}
                       alt=""
                     />
-                    <h3 className="text-darkBlue mt-2 md:text-2xl text-xl font-extrabold">
+                    <h3 className="text-darkBlue mt-2 md:text-2xl text-xl font-extrabold uppercase">
                       {offer.heading}
                     </h3>
                     <hr className="h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
