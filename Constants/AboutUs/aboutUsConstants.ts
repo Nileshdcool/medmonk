@@ -1,20 +1,20 @@
 const asATeamParagraphs: string[] = [
   "At Medmonk, we take pride in our long history of patient advocacy. From the very beginning, our focus has always been clear: patients are our top priority.",
-  "Medmonks story began in 2009 when co-founder Somaira Punjwani, an HIV specialty pharmacist, developed a unique process to help patients struggling with their co-pays instead of turning them away. For over three years, she managed this manually, receiving tremendous positive feedback. This innovative approach led to the founding of Medmonk in 2012. As a Silicon Valley-based company incubated by Y Combinator, we have leveraged our innovative roots to build a robust and impactful patient support system.",
+  "Medmonk's story began in 2009 when co-founder Somaira Punjwani, an HIV specialty pharmacist, developed a unique process to help patients struggling with their copays instead of turning them away. For over three years, she managed this manually, receiving tremendous positive feedback. This innovative approach led to the founding of Medmonk in 2012. As a Silicon Valley-based company incubated by Y Combinator, we have leveraged our innovative roots to build a robust and impactful patient support system.",
   "Our team is composed of dedicated pharmacists, nurses, patient advocates, and reimbursement specialists who bring extensive experience and a shared passion for supporting patients with their life-saving medications. We understand the unique challenges faced by patients with rare diseases and are committed to going the extra mile to assist them. This dedication is reflected in Medmonks impressive average brand retention of seven years.",
-  "At Medmonk, patient care is not just a commitment—its our mission. Join us in making a difference in patients lives.",
+  "At Medmonk, patient care is not just a commitment—it's our mission. Join us in making a difference in patients' lives.",
 ];
-const aboutLeadership = `At Medmonk, were more than just a company; were a passionate team
+const aboutLeadership = `At Medmonk, we're more than just a company; we're a passionate team
               of professionals committed to making a meaningful impact in the
               lives of patients. Our founding members, comprised of pharmacists
               and technologists, bring decades of collective experience in
               patient care and support.`;
 const teamMembers: TeamMember[] = [
   {
-    name: "ASHAR HASAN R.",
+    name: "ASHAR HASAN",
     title: "Chief Executive Officer",
     image: "/assets/team-member.jpg",
-    degree: "Ph, MBA",
+    degree: "R. Ph, MBA",
     position: "Chief Executive Officer",
     description:
       "Transitioned from Chief Business Development Officer to Chief Executive Officer, bringing over a decade of experience in strategic innovation and business growth at Medmonk...",

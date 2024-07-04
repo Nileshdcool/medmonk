@@ -1,5 +1,5 @@
 import Image from "next/image";
-import business from "@/public/assets/business-computer.png";
+import business from "@/public/assets/business-computer.jpg";
 import { productPageInfo } from "@/Constants/Product/productPageInfo";
 const ProductAdvancement = () => {
   return (

@@ -196,6 +196,15 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   background-repeat: no-repeat;
 }
 
+body .quote-text{font-size: 25px;}
+
+@media(min-width:991px) and (max-width:1279px){
+  body .quote-text{font-size: 1.6vw;}
+}
+
+@media(max-width:990px){
+  body .quote-text{font-size: 16px;}
+}
 
 @media(max-width:1279px){
 .automation-boxs .card-box::before{width: 50px; height: 15px;}
@@ -249,5 +258,9 @@ h3, .get-started-sec h2{ font-family: "Open Sans", sans-serif;}
   top: 100%;
   margin-top: 17px;
   margin-left: -30px;
+}
+.card-carsual .card-box p {
+  height: 180px;
+  margin: 0 -10px;
 }
 }

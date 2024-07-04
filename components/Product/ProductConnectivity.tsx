@@ -28,7 +28,7 @@ const ProductConnectivity = () => {
                 height="0"
                 decoding="async"
                 data-nimg="1"
-                className=" max-w-full mx-auto mb-5"
+                className=" max-w-lg w-full mx-auto mb-5"
                 sizes="100vw"
                 src={Connectivity}
               />

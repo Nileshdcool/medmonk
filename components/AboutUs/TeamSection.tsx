@@ -16,13 +16,15 @@ const TeamSection = () => {
     <>
       <Popup isOpen={isPopupOpen} onClose={onClose} member={selectedMember} />
       <div className="pt-6 max-w-7xl mx-auto px-2 lg:px-2">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-3">
           {aboutUsConstants.teamMembers.map((member, index) => (
             <div
               key={index}
-              className="card-box bg-white rounded-md p-2 xl:p-6"
+              className="card-box flex flex-wrap bg-white rounded-md p-2 xl:p-6"
             >
+              
               {/* {member.image} */}
+              <div>
               <Image
                 alt={member.name}
                 loading="lazy"
@@ -47,10 +49,11 @@ const TeamSection = () => {
                 {member.position}
               </p>
               <p className="text-lightGray my-3">{member.description}</p>
+              </div>
               <a
                 href="javascript:void(0)"
                 onClick={() => togglePopup(member)} // assuming togglePopup is defined to handle the popup
-                className="text-darkBlue font-bold"
+                className="text-darkBlue font-bold self-end"
               >
                 READ MORE
               </a>
