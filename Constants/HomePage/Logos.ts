@@ -213,10 +213,12 @@ export const logoTabs: LogoTabType[] = [
   {
     name: "Speciality Pharmacy Partners",
     logos: specialtyPharmacyPartners,
+    description: "At Medmonk, collaboration is key. We partner with leading healthcare organizations, pharmaceutical companies, and patient advocacy groups to expand our reach and impact. Together, we are dedicated to advancing patient care and ensuring access to vital medications."
   },
   {
     name: "Institutional Partners",
     logos: pharmaceuticalPartners,
+    description:"Medmonk is incubated by leading investors who share our vision of revolutionizing patient care. Their strategic guidance and deep industry insights empower us to drive innovation and expand our impact. Together, we are dedicated to enhancing access to life-saving medications and improving patient outcomes."
   },
   
 ];

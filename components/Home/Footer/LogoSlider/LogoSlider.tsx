@@ -18,11 +18,8 @@ const LogoSlider = () => {
             Partners
           </h2>
           <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" />
-          <p className="animate__animated animate__fadeInDown animate__slow wow">
-            At Medmonk, collaboration is key. We partner with leading healthcare
-            organizations, pharmaceutical companies, and patient advocacy groups
-            to expand our reach and impact. Together, we are dedicated to
-            advancing patient care and ensuring access to vital medications.
+          <p className="text-darkBlue animate__animated animate__fadeInDown animate__slow wow">
+            {logoTabs[activeTab].description}
           </p>
           <div
             className="flex mt-6 justify-center flex-col md:flex-row animate__animated animate__fadeInUp animate__slow wow"
