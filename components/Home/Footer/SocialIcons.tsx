@@ -4,7 +4,7 @@ import { SocialIconsList } from "@/Constants/HomePage/Footer/SocialIconsList";
 
 const SocialIcons = () => {
   return (
-    <ul className="flex gap-4 social-ico mt-3 mb-5">
+    <ul className="flex gap-4 social-ico mt-3 mb-5 md:justify-start justify-center">
       {SocialIconsList.map((icon, index) => (
         <li key={index}>
           <a href={icon.link} target='_blank'>

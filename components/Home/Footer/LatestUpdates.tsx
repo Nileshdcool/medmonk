@@ -41,7 +41,7 @@ const LatestUpdates = () => {
           </div>
         </form>
       </div> */}
-      <h3 className="text-darkBlue mb-1.5 text-xl font-bold">Follow us on:</h3>
+      <h3 className="font-semibold text-hBlack mb-2 text-lg">Follow us on:</h3>
       <SocialIcons />
       <AccreditedBy />
     </div>

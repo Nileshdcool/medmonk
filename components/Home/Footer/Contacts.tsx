@@ -6,10 +6,10 @@ const Contacts = () => {
     <div className="w-full">
       <Link
         href="https://flowbite.com/"
-        className="flex items-center space-x-3 rtl:space-x-reverse mb-4"
+        className="flex items-center space-x-3 rtl:space-x-reverse mb-4 md:justify-start justify-center w-28 md:w-auto m-auto"
       >
         <Image
-          className="object-fill h-auto w-100"
+          className="object-fill h-auto w-100 md:w-60"
           width={220}
           height={58}
           src="/assets/medmonk-logo.png"
