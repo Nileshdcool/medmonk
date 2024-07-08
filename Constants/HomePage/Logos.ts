@@ -6,8 +6,8 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/Rock-Health.png",
-        "/assets/Y-Combinator.png",
+        "/assets/RockHealth_logo-CMYK_color.png",
+        "/assets/Y-Combinator1.png",
         //"/assets/logo3.png",
         //"/assets/logo4.png",
         
@@ -69,10 +69,10 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo1-spp.png",
-        "/assets/logo2-spp.png",
-        "/assets/logo3-spp.png",
-        "/assets/logo4-spp.png",
+        "/assets/All-logo_0001_1.png",
+        "/assets/All-logo_0001_2.png",
+        "/assets/All-logo_0002_3.png",
+        "/assets/All-logo_0003_4.png",
        
       ],
     },
@@ -80,10 +80,10 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo5-spp.png",
-        "/assets/logo6-spp.png",
-        "/assets/logo7-spp.png",
-        "/assets/logo8-spp.png",
+        "/assets/All-logo_0004_5.png",
+        "/assets/All-logo_0006_6.png",
+        "/assets/All-logo_0006_7.png",
+        "/assets/All-logo_0007_8.png",
         
       ],
     },
@@ -91,45 +91,10 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo9-spp.png",
-        "/assets/logo10-spp.png",
-        "/assets/logo11-spp.png",
-        "/assets/logo12-spp.png",
-       
-      ],
-    },
-  ],
-  [
-    {
-      containerClass:
-        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
-      images: [
-        "/assets/logo13-spp.png",
-        "/assets/logo14-spp.png",
-        "/assets/logo15-spp.png",
-        "/assets/logo16-spp.png",
-        
-      ],
-    },
-    {
-      containerClass:
-        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
-      images: [
-        "/assets/logo17-spp.png",
-        "/assets/logo18-spp.png",
-        "/assets/logo19-spp.png",
-        "/assets/logo20-spp.png",
-        
-      ],
-    },
-    {
-      containerClass:
-        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
-      images: [
-        "/assets/logo3-spp.png",
-        "/assets/logo21-spp.png",
-        "/assets/logo22-spp.png",
-        "/assets/logo23-spp.png",
+        "/assets/All-logo_0008_9.png",
+        "/assets/All-logo_0009_10.png",
+        "/assets/All-logo_0010_11.png",
+        "/assets/All-logo_0011_12.png",
        
       ],
     },
@@ -139,30 +104,33 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo24-spp.png",
-        "/assets/logo25-spp.png",
-        "/assets/logo26-spp.png",
-        "/assets/logo27-spp.png",
+        "/assets/All-logo_0012_13.png",
+        "/assets/All-logo_0013_14.png",
+        "/assets/All-logo_0014_15.png",
+        "/assets/All-logo_0015_16.png",
+        
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo28-spp.png",
-        "/assets/logo29-spp.png",
-        "/assets/logo30-spp.png",
-        "/assets/logo31-spp.png",
+        "/assets/All-logo_0016_17.png",
+        "/assets/All-logo_0017_18.png",
+        "/assets/All-logo_0018_19.png",
+        "/assets/All-logo_0019_20.png",
+        
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo32-spp.png",
-        "/assets/logo33-spp.png",
-        "/assets/logo34-spp.png",
-        "/assets/logo35-spp.png",
+        "/assets/All-logo_0020_21.png",
+        "/assets/All-logo_0021_22.png",
+        "/assets/All-logo_0022_23.png",
+        "/assets/All-logo_0023_24.png",
+       
       ],
     },
   ],
@@ -171,30 +139,62 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo37-spp.png",
-        "/assets/logo38-spp.png",
-        "/assets/logo39-spp.png",
-        "/assets/logo40-spp.png",
+        "/assets/All-logo_0024_25.png",
+        "/assets/All-logo_0025_26.png",
+        "/assets/All-logo_0026_27.png",
+        "/assets/All-logo_0027_28.png",
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo41-spp.png",
-        "/assets/logo42-spp.png",
-        "/assets/logo43-spp.png",
-        "/assets/logo44-spp.png",
+        "/assets/All-logo_0028_29.png",
+        "/assets/All-logo_0029_30.png",
+        "/assets/All-logo_0030_31.png",
+        "/assets/All-logo_0031_32.png",
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/logo45-spp.png",
-        "/assets/logo46-spp.png",
-        "/assets/logo47-spp.png",
-        "/assets/logo48-spp.png",
+        "/assets/All-logo_0032_33.png",
+        "/assets/All-logo_0033_34.png",
+        "/assets/All-logo_0034_35.png",
+        "/assets/All-logo_0035_36.png",
+      ],
+    },
+  ],
+  [
+    {
+      containerClass:
+        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
+      images: [
+        "/assets/All-logo_0036_37.png",
+        "/assets/All-logo_0037_38.png",
+        "/assets/All-logo_0038_39.png",
+        "/assets/All-logo_0039_40.png",
+      ],
+    },
+    {
+      containerClass:
+        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
+      images: [
+        "/assets/All-logo_0040_41.png",
+        "/assets/All-logo_0041_42.png",
+        "/assets/All-logo_0042_43.png",
+        "/assets/All-logo_0043_44.png",
+      ],
+    },
+    {
+      containerClass:
+        "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
+      images: [
+        "/assets/All-logo_0044_45.png",
+        "/assets/All-logo_0045_46.png",
+        "/assets/All-logo_0046_47.png",
+        "/assets/All-logo_0047_48.png",
       ],
     },
   ],

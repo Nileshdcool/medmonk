@@ -6,7 +6,7 @@ const AccreditedBy = () => {
       <h3 className="font-semibold text-gray-800 mb-1 text-lg whitespace-nowrap w-full">Accredited by</h3>
       <div className="relative w-full h-24 flex items-center md:justify-start justify-center">
         <Image
-          src="/assets/AccreditedBy.png"
+          src="/assets/AccreditedBy-New.png"
           alt="Accreditation Logo"
           layout="responsive"
           className='max-w-16'

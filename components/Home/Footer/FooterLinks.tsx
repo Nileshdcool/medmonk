@@ -7,7 +7,7 @@ const FooterLinks = () => {
   const router = useRouter();
   return (
     <div className="footer-links mt-4 text-center md:text-left">
-      <ul className="block md:flex flex-row gap-3 justify-center">
+      <ul className="block md:flex flex-row gap-3 justify-center footer-link">
         {Links.map((link, index) => (
           <React.Fragment key={index}>
             <li>
@@ -20,7 +20,7 @@ const FooterLinks = () => {
                 {link.text}
               </Link>
             </li>
-            {link.separator}
+            <span className="separator">{link.separator}</span>
           </React.Fragment>
         ))}
       </ul>
