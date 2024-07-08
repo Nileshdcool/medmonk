@@ -46,9 +46,11 @@ export const offersToPartners: OfferToPartnerType[] = [
 
 export const partnershipSliderSettings = {
   dots: true,
-  arrows: true,
+  arrows: false,
   slide: ".card-box",
   slidesToShow: 2,
+  autoplaySpeed: 6000,
+  speed: 1000,
   autoplay: true,
   centerMode: false,
   adaptiveHeight: true,

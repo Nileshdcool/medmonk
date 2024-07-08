@@ -6,7 +6,7 @@ import { Links } from "@/Constants/HomePage/Footer/Links";
 const FooterLinks = () => {
   const router = useRouter();
   return (
-    <div className="footer-links mt-8">
+    <div className="footer-links mt-4 text-center md:text-left">
       <ul className="block md:flex flex-row gap-3 justify-center">
         {Links.map((link, index) => (
           <React.Fragment key={index}>

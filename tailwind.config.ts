@@ -21,7 +21,8 @@ const config: Config = {
       colors: {
         'campaign-background': 'var(--campaign-background)',
         'white': '#ffffff',
-        'lightGray':'#636569',
+        //'lightGray':'#636569',
+        'lightGray':'#003A5D',
         'hBlack':'#222222',
         'darkBlue': "#003A5D",
         'darkOrange': "#BA3725",

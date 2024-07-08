@@ -17,10 +17,7 @@ const ServiceIntegration = () => {
               <Link href="#" style={{ color: "#BA3725", fontWeight: 700 }}>
                 &nbsp;98% of U.S. pharmacy&nbsp;
               </Link>
-              and provider billing terminals, ensuring hassle-free enrollment
-              and access to co-pay assistance in less than 3 seconds for both
-              medical and pharmacy benefits. This not only enhances the patient
-              experience but also accelerates the speed of therapy.
+              and provider billing terminals, ensuring hassle-free enrollment and access to copay assistance in less than 3 seconds for both medical and pharmacy benefits. This not only enhances the patient experience but also accelerates the speed of therapy.
             </p>
             <Image
               alt=""

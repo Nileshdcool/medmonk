@@ -5,12 +5,12 @@ const ServiceHero = () => {
     <section className="hreo-sec bg-center flex bg-no-repeat bg-service-hero bg-cover py-20 items-end lg:items-center">
       <div className="container mx-auto justify-between items-center flex px-4">
         <div className="flex -mt-7">
-          <div className="w-1/1 lg:w-1/2 pr-4">
+          <div className="w-1/1 lg:w-1/2 pr-18">
             <h1 className="text-4xl md:text-6xl font-black text-darkBlue mb-4 animate__animated animate__fadeInDown animate__slow">
               {servicesInfo.Hero.Heading}
             </h1>
             <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block animate__animated animate__fadeInDown animate__slow" />
-            <p className="sm:text-lg text-md text-darkBlue mb-8  font-semibold animate__animated animate__fadeInUp animate__slow">
+            <p className="sm:text-lg text-md text-darkBlue mb-8 pr-0 xl:pr-40 font-semibold animate__animated animate__fadeInUp animate__slow">
               {servicesInfo.Hero.Content}
             </p>
             <button

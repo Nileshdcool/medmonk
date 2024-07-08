@@ -211,11 +211,11 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
 ];
 export const logoTabs: LogoTabType[] = [
   {
-    name: "Speciality Pharmacy Partners",
+    name: "Institutional Partners",
     logos: specialtyPharmacyPartners,
   },
   {
-    name: "Institutional Partners",
+    name: "Speciality Pharmacy Partners",
     logos: pharmaceuticalPartners,
   },
   
