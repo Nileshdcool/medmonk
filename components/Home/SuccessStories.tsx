@@ -142,7 +142,7 @@ class SlideSlider extends Component<SlideSliderProps, SlideSliderState> {
                           <h3 className="text-darkBlue mb-4 text-2xl font-bold">
                             {story.heading}
                           </h3>
-                          <p className="pl-4 border-l-4 border-brownCust">
+                          <p className="pl-4 border-l-4 border-brownCust text-darkBlue">
                             {story.description}
                           </p>
                         </div>

@@ -1,6 +1,6 @@
 export const productPageInfo: ProductPageInfoType = {
   Hero: {
-    Heading: "Revolutionizing Patient Care with Innovative Technology.",
+    Heading: "Revolutionizing Patient Care with Innovative Technology",
     Content: `In the complex landscape of healthcare, patients often struggle
               with navigating complex systems. Medmonk recognizes that
               navigating insurance, understanding out-of-pocket costs, and
@@ -10,12 +10,7 @@ export const productPageInfo: ProductPageInfoType = {
   Connectivity: 
   {
     Heading: "Direct Connectivity with Payers and Providers",
-    Content: `What sets our technology apart is its direct connectivity with
-                payers and providers. This unique capability, combined with our
-                compassionate team, ensures a seamless and enhanced patient
-                experience. Medmonks platform acts as a bridge, facilitating
-                efficient communication and coordination among all stakeholders
-                in the healthcare journey.`
+    Content: `What sets our technology apart is its direct connectivity with payers and providers. This unique capability, combined with our compassionate team, ensures a seamless and enhanced patient experience. Medmonk's platform acts as a bridge, facilitating efficient communication and coordination among all stakeholders in the healthcare journey.`
   },
   Advancement:
   {
@@ -43,10 +38,6 @@ export const productPageInfo: ProductPageInfoType = {
  CostReduction:
  {
     Heading: "Cost Reduction",
-    Content: `Medmonks technology-based solution is significantly more
-                  cost-effective than traditional manual methods. Pharmaceutical
-                  brands benefit from an efficient way to offer hub services and
-                  co-pay assistance to their patients, ensuring accessibility
-                  without compromising on quality.`
+    Content: `Medmonk's technology-based solution is significantly more cost-effective than traditional manual methods. Pharmaceutical brands benefit from an efficient way to offer hub services and copay assistance to their patients, ensuring accessibility without compromising quality.`
  }
 };

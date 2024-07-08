@@ -91,7 +91,7 @@ const LetsContact = () => {
     );
   };
   return (
-    <section className="px-4 py-10 sm:py-16">
+    <section className="md:pt-40 pt-28 px-4 pb-10 sm:pb-16 ">
       <Toaster richColors expand={true} position="top-right" />
       <div className="container mx-auto">
         <div className="text-center max-w-4xl mx-auto px-4">
@@ -100,7 +100,7 @@ const LetsContact = () => {
           </h2>
           <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" />
           <div className="animate__ animate__fadeInDown animate__slow wow animated">
-            <p className="mb-5">
+            <p className="mb-5 hidden">
               In publishing and graphic design, Lorem ipsum is a placeholder
               text commonly used to demonstrate the visual form of a document or
               a typeface without relying on meaningful content
@@ -112,7 +112,7 @@ const LetsContact = () => {
             <div className="contact-info order-2 md:order-1 mt-5 md:mt-0">
               <ul>
                 <li className="mb-4">
-                  <h3 className="text-lg font-bold mb-2 text-darkBlue">
+                  <h3 className="text-lg font-bold mb-2 text-darkBlue hidden">
                     Email:
                   </h3>
                   <div className="flex items-center text-sm font-semibold">
@@ -128,7 +128,6 @@ const LetsContact = () => {
                       src={MailIco}
                     />
                     <div className="flex">
-                      Email:
                       <Link href="mailto:info@medmonk.com">
                         info@medmonk.com
                       </Link>
@@ -136,7 +135,7 @@ const LetsContact = () => {
                   </div>
                 </li>
                 <li>
-                  <h3 className="text-lg font-bold mb-2 text-darkBlue">
+                  <h3 className="text-lg font-bold mb-2 text-darkBlue hidden">
                     Telephone
                   </h3>
                   <div className="flex items-center text-sm font-semibold">

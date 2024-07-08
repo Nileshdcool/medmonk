@@ -36,7 +36,7 @@ const ServiceAutomation = () => {
                     src={value.Image}
                   />
                 </div>
-                <div className="max-w-60 m-auto">{value.Description}</div>
+                <div className="max-w-60 m-auto text-darkBlue">{value.Description}</div>
               </div>
             ))}
           </div>
