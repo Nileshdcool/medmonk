@@ -2,7 +2,7 @@ import { productPageInfo } from "@/Constants/Product/productPageInfo";
 
 const ProductHero = () => {
   return (
-    <section className="hreo-sec bg-center flex bg-no-repeat bg-tech-hero bg-cover py-20 items-end lg:items-center">
+    <section className="hreo-sec bg-center flex bg-no-repeat bg-tech-hero bg-cover pt-20 md:pb-20 pb-4 items-end lg:items-center">
       <div className="container mx-auto justify-between items-center flex px-4">
         <div className="flex -mt-7">
           <div className="w-1/1 lg:w-1/2 pr-18">

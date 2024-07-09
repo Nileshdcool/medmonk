@@ -21,7 +21,7 @@ const PatientSupport = () => {
               ))}
             </div>
           </div>
-          <div className=" text-center mt-20 max-w-6xl m-auto">
+          <div className=" text-center mt-20 max-w-6xl m-auto bg-gray-200 px-4 py-4 rounded-lg">
             <h2 className="text-darkBlue mt-1 mb-2 md:text-2xl text-1xl font-extrabold quote-text flex justify-center">
               <Image
                 alt=""

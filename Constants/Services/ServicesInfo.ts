@@ -40,7 +40,7 @@ const servicesInfo : ServiceType =
         Cards: [
             {
                 Image: '/assets/Home.png',
-                Description: `Electronically receive enrollment form from providers office`
+                Description: `Electronically receive enrollment form from provider's office`
             },
             {
                 Image: "/assets/automation-ico2.png",

@@ -2,7 +2,7 @@ const Copyright = () => {
   return (
     <div className="bg-darkBlue py-5 px-4 -mx-4 mt-16">
       <div className="container max-w-4xl mx-auto text-white text-center">
-        <p className="text-xl mb-3 font-medium">
+        <p className="text-xl mb-3 font-medium text-white">
           © 2024 MEDMONK. All Rights Reserved
         </p>
         <p className="hidden text-sm">
