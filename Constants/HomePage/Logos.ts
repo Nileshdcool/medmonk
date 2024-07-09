@@ -10,7 +10,6 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
         "/assets/Y-Combinator1.png",
         //"/assets/logo3.png",
         //"/assets/logo4.png",
-        
       ],
     },
     // {
@@ -21,7 +20,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
     //     "/assets/logo6.png",
     //     "/assets/logo7.png",
     //     "/assets/logo8.png",
-        
+
     //   ],
     // },
     // {
@@ -35,7 +34,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
     //   ],
     // },
   ],
- /* [
+  /* [
     {
       containerClass:
         "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-0 xl:gap-0 pt-0 lg:pt-14 px-0 xl:px-0 max-w-6xl m-auto",
@@ -73,7 +72,6 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
         "/assets/All-logo_0001_2.png",
         "/assets/All-logo_0002_3.png",
         "/assets/All-logo_0003_4.png",
-       
       ],
     },
     {
@@ -84,7 +82,6 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
         "/assets/All-logo_0006_6.png",
         "/assets/All-logo_0006_7.png",
         "/assets/All-logo_0007_8.png",
-        
       ],
     },
     {
@@ -95,7 +92,6 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
         "/assets/All-logo_0009_10.png",
         "/assets/All-logo_0010_11.png",
         "/assets/All-logo_0011_12.png",
-       
       ],
     },
   ],
@@ -108,7 +104,6 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
         "/assets/All-logo_0013_14.png",
         "/assets/All-logo_0014_15.png",
         "/assets/All-logo_0015_16.png",
-        
       ],
     },
     {
@@ -119,7 +114,6 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
         "/assets/All-logo_0017_18.png",
         "/assets/All-logo_0018_19.png",
         "/assets/All-logo_0019_20.png",
-        
       ],
     },
     {
@@ -130,7 +124,6 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
         "/assets/All-logo_0021_22.png",
         "/assets/All-logo_0022_23.png",
         "/assets/All-logo_0023_24.png",
-       
       ],
     },
   ],
@@ -202,25 +195,23 @@ export const specialtyPharmacyPartners: LogoTabImagesType[][] = [
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
-      images: [
-        "/assets/logo49-spp.png",
-      ],
+      images: ["/assets/logo49-spp.png"],
     },
-  ]
-  
+  ],
 ];
 export const logoTabs: LogoTabType[] = [
   {
     name: "Institutional Partners",
     logos: specialtyPharmacyPartners,
-    description: "At Medmonk, collaboration is key. We partner with leading healthcare organizations, pharmaceutical companies, and patient advocacy groups to expand our reach and impact. Together, we are dedicated to advancing patient care and ensuring access to vital medications."
+    description:
+      "Medmonk is incubated by leading investors who share our vision of revolutionizing patient care. Their strategic guidance and deep industry insights empower us to drive innovation and expand our impact. Together, we are dedicated to enhancing access to life-saving medications and improving patient outcomes.",
   },
   {
     name: "Speciality Pharmacy Partners",
     logos: pharmaceuticalPartners,
-    description:"Medmonk is incubated by leading investors who share our vision of revolutionizing patient care. Their strategic guidance and deep industry insights empower us to drive innovation and expand our impact. Together, we are dedicated to enhancing access to life-saving medications and improving patient outcomes."
+    description:
+      "At Medmonk, collaboration is key. We partner with leading healthcare organizations, pharmaceutical companies, and patient advocacy groups to expand our reach and impact. Together, we are dedicated to advancing patient care and ensuring access to vital medications.",
   },
-  
 ];
 export const settingsLogo = {
   dots: true,
