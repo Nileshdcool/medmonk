@@ -236,7 +236,11 @@ body .quote-text{font-size: 25px;}
   .journy-step li:nth-child(odd){margin-left: 50%; padding-left: 30px; text-align: left;}
   .journy-step li:nth-child(even){margin-right: 50%; padding-right: 30px; text-align: right ;}
   .chartslider .slick-prev, .chartslider .slick-next {width: 25px;height: 25px;}
-
+  .service-hero {
+    background-position: 82% 50%;
+  }
+  .footer-link .separator{display: none;}
+  .footer-link li{margin: 5px 0;}
 }
 
 @media(max-width:665px){

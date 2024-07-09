@@ -18,7 +18,7 @@ const CostReduction = () => {
             </div>
           </div>
         </section>
-        <section className="pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow">
+        <section className="sm:order-1 -order-1 pt-2 xl:pt-6 pb-2 xl:pb-20 flex flex-col overflow-hidden animate__animated animate__fadeIn animate__slow wow">
           <div className="container mx-auto">
             <div className="text-center max-w-7xl max-w- mx-auto px-4">
               <div className="animate__ animate__fadeInDown animate__slow wow animated">
@@ -29,7 +29,7 @@ const CostReduction = () => {
                   height="0"
                   decoding="async"
                   data-nimg="1"
-                  className=" max-w-full mx-auto mb-5"
+                  className=" max-w-full mx-auto md:mb-5 mb-0"
                   sizes="100vw"
                   src={coins}
                 />

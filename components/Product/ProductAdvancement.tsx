@@ -15,7 +15,7 @@ const ProductAdvancement = () => {
                 height="0"
                 decoding="async"
                 data-nimg="1"
-                className=" max-w-full mx-auto mb-5"
+                className=" max-w-full mx-auto md:mb-5 mb-0"
                 sizes="100vw"
                 src={business}
               />
