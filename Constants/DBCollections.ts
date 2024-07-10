@@ -13,7 +13,8 @@ const Collections : ICollections = {
   ProductPage: "ProductPage",
   ServicesPage: "ServicesPage",
   ContactUsPage: "ContactUsPage",
-  ContactUs: "ContactUsSubmissions"
+  ContactUs: "ContactUsSubmissions",
+  CareerPage: "CareerPage"
 };
 const AllCollections = () => {
   return Object.values(Collections);
@@ -51,4 +52,5 @@ export interface ICollections {
     ServicesPage: string;
     ContactUsPage: string;
     ContactUs: string;
+    CareerPage: string;
 }
