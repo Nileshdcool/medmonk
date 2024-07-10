@@ -1,5 +1,5 @@
 import Image from "next/image";
-import coins from "@/public/assets/coins.jpg";
+import coins from "@/public/assets/cost-reduction-business-concept-finance.jpg";
 import { productPageInfo } from "@/Constants/Product/productPageInfo";
 const CostReduction = () => {
   return (
