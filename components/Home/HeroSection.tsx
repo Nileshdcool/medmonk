@@ -10,7 +10,7 @@ const HeroSection = () => {
 
             <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block animate__animated animate__fadeInDown animate__slow" />
             <p className="sm:text-lg text-md text-darkBlue mb-8 pr-0 xl:pr-24 font-semibold animate__animated animate__fadeInUp animate__slow">
-            At Medmonk, we strongly believe that a patient receiving their medication without unnecessary delays is a collective win. Its a win for the patient, a win for the healthcare provider, and a win for the pharmaceutical brand. Together, we enhance the process that patients stay on track with their treatment, enabling them to focus on their health and well-being.
+            At Medmonk, we strongly believe that patients receiving their medication without unnecessary delays is a collective win. {"It's"} a win for the patient, a win for the healthcare provider, and a win for the pharmaceutical brand. Together, we enhance the process by which patients stay on track with their treatment, enabling them to focus on their health and well-being.
             </p>
             <button
               type="button"
