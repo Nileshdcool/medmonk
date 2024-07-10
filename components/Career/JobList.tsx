@@ -33,20 +33,20 @@ const JobList: React.FC = () => {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-4xl text-orange-500 font-bold mb-6 text-center">
+      <h1 className="text-4xl text-brownCust font-bold mb-6 text-center">
         WE ARE HIRING!
       </h1>
       <div className="mb-4">
         <input
           type="text"
           placeholder="Search jobs..."
-          className="border text-gray-950 border-gray-300 rounded px-4 py-2 w-full"
+          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full"
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
       <div className="flex flex-col md:flex-row gap-4 mb-6">
         <select
-          className="border text-gray-950 border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
+          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
           onChange={(e) => setLocation(e.target.value)}
         >
           <option value="">Location</option>
@@ -57,7 +57,7 @@ const JobList: React.FC = () => {
           ))}
         </select>
         <select
-          className="border text-gray-950 border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
+          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
           onChange={(e) => setDepartment(e.target.value)}
         >
           <option value="">Department</option>
@@ -68,7 +68,7 @@ const JobList: React.FC = () => {
           ))}
         </select>
         <select
-          className="border text-gray-950 border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
+          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
           onChange={(e) => setWorkType(e.target.value)}
         >
           <option value="">Work type</option>
@@ -89,7 +89,7 @@ const JobList: React.FC = () => {
               {workTypes.find((type) => type.id === job.workType)?.type}
             </p>
             <div className="flex justify-end mt-2">
-              <button className="text-orange-500 border border-orange-500 px-4 py-2 rounded hover:bg-orange-500 hover:text-white">
+              <button className="text-brownCust border border-brownCust px-4 py-2 rounded hover:bg-brownCust hover:text-white">
                 READ MORE
               </button>
             </div>
