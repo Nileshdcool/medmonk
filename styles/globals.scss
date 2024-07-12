@@ -168,10 +168,11 @@ p{color: #003A5D;}
   left: 80px;
 }
 .arrow-style .slick-arrow:before{opacity:1; color:#003A5D;}
-.journy-step li{display: flex; flex-wrap: wrap; justify-content: center; /*margin: 0 -24px;*/ margin: 0 -42px;}
-.journy-step li:nth-child(odd){margin-bottom: 150px;}
-.journy-step li:nth-child(even){margin-top: 150px;}
-.journy-step{position: relative; padding-right: 40px; padding-left: 5px; background-image: url(..//public/assets/journey-bar.png); background-size: contain; background-repeat: no-repeat; background-position: center;}
+.journy-step{grid-template-columns: repeat(14, minmax(0, 1fr));}
+.journy-step li{display: flex; font-weight: 600; flex-wrap: wrap; justify-content: center; /*margin: 0 -24px;*/ margin: 0 -35px; font-size: 13px; line-height: 1.3;}
+.journy-step li:nth-child(odd){margin-bottom: 190px;}
+.journy-step li:nth-child(even){margin-top: 200px;}
+.journy-step{position: relative; padding: 0 10px;  background-image: url(..//public/assets/Our-Journey-Desk-Bg.png); background-size: contain; background-repeat: no-repeat; background-position: center calc(50% + 10px);}
 // .journy-step li::before{background-image: url(..//public/assets/find-w.png); width: 25px; height: 40px; display:block; content: ""; background-size: contain; margin: 5px 0;}
 // .journy-step li:nth-child(odd):before{order: 1; transform: rotate(180deg);}
 // .journy-step:before {
@@ -212,13 +213,13 @@ body .quote-text{font-size: 25px;}
 }
 
 @media(max-width:1025px){
-  .journy-step{padding-right: 30px;}
+  // .journy-step{padding-right: 30px;}
   .journy-step li:nth-child(odd) {
     margin-bottom: 180px;}
   .journy-step li:nth-child(even) {
       margin-top: 180px;
   }
-  .journy-step li{margin: 0 -22px;}
+  .journy-step li{margin: 0 -30px;}
 }
 
 @media(min-width:666px) and (max-width:991px){
@@ -228,19 +229,26 @@ body .quote-text{font-size: 25px;}
 
 @media(max-width:767px){
   .journy-step{
-    padding: 0 0 30px;
-    background-image: url(..//public/assets/journey-bar-m.png);
+    padding: 10px 20px 10px;
+    background-image: url(..//public/assets/Our-Journey-Desk-V-Bg1.png);
     max-width: 320px; margin: 0 auto;
+    background-position: center;
   }
-  .journy-step li{margin-top: 0 !important; margin-bottom: 0 !important;}
-  .journy-step li:nth-child(odd){margin-left: 50%; padding-left: 30px; text-align: left;}
-  .journy-step li:nth-child(even){margin-right: 50%; padding-right: 30px; text-align: right ;}
+  .journy-step li{margin-top: 0 !important; margin-bottom: 0 !important; font-size: 11px;}
+  .journy-step li:nth-child(odd){margin-left: 50%; padding-left: 40px; text-align: left;}
+  .journy-step li:nth-child(even){margin-right: 50%; padding-right: 40px; text-align: right ;}
   .chartslider .slick-prev, .chartslider .slick-next {width: 25px;height: 25px;}
   .service-hero {
     background-position: 82% 50%;
   }
   .footer-link .separator{display: none;}
   .footer-link li{margin: 5px 0;}
+  .journy-step li:nth-child(6n), .journy-step li:nth-child(7n), .journy-step li:nth-child(8n), .journy-step li:nth-child(9n), .journy-step li:nth-child(10n), .journy-step li:nth-child(11n), .journy-step li:nth-child(13n) {
+    position: relative;
+    // top: -13px;
+    top: 0;
+}
+.journy-step li:last-child{top:0; display: none;}
 }
 
 @media(max-width:665px){
