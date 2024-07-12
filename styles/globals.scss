@@ -230,7 +230,7 @@ body .quote-text{font-size: 25px;}
 @media(max-width:767px){
   .journy-step{
     padding: 10px 20px 10px;
-    background-image: url(..//public/assets/Our-Journey-Desk-V-Bg.png);
+    background-image: url(..//public/assets/Our-Journey-Desk-V-Bg1.png);
     max-width: 320px; margin: 0 auto;
     background-position: center;
   }
@@ -245,9 +245,10 @@ body .quote-text{font-size: 25px;}
   .footer-link li{margin: 5px 0;}
   .journy-step li:nth-child(6n), .journy-step li:nth-child(7n), .journy-step li:nth-child(8n), .journy-step li:nth-child(9n), .journy-step li:nth-child(10n), .journy-step li:nth-child(11n), .journy-step li:nth-child(13n) {
     position: relative;
-    top: -13px;
+    // top: -13px;
+    top: 0;
 }
-.journy-step li:last-child{top:0;}
+.journy-step li:last-child{top:0; display: none;}
 }
 
 @media(max-width:665px){
