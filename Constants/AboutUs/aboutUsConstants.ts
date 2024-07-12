@@ -94,18 +94,23 @@ const teamMembers: TeamMember[] = [
   },
 ];
 const journeyPaths: string[] = [
-  "1. Medmonk founded in 2012",
-  "2. Incubated by Y Combinator in Silicon Valley",
-  "3. Medmonk launched its 1st client’s co-pay program in 2014",
-  "4. Digitized co-pay process in 2014, connecting to over 98% of US pharmacies",
-  "5. Medmonk contracted with 98% of US pharmacies, Buy & Bill & AIC in 2015",
-  "6. Launched complete automated medical benefit co-pay solution in 2017",
-  "7. Launched fully automated PAP solution in 2018",
-  "8. Launched a hub service solution for several brands in 2018",
-  "9. Medmonk’s technology achieved COX II Certification in 2022",
-  "10. Assisted 10 million patients since its inception by 2021",
-  "11. Launched proprietary automated BI & PA solution in 2023",
-  "12. Launched unique AI capabilities in 2024",
+  "Medmonk founded in 2012",
+  "Incubated by Y Combinator in Silicon Valley",
+  "Digitized co-pay process in 2014, connecting to over 98% of US pharmacies",
+  "Medmonk launched its 1st client’s co-pay program in 2014",
+  "Digitized co-pay process in 2014, connecting to over 98% of US pharmacies",
+  "Medmonk contracted with 98% of US pharmacies Buy & Bill",
+  "Launched complete automated medical benefit co-pay solution in 2017",
+  "Launched fully automated PAP solution in 2018",
+  "Launched a hub service solution for several brands in 2018",
+  "Medmonk launched its 10th Clients program in 2019",
+  //"Medmonk contracted with 98% of US pharmacies, Buy & Bill & AIC in 2015",
+  
+  "Assisted 10 million patients since its inception by 2021",
+  "Medmonk’s technology achieved COX II Certification in 2022",
+  
+  "Launched proprietary automated BI & PA solution in 2023",
+  "Launched unique AI capabilities in 2024",
 ];
 
 const aboutUsConstants = {
