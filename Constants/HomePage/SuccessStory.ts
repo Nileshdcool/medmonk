@@ -5,12 +5,12 @@ export const successStories: SuccessStoryType[] =
     {
         heading: `Patient Success Story - Navigating Insurance with Ease`,
         description: `"When my life-saving medication was first prescribed, I was nervous and concerned about the approval and copay costs. They guided me through every step of the insurance process and helped me navigate the complexities. Thanks to their dedication."`,
-        image:"/assets/Success-Stories1.jpg"
+        image:"/assets/success-stories1.jpg"
     },
     {
         heading:`Director Market Access - Seven Years of Strategic Partnership`,
         description: `"For seven years, I have valued our partnership with Medmonk. They have provided completely customized solutions tailored specifically for my brand. Their data-driven approach has streamlined our market strategy and significantly enhanced our program effectiveness. Medmonk’s nimble approach to patient support has offered my brand a true partnership, adapting and responding to our needs with precision and care."`,
-        image: "/assets/Success-Stories2.jpg"
+        image: "/assets/success-stories2.jpg"
     },
     {
         heading: `Brand Manager - Expanding Access to Rare Disease Treatments`,
