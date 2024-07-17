@@ -5,4 +5,5 @@ interface JobType {
   department: number;
   workType: number;
   postedDate: Date;
+  description: string;
 }
