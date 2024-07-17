@@ -4,12 +4,29 @@ import { jobs } from "@/Constants/Career/jobs";
 import { locations } from "@/Constants/Career/locations";
 import { workTypes } from "@/Constants/Career/workTypes";
 import { departments } from "@/Constants/Career/departments";
+import JobBody from "./Job";
 
 const JobList: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [location, setLocation] = useState("");
   const [department, setDepartment] = useState("");
   const [workType, setWorkType] = useState("");
+  const [expandedJobId, setExpandedJobId] = useState<number | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [jobsPerPage, setJobsPerPage] = useState(10);
+
+  const handleExpand = (jobId: number) => {
+    setExpandedJobId(jobId === expandedJobId ? null : jobId);
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const handleJobsPerPageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setJobsPerPage(parseInt(e.target.value));
+    setCurrentPage(1);
+  };
 
   const filteredJobs = jobs.filter(
     (job) =>
@@ -21,15 +38,11 @@ const JobList: React.FC = () => {
       (workType ? job.workType === parseInt(workType) : true)
   );
 
-  const postedOn = (date: Date) => {
-    const differenceInDays = Math.floor(
-      (new Date().getTime() - new Date(date).getTime()) / (1000 * 60 * 60 * 24)
-    );
-    if (differenceInDays > 0) {
-      return `Posted ${differenceInDays} days ago`;
-    }
-    return `Posted On ${new Date(date).toLocaleDateString("en-US")}`;
-  };
+  const indexOfLastJob = currentPage * jobsPerPage;
+  const indexOfFirstJob = indexOfLastJob - jobsPerPage;
+  const currentJobs = filteredJobs.slice(indexOfFirstJob, indexOfLastJob);
+
+  const totalPages = Math.ceil(filteredJobs.length / jobsPerPage);
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
@@ -40,13 +53,13 @@ const JobList: React.FC = () => {
         <input
           type="text"
           placeholder="Search jobs..."
-          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full"
-          onChange={(e) => setSearchTerm(e.target.value)}
+          className="border text-lightGray border-lightGray rounded px-4 py-2 w-full"
+          onChange={(e) => {setSearchTerm(e.target.value); setCurrentPage(1);}}
         />
       </div>
       <div className="flex flex-col md:flex-row gap-4 mb-6">
         <select
-          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
+          className="border text-lightGray border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
           onChange={(e) => setLocation(e.target.value)}
         >
           <option value="">Location</option>
@@ -57,8 +70,8 @@ const JobList: React.FC = () => {
           ))}
         </select>
         <select
-          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
-          onChange={(e) => setDepartment(e.target.value)}
+          className="border text-lightGray border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
+          onChange={(e) => {setDepartment(e.target.value); setCurrentPage(1);}}
         >
           <option value="">Department</option>
           {departments.map((dept) => (
@@ -68,8 +81,8 @@ const JobList: React.FC = () => {
           ))}
         </select>
         <select
-          className="border text-darkBlue border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
-          onChange={(e) => setWorkType(e.target.value)}
+          className="border text-lightGray border-gray-300 rounded px-4 py-2 w-full md:w-1/3"
+          onChange={(e) => {setWorkType(e.target.value); setCurrentPage(1);}}
         >
           <option value="">Work type</option>
           {workTypes.map((type) => (
@@ -79,21 +92,29 @@ const JobList: React.FC = () => {
           ))}
         </select>
       </div>
+      <div className="flex justify-end mb-6">
+        {filteredJobs.length > 10 && (
+          <select
+            className="border text-lightGray border-gray-300 rounded px-4 py-2"
+            onChange={handleJobsPerPageChange}
+            value={jobsPerPage}
+          >
+            <option value={10}>10 per page</option>
+            <option value={20}>20 per page</option>
+            <option value={30}>30 per page</option>
+            <option value={40}>40 per page</option>
+            <option value={50}>50 per page</option>
+          </select>
+        )}
+      </div>
       <div className="space-y-4">
-        {filteredJobs.map((job) => (
-          <div key={job.id} className="border border-gray-300 rounded p-4">
-            <p className="text-gray-500">{postedOn(job.postedDate)}</p>
-            <h2 className="text-xl font-bold text-blue-800">{job.title}</h2>
-            <p className="text-gray-700 mt-5">
-              {locations.find((loc) => loc.id === job.location)?.title} -{" "}
-              {workTypes.find((type) => type.id === job.workType)?.type}
-            </p>
-            <div className="flex justify-end mt-2">
-              <button className="text-brownCust border border-brownCust px-4 py-2 rounded hover:bg-brownCust hover:text-white">
-                READ MORE
-              </button>
-            </div>
-          </div>
+        {currentJobs.map((job, idx) => (
+          <JobBody
+            key={idx}
+            job={job}
+            isExpanded={job.id === expandedJobId}
+            onExpand={() => handleExpand(job.id)}
+          />
         ))}
         {filteredJobs.length === 0 && (
           <p className="text-center text-gray-500">
@@ -101,6 +122,23 @@ const JobList: React.FC = () => {
           </p>
         )}
       </div>
+      {filteredJobs.length > jobsPerPage && (
+        <div className="flex justify-center mt-6">
+          {Array.from({ length: totalPages }, (_, idx) => (
+            <button
+              key={idx}
+              className={`px-4 py-2 mx-1 rounded ${
+                currentPage === idx + 1
+                  ? "bg-brownCust text-white"
+                  : "text-brownCust border-brownCust border hover:bg-brownCust hover:text-white"
+              }`}
+              onClick={() => handlePageChange(idx + 1)}
+            >
+              {idx + 1}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
