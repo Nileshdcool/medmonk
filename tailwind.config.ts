@@ -12,9 +12,9 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-          "home-hero":"url(/assets/home-hero.jpg)",
+          "home-hero":"url(/assets/Home-Hero-Banner.jpeg)",
           "tech-hero":"url(/assets/tech-hero-min.png)",
-          "service-hero":"url(/assets/service-banner.jpg)",
+          "service-hero":"url(/assets/Services-Hero-Banner.jpeg)",
           "get-started":"url(/assets/get-started-img.jpg)",
           "contact-hero":"url(/assets/contact-banner.jpg)",
       },
