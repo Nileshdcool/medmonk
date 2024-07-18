@@ -7,31 +7,33 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto ",
       images: [
-        //"/assets/All-logo_0001_1.png",
+        "/assets/All-logo_0001_1.png",
         "/assets/All-logo_0001_2.png",
         "/assets/All-logo_0002_3.png",
         "/assets/All-logo_0003_4.png",
-        "/assets/All-logo_0004_5.png",
+        
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        "/assets/All-logo_0004_5.png",
         "/assets/All-logo_0006_6.png",
         "/assets/All-logo_0006_7.png",
         "/assets/All-logo_0007_8.png",
-        "/assets/All-logo_0008_9.png",
+        
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        "/assets/All-logo_0008_9.png",
         "/assets/All-logo_0009_10.png",
         "/assets/All-logo_0010_11.png",
         "/assets/All-logo_0011_12.png",
-        "/assets/All-logo_0012_13.png",
+        
       ],
     },
   ],
@@ -40,27 +42,30 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        "/assets/All-logo_0012_13.png",
         "/assets/All-logo_0013_14.png",
         "/assets/All-logo_0014_15.png",
         "/assets/All-logo_0015_16.png",
-        "/assets/All-logo_0016_17.png",
+        
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        "/assets/All-logo_0016_17.png",
         "/assets/All-logo_0017_18.png",
         "/assets/All-logo_0018_19.png",
         "/assets/All-logo_0019_20.png",
-        "/assets/All-logo_0020_21.png",
+        
       ],
     },
     {
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
-        "/assets/All-logo_0021_22.png",
+        "/assets/All-logo_0020_21.png",
+        //"/assets/All-logo_0021_22.png",
         "/assets/All-logo_0022_23.png",
         "/assets/All-logo_0023_24.png",
         "/assets/All-logo_0024_25.png",
@@ -72,6 +77,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        
         "/assets/All-logo_0025_26.png",
         "/assets/All-logo_0026_27.png",
         "/assets/All-logo_0027_28.png",
@@ -82,6 +88,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+       
         "/assets/All-logo_0029_30.png",
         "/assets/All-logo_0030_31.png",
         "/assets/All-logo_0031_32.png",
@@ -92,6 +99,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        
         "/assets/All-logo_0033_34.png",
         "/assets/All-logo_0034_35.png",
         "/assets/All-logo_0035_36.png",
@@ -104,6 +112,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        
         "/assets/All-logo_0037_38.png",
         "/assets/All-logo_0038_39.png",
         "/assets/All-logo_0039_40.png",
@@ -114,6 +123,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        
         "/assets/All-logo_0041_42.png",
         "/assets/All-logo_0042_43.png",
         "/assets/All-logo_0043_44.png",
@@ -124,6 +134,7 @@ export const pharmaceuticalPartners: LogoTabImagesType[][] = [
       containerClass:
         "grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-0 xl:gap-0 pt-14 px-0 xl:px-0 max-w-6xl m-auto",
       images: [
+        
         "/assets/All-logo_0045_46.png",
         "/assets/All-logo_0046_47.png",
         "/assets/All-logo_0047_48.png",
