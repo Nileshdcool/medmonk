@@ -43,11 +43,9 @@ const JobBody = ({
       {isExpanded && (
         <div className="mt-4">
           <p className="text-darkGray">{job.description}</p>
-          <div className="flex justify-end mt-2">
-            <button className="text-white bg-darkBlue px-4 py-2 rounded hover:bg-lightGray">
-              APPLY
-            </button>
-          </div>
+          <p className="text-darkGray font-bold text-sm mt-2">
+            To apply for this position, kindly forward your resume to us at careers@medmonk.com.
+          </p>
         </div>
       )}
     </div>
