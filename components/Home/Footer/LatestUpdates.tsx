@@ -3,7 +3,7 @@ import AccreditedBy from "./AccreditedBy";
 
 const LatestUpdates = () => {
   return (
-    <div className="w-full">
+    <div className="w-full lg:pl-48">
       {/* <h3 className="text-darkBlue mb-3 text-xl font-bold">
         Get the latest updates
       </h3>
