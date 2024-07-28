@@ -20,24 +20,24 @@ export const partners: PartnershipType[] = [
     containerClass:
       "flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow  wow",
     heading: "EFFORTLESS INTEGRATION",
-    description: `Our platform seamlessly integrates with pharmacy and provider billing terminals. This simplifies the hub, co-pay, and patient assistance enrollment process, ensuring a smooth experience for all users in both medical and pharmacy benefits.`,
+    description: `Our platform seamlessly integrates with pharmacy and provider billing terminals. This simplifies the hub, copay, and patient assistance enrollment process, ensuring a smooth experience for all users in both medical and pharmacy benefits.`,
     logo: "/assets/Medmon-Partner3.png",
   },
 ];
 export const offersToPartners: OfferToPartnerType[] = [
   {
     heading: "Speed",
-    description: `Medmonks automated system enables instant patient enrollment into the hub. all within a remarkable timeframe of under three seconds.`,
+    description: `Medmonk's automated system enables instant patient enrollment into the hub. all within a remarkable timeframe of under three seconds.`,
     logo: "/assets/speed.png",
   },
   {
     heading: "Customization",
-    description: `We tailor support programs for brands, addressing the individual needs of conditions, patients, providers, and prescribers, with a focus on agility and customization in each unique landscape`,
+    description: `We tailor support programs for brands, addressing the individual needs of conditions, patients, healthcare providers, and pharmacies, with a focus on agility and customization in each unique landscape`,
     logo: "/assets/customization.png",
   },
   {
     heading: "Collaboration",
-    description: `Medmonks automated system enables instant financial
+    description: `Medmonk's automated system enables instant financial
         assistance and patient enrollment into the hub, all within a
         remarkable timeframe of under three seconds.`,
     logo: "/assets/customization1.png",
