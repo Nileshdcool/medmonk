@@ -8,8 +8,8 @@ export const productPageInfo: ProductPageInfoType = {
               to shift the focus back to what truly matters - patient health.`,
   },
   Connectivity: {
-    Heading: "Direct Connectivity with Payers and Providers",
-    Content: `What sets our technology apart is its direct connectivity with payers and providers. This unique capability, combined with our compassionate team, ensures a seamless and enhanced patient experience. Medmonk's platform acts as a bridge, facilitating efficient communication and coordination among all stakeholders in the healthcare journey.`,
+    Heading: "Direct Connectivity with Payers and healthcare Providers",
+    Content: `What sets our technology apart is its direct connectivity with payers and healthcare providers. This unique capability, combined with our compassionate team, ensures a seamless and enhanced patient experience. Medmonk's platform acts as a bridge, facilitating efficient communication and coordination among all stakeholders in the healthcare journey.`,
   },
   Advancement: {
     Heading: "Advanced Algorithms and Machine Learning",

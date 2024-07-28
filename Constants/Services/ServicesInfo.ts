@@ -13,15 +13,15 @@ const servicesInfo: ServiceType = {
         },
         {
           Heading: "Patient and Provider Support Services",
-          Description: `Our Coordinated Care Management team assists prescribers, patients, and pharmacies in navigating all aspects of the prescription journey. From benefit verifications to prior authorizations, to technical and billing support, our Hub Services team is a one-stop shop for every stakeholder.`
+          Description: `Our Coordinated Care Management team assists pharmacies, patients, and pharmacies in navigating all aspects of the prescription journey. From benefit verifications to prior authorizations, to technical and billing support, our hub services team is a one-stop shop for every stakeholder.`
         },
         {
           Heading: "Distribution and Adherence",
-          Description: `Depending on the brand's strategy, we use a wide variety of electronic and traditional communication channels, specialized for prescribers, pharmacies, and patients. These keep the conversation flowing with continuous incoming feedback, while keeping programs top of mind.`
+          Description: `Depending on the brand's strategy, we use a wide variety of electronic and traditional communication channels, specialized for pharmacies, pharmacies, and patients. These keep the conversation flowing with continuous incoming feedback, while keeping programs top of mind.`
         },
         {
           Heading: "Analytics and Custom Reports",
-          Description: `Depending on the brand's strategy, we use a wide variety of electronic and traditional communication channels, specialized for prescribers, pharmacies, and patients. These keep the conversation flowing with continuous incoming feedback while keeping programs top of mind.`
+          Description: `Our real-time analytics dashboard gives you instant access to program analytics, tracking and reports. Additionally, you can request as many custom reports as needed on a one-off or periodic basis, on intervals that work for you.`
         }
       ]
     },
@@ -36,7 +36,7 @@ const servicesInfo: ServiceType = {
       Cards: [
         {
           Image: '/assets/Home.png',
-          Description: `Electronically receive enrollment form from provider's office`
+          Description: `Electronically receive enrollment form from healthcare provider's office`
         },
         {
           Image: "/assets/automation-ico2.png",
