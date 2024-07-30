@@ -17,20 +17,11 @@ export const productPageInfo: ProductPageInfoType = {
   },
   DecisionMaking: [
     {
-      ImageUrl: "/assets/product/decisionMaking/claims.png",
+      ImageUrl: "/assets/product/decisionMaking/Analytics First Collage.png",
     },
     {
-      ImageUrl: "/assets/product/decisionMaking/counts.png",
-    },
-    {
-      ImageUrl: "/assets/product/decisionMaking/enrolees.png",
-    },
-    {
-      ImageUrl: "/assets/product/decisionMaking/patients_claims.png",
-    },
-    {
-      ImageUrl: "/assets/product/decisionMaking/pharmacy_medical.png",
-    },
+      ImageUrl: "/assets/product/decisionMaking/Analytics Second Collage.png"
+    }
   ],
   CostReduction: {
     Heading: "Cost Reduction",

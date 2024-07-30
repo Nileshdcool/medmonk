@@ -34,7 +34,7 @@ const TeamSection = () => {
                 data-nimg="1"
                 className="max-w-full rounded-lg mx-auto mb-5 shadow-2xl"
                 sizes="100vw"
-                style={{ width: "100%" }}
+                style={{ width: "100%", maxHeight: "358.275px" }}
                 src={member.image}
               />
               <h3 className="text-darkBlue mt-1 md:text-2xl text-xl font-extrabold">
