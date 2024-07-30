@@ -57,8 +57,8 @@ const PartnershipSection = () => {
                     <h3 className="text-darkBlue mt-2 md:text-2xl text-xl font-extrabold uppercase">
                       {offer.heading}
                     </h3>
-                    <hr className="h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" />
-                    <p className="text-darkBlue">{offer.description}</p>
+                    {/* <hr className="h-1 w-24 bg-brownCust mb-2 mt-1 inline-block" /> */}
+                    <p className="text-darkBlue mt-4">{offer.description}</p>
                   </div>
                 ))}
               </Slider>

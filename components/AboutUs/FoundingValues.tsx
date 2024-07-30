@@ -8,8 +8,8 @@ const FoundingValues = () =>
             <div className="container mx-auto">
               <div className="text-center mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Founding Values</h2>
-                <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated"/>
-                <div className="px-0 xl:px-14">
+                {/* <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated"/> */}
+                <div className="mt-4 px-0 xl:px-14">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="card-box bg-white rounded-md p-2 sm:p-2 lg:p-6 text-center">
                       <Image

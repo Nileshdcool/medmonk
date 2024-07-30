@@ -9,8 +9,8 @@ const ProductHero = () => {
             <h1 className="text-4xl md:text-6xl font-black text-darkBlue mb-4 animate__animated animate__fadeInDown animate__slow">
               {productPageInfo.Hero.Heading}
             </h1>
-            <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block animate__animated animate__fadeInDown animate__slow" />
-            <p className="sm:text-lg text-md text-darkBlue mb-8 pr-0 xl:pr-24 font-semibold animate__animated animate__fadeInUp animate__slow">
+            {/* <hr className=" h-1.5 w-36 bg-brownCust mb-5 hidden sm:inline-block animate__animated animate__fadeInDown animate__slow" /> */}
+            <p className="mt-4 sm:text-lg text-md text-darkBlue mb-8 pr-0 xl:pr-24 font-semibold animate__animated animate__fadeInUp animate__slow">
               {productPageInfo.Hero.Content}
             </p>
             <button

@@ -17,8 +17,8 @@ const LogoSlider = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
             Partners
           </h2>
-          <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" />
-          <p className="text-darkBlue animate__animated animate__fadeInDown animate__slow wow">
+          {/* <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" /> */}
+          <p className="text-darkBlue mt-4 animate__animated animate__fadeInDown animate__slow wow">
             {logoTabs[activeTab].description}
           </p>
           <div

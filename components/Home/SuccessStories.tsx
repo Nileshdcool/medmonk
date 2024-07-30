@@ -46,7 +46,7 @@ class SlideSlider extends Component<SlideSliderProps, SlideSliderState> {
                 <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__animated animate__fadeInDown animate__slow wow">
                   Success Stories
                 </h2>
-                <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" />
+                {/* <hr className=" h-1.5 w-36 bg-brownCust mb-5 inline-block animate__animated animate__fadeInDown animate__slow wow" /> */}
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-3 items-center">
                 <div className="partne-left arrow-style grid grid-cols-1 gap-10 animate__animated animate__fadeInLeft animate__slow wow">

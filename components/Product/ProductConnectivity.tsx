@@ -10,8 +10,8 @@ const ProductConnectivity = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 pr-4 xl:pr-14 animate__ animate__fadeInDown animate__slow wow animated">
               {productPageInfo.Connectivity.Heading}
             </h2>
-            <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" />
-            <div className="animate__ animate__fadeInDown animate__slow wow animated pr-4 xl:pr-14">
+            {/* <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" /> */}
+            <div className="mt-4 animate__ animate__fadeInDown animate__slow wow animated pr-4 xl:pr-14">
               <p className="mb-5">{productPageInfo.Connectivity.Content}</p>
             </div>
           </div>
