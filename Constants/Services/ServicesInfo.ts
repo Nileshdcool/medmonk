@@ -40,7 +40,7 @@ const servicesInfo: ServiceType = {
         },
         {
           Image: "/assets/automation-ico2.png",
-          Description: `Verify coverage of benefits with the patient's primary and secondary payers`
+          Description: `Verify coverage of benefits with the patient's primary and secondary payers`  
         },
         {
           Image: "/assets/automation-ico3.png",
