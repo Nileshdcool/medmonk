@@ -19,7 +19,7 @@ const FoundingValues = () =>
                           height="0"
                           decoding="async"
                           data-nimg="1"
-                          className="h-16 w-auto max-w-full rounded-lg mx-auto mb-5"
+                          className="h-16 w-auto max-w-full rounded-lg mx-auto mb-5 pl-3"
                           sizes="100vw"
                           src={compassion}
                       />
@@ -35,7 +35,7 @@ const FoundingValues = () =>
                           height="0"
                           decoding="async"
                           data-nimg="1"
-                          className="h-16 w-auto max-w-full rounded-lg mx-auto mb-5"
+                          className="h-16 w-auto max-w-full rounded-lg mx-auto mb-5 pl-5"
                           sizes="100vw"
                           src={innovation}
                       />
