@@ -4,6 +4,6 @@ export const SiteMaps: SiteMapType[] = [
   { text: "About us", href: "/AboutUs"},
   { text: "Technology Solutions", href:"/Product"},
   { text: "Services", href: "/Services"},
-  { text: "News & Trends", href: "/News" },
+  { text: "News", href: "/News" },
   { text: "Careers", href: "/Careers" },
 ];
