@@ -108,7 +108,7 @@ const journeyPaths: string[] = [
   //"Medmonk contracted with 98% of US pharmacies, Buy & Bill & AIC in 2015",
   
   "Assisted 10 million patients since Medmonk's inception by 2021",
-  "Medmonk’s technology achieved COX II Certification in 2022",
+  //"Medmonk’s technology achieved COX II Certification in 2022",
   
   "Launched proprietary automated BI & PA solution in 2023",
   "Launched unique AI capabilities in 2024",
