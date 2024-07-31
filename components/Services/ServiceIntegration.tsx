@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import banner from "@/public/assets/map.png";
+import banner from "@/public/assets/map1.png";
 
 const ServiceIntegration = () => {
   return (
