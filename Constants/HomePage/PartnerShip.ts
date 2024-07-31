@@ -13,7 +13,7 @@ export const partners: PartnershipType[] = [
     containerClass:
       "flex md:flex-row flex-col text-center md:text-left animate__animated animate__fadeInLeft animate__slow wow",
     heading: "EXTENSIVE SPECIALTY PHARMACY NETWORK",
-    description: `Medmonk is connected and contracted with 98% of specialty pharmacies, buy & bill facilities, and infusion centers nationwide. This extensive network ensures seamless collaboration and efficient solutions.`,
+    description: `Medmonk is connected and contracted with 98% of pharmacies, buy & bill facilities, and infusion centers nationwide. This extensive network ensures seamless collaboration and efficient solutions.`,
     logo: "/assets/Medmon-Partner2.png",
   },
   {
@@ -32,7 +32,7 @@ export const offersToPartners: OfferToPartnerType[] = [
   },
   {
     heading: "Customization",
-    description: `We tailor support programs for brands, addressing the individual needs of conditions, patients, healthcare providers, and pharmacies, with a focus on agility and customization in each unique landscape`,
+    description: `We tailor support programs for brands, addressing the individual needs of patients, healthcare providers, and pharmacies, with a focus on agility and customization in each unique landscape`,
     logo: "/assets/customization.png",
   },
   {
