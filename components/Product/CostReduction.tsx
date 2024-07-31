@@ -1,5 +1,5 @@
 import Image from "next/image";
-import coins from "@/public/assets/cost-reduction-business-concept-finance.jpg";
+import coins from "@/public/assets/cost-reduction-business-concept-finance.png";
 import { productPageInfo } from "@/Constants/Product/productPageInfo";
 const CostReduction = () => {
   return (
@@ -11,8 +11,8 @@ const CostReduction = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 pr-4 xl:pr-14 animate__ animate__fadeInDown animate__slow wow animated">
                 {productPageInfo.CostReduction.Heading}
               </h2>
-              <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" />
-              <div className="animate__ animate__fadeInDown animate__slow wow animated pr-4 xl:pr-14">
+              {/* <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" /> */}
+              <div className="mt-4 animate__ animate__fadeInDown animate__slow wow animated pr-4 xl:pr-14">
                 <p className="mb-5">{productPageInfo.CostReduction.Content}</p>
               </div>
             </div>

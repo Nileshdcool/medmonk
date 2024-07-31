@@ -203,6 +203,9 @@ body .quote-text{font-size: 25px;}
 .institutional-partners {
   max-width: 400px;
 }
+.automation-boxs .card-box:last-child .bg-white img {
+  padding-left: 30px;
+}
 
 @media(min-width:991px) and (max-width:1279px){
   body .quote-text{font-size: 1.6vw;}
