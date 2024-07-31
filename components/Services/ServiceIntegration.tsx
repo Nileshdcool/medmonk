@@ -10,8 +10,8 @@ const ServiceIntegration = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">
             Seamless Integration
           </h2>
-          <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" />
-          <div className="animate__ animate__fadeInDown animate__slow wow animated">
+          {/* <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" /> */}
+          <div className="mt-4 animate__ animate__fadeInDown animate__slow wow animated">
             <p className="mb-5 text-darkBlue">
               Our platform seamlessly integrates with
               <Link href="#" style={{ color: "#BA3725", fontWeight: 700 }}>
