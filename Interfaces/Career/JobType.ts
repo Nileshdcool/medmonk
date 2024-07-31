@@ -4,6 +4,7 @@ interface JobType {
   location: number;
   department: number;
   workType: number;
-  postedDate: Date;
-  description: string;
+  postedDate?: Date;
+  description: JobDescriptionSectionType[];
+  applyEmail: string;
 }

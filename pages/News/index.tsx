@@ -15,7 +15,7 @@ const NewsPage = ({ posts, metaData }: NewsPageProps) => {
             {" "}
             News
           </h1>
-          <hr className=" h-1.5 w-24 md:w-36 bg-brownCust inline-block animate__animated animate__fadeInDown animate__slow" />
+          {/* <hr className=" h-1.5 w-24 md:w-36 bg-brownCust inline-block animate__animated animate__fadeInDown animate__slow" /> */}
         </div>
       </section>
 
