@@ -22,12 +22,16 @@ const JobBody = ({
 
   return (
     <div key={job.id} className="border border-gray-300 rounded p-4">
-      <p className="text-lightGray">{postedOn(job.postedDate)}</p>
-      <h2 className="text-xl font-bold text-darkBlue">{job.title}</h2>
-      <p className="text-lightGray mt-5">
-        {locations.find((loc) => loc.id === job.location)?.title} -{" "}
-        {workTypes.find((type) => type.id === job.workType)?.type}
-      </p>
+      {/* <p className="text-lightGray">{postedOn(job.postedDate)}</p> */}
+      {!isExpanded && (
+        <>
+          <h2 className="text-xl font-bold text-darkBlue">{job.title}</h2>
+          <p className="text-lightGray mt-5">
+            {locations.find((loc) => loc.id === job.location)?.title} -{" "}
+            {workTypes.find((type) => type.id === job.workType)?.type}
+          </p>
+        </>
+      )}
       <div className="flex justify-end mt-2">
         <button
           className={`px-4 py-2 rounded border ${
@@ -42,9 +46,42 @@ const JobBody = ({
       </div>
       {isExpanded && (
         <div className="mt-4">
-          <p className="text-darkGray">{job.description}</p>
-          <p className="text-darkGray font-bold text-sm mt-2">
-            To apply for this position, kindly forward your resume to us at careers@medmonk.com.
+          <p className="font-bold text-darkBlue">
+            Job Posting: {job.title}(
+            {locations.find((loc) => loc.id === job.location)?.title})
+          </p>
+          {job.description.map((desc, index) => (
+            <div key={index} className="mt-5">
+              <span className="font-bold text-darkBlue">{desc.Heading}: </span>
+              {desc.Descriptions.length === 1 ? (
+                <span className="text-darkBlue mt-1">
+                  {desc.Descriptions[0]}
+                </span>
+              ) : (
+                <ul className="list-disc mt-1 text-darkGray pl-5">
+                  {desc.Descriptions.map((d, i) => (
+                    <li
+                      className="text-darkBlue"
+                      key={i}
+                      style={{ paddingLeft: "5px", marginBottom: "10px" }}
+                    >
+                      {d}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+          <p className="text-darkGray font-bold text-sm mt-2">How to Apply:</p>
+          <p>
+            Please send your resume to{" "}
+            <a
+              style={{ textDecoration: "underline" }}
+              href={`mailto:${job.applyEmail}`}
+            >
+              {job.applyEmail}
+            </a>
+            .
           </p>
         </div>
       )}
