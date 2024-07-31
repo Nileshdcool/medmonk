@@ -43,11 +43,10 @@ const LogoSlider = () => {
             
             <div key={index}>
 
-              {logosTab.map((logos, tabIndex) => (
+              {logosTab.map((logo, tabIndex) => (
                 <Partner
                   key={tabIndex}
-                  containerClass={logos.containerClass}
-                  images={logos.images}
+                  logo={logo}
                 />
               ))}
             </div>

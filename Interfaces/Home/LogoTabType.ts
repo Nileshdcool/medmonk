@@ -3,7 +3,12 @@ export interface LogoTabType {
   logos: LogoTabImagesType[][];
   description: string;
 }
+export interface LogoImage{
+  image: string;
+  style?: {}
+}
 export interface LogoTabImagesType {
   containerClass: string;
-  images: string[];
+  images: LogoImage[];
 }
+
