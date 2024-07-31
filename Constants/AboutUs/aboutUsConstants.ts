@@ -13,7 +13,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "ASHAR HASAN",
     title: "Chief Executive Officer",
-    image: "/assets/aboutUs/leadership/Ashar.png",
+    image: "/assets/aboutUs/leadership/Ashar.jpg",
     degree: "R. Ph, MBA.",
     position: "Chief Executive Officer",
     description:
@@ -27,7 +27,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "ABBAS MEHDI",
     title: "Chief Executive Officer",
-    image: "/assets/aboutUs/leadership/Abbas.png",
+    image: "/assets/aboutUs/leadership/Abbas.jpg",
     degree: "BASc.",
     position: "Chief Executive Officer",
     description:
@@ -41,7 +41,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "SOMAIRA PUNJWANI",
     title: "Chief Medical Officer & Co-Founder, Medmonk",
-    image: "/assets/aboutUs/leadership/Somaira.png",
+    image: "/assets/aboutUs/leadership/Somaira.jpg",
     degree: "PharmD",
     position: "Chief Medical Officer & Co-Founder, Medmonk",
     description:
@@ -70,7 +70,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "COURTNEY SMILEY",
     title: "Sr. Vice President Business Development",
-    image: "/assets/aboutUs/leadership/Courtney.png",
+    image: "/assets/aboutUs/leadership/Courtney.jpg",
     position: "Sr. Vice President Business Development",
     description:
       "Courtney spearheads Medmonk's business development initiatives, meticulously tracking industry trends and collaborating with biotechnology and pharmaceutical manufacturers...",
@@ -82,7 +82,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "MARY JERCICH",
     title: "Director of Sales Support & Patient Services",
-    image: "/assets/aboutUs/leadership/Mary Jercich.png",
+    image: "/assets/aboutUs/leadership/Mary Jercich.jpg",
     position: "Director of Sales Support & Patient Services",
     description:
       "Mary Jercich brings over a decade of specialized experience in the pharmacy realm, making her an indispensable asset to Medmonk's mission. Since starting with...",
