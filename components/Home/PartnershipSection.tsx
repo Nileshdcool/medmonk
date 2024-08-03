@@ -13,7 +13,7 @@ const PartnershipSection = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-5 md:mb-8 px-4 md:px-8 xl:px-14 text-center md:text-left animate__animated animate__fadeInDown animate__slow wow">
           Medmonk As Your Partner
         </h2>
-        <hr className=" h-1.5 w-36 bg-brownCust mb-8 md:hidden block ml-auto mr-auto" />
+        {/* <hr className=" h-1.5 w-36 bg-brownCust mb-8 md:hidden block ml-auto mr-auto" /> */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xl:gap-8 px-4 xl:px-14">
           <div className="partne-left grid grid-cols-1 gap-10 mb-10 md:mb-0">
             {partners.map((partner, index) => (
