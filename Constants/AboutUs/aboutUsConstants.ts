@@ -14,22 +14,22 @@ const teamMembers: TeamMember[] = [
     name: "ASHAR HASAN",
     title: "Chief Executive Officer",
     image: "/assets/aboutUs/leadership/Ashar.jpg",
-    degree: "R. Ph, MBA.",
+    degree: "RPh, MBA.",
     position: "Chief Executive Officer",
     description:
-      "Transitioned from Chief Business Development Officer to Chief Executive Officer, bringing over a decade of experience in strategic innovation and business growth at Medmonk...",
+      "After over a decade of strategic innovation and business growth at Medmonk, of Ashar recently transitioned from Chief Business Development Officer to Chief Executive Officer...",
     descriptionParagraphs: [
-      "Transitioned from Chief Business Development Officer to Chief Executive Officer, bringing over a decade of experience in strategic innovation and business growth at Medmonk. Passionate about revolutionizing access and affordability, Ashar leads Medmonk, a technology-driven company specializing in patient support services for the treatment of complex chronic rare diseases. As a dedicated pharmacist, Ashar consistently places patients first, ensuring that all strategies and initiatives enhance both patient and provider experiences.",
+      "After over a decade of strategic innovation and business growth at Medmonk, of Ashar recently transitioned from Chief Business Development Officer to Chief Executive Officer. Passionate about revolutionizing access and affordability, Ashar leads Medmonk, a technology-driven company specializing in patient support services for the treatment of complex chronic rare diseases. As a dedicated pharmacist, Ashar consistently places patients first, ensuring that all strategies and initiatives enhance both patient and provider experiences.",
       "As the visionary founder and CEO of Premier Specialty Infusion (PSI), Ashar transformed the specialty infusion services landscape nationwide. Previously, he co-founded and led Envoy Innovations, empowering healthcare providers with cutting-edge technology to analyze treatment outcomes. At Walgreens/OptionCare, he led the Immunoglobulin Program to national prominence following the acquisition of Rx Solutions, where Ashar served as CEO/President and guided it into becoming the fastest-growing specialty injectable provider. Early leadership roles at Crescent Healthcare and Apria Healthcare provided a strong foundation in operational and strategic expertise.",
       "In addition to leadership roles, Ashar has authored numerous publications related to treatment modalities for complex chronic therapies, further contributing to the field. Combining visionary thinking and industry expertise, Ashar consistently delivers exceptional results and advances specialty drug therapy delivery, always with a patient-first approach.",
     ],
   },
   {
     name: "ABBAS MEHDI",
-    title: "Chief Executive Officer",
+    title: "Chief Product Officer",
     image: "/assets/aboutUs/leadership/Abbas.jpg",
     degree: "BASc.",
-    position: "Chief Executive Officer",
+    position: "Chief Product Officer",
     description:
       "Abbas Mehdi recently transitioned to the role of Chief Product Officer after serving as CEO of Medmonk for eleven years. Under his visionary leadership...",
     descriptionParagraphs: [
@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
       "Somaira Punjwani, co-founder of Medmonk, brings over 15 years of pharmacy experience to the organization. Holding a Doctorate in Pharmaceutical Sciences, she has dedicated...",
     descriptionParagraphs: [
       "Somaira Punjwani, co-founder of Medmonk, brings over 15 years of pharmacy experience to the organization. Holding a Doctorate in Pharmaceutical Sciences, she has dedicated her career to enhancing patient access to care. Before founding Medmonk, Somaira served as a lead pharmacist at Walgreens, specializing in therapies for HIV, Oncology, Rheumatoid Arthritis, and Hepatitis.",
-      "During her tenure at Walgreens, Somaira identified a critical need for a patient affordability solution available at the point of care. She developed a unique process to assist patients with their co-pays, a system that was later adopted nationwide by Walgreens. Building on this innovative concept, Somaira helped establish Medmonk, digitizing the solution to create a comprehensive, technology-driven platform for patient support services, particularly for complex chronic rare diseases.",
+      "During her tenure at Walgreens, Somaira identified a critical need for a patient affordability solution available at the point of care. She developed a unique process to assist patients with their copays, a system that was later adopted nationwide by Walgreens. Building on this innovative concept, Somaira helped establish Medmonk, digitizing the solution to create a comprehensive, technology-driven platform for patient support services, particularly for complex chronic rare diseases.",
       "Somaira’s deep expertise and unwavering commitment to patient care fuel her drive to develop solutions that improve both patient and provider experiences. Her leadership and vision are instrumental in shaping the future of Medmonk, ensuring that patients receive the essential support they need to access life-saving treatments.",
     ],
   },
