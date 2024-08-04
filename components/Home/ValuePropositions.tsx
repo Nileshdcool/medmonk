@@ -5,7 +5,7 @@ const ValuePropositions = () => {
   return (
     <section className="bg-center flex px-4 xl:px-0">
       <div className="container mx-auto justify-between items-center flex">
-        <div className="w-full grid text-center md:text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8 py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md lg:-mt-36 -mt-10 mx-0 xl:mx-10">
+        <div className="ico-text w-full grid text-center md:text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 xl:gap-8 py-8 xl:py-14 px-8 xl:px-14 bg-white shadow-xl rounded-md lg:-mt-36 -mt-10 mx-0 xl:mx-10">
           {ValuePropositionsData.map((value, index) => (
             <div key={index} className={value.containerClass}>
               <Image
