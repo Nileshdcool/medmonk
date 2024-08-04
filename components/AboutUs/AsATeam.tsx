@@ -2,7 +2,7 @@ import aboutUsConstants from "@/Constants/AboutUs/aboutUsConstants";
 
 const AsATeam = () =>
     {
-        return (<section className="pt-28 xl:pt-48 pb-16 xl:pb-20 overflow-hidden">
+        return (<section className="as-a-team pt-28 xl:pt-48 pb-16 xl:pb-20 overflow-hidden">
             <div className="container mx-auto">
               <div className="text-center max-w-7xl max-w- mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">Medmonk As A Team</h2>
