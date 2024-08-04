@@ -13,11 +13,11 @@ const servicesInfo: ServiceType = {
         },
         {
           Heading: "Patient and Provider Support Services",
-          Description: `Our Coordinated Care Management team assists pharmacies, patients, and pharmacies in navigating all aspects of the prescription journey. From benefit verifications to prior authorizations, to technical and billing support, our hub services team is a one-stop shop for every stakeholder.`
+          Description: `Our Coordinated Care Management team assists patients and pharmacies in navigating all aspects of the prescription journey. From benefit verifications to prior authorizations, to technical and billing support, our hub services team is a one-stop shop for every stakeholder.`
         },
         {
           Heading: "Distribution and Adherence",
-          Description: `Depending on the brand's strategy, we use a wide variety of electronic and traditional communication channels, specialized for pharmacies, pharmacies, and patients. These keep the conversation flowing with continuous incoming feedback, while keeping programs top of mind.`
+          Description: `Depending on the brand's strategy, we use a wide variety of electronic and traditional communication channels, specialized for pharmacies and patients. These keep the conversation flowing with continuous incoming feedback, while keeping programs top of mind.`
         },
         {
           Heading: "Analytics and Custom Reports",
