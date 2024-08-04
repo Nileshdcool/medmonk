@@ -98,7 +98,7 @@ const LetsContact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-darkOrange mb-2 px-4 xl:px-14 animate__ animate__fadeInDown animate__slow wow animated">
             Lets Connect!
           </h2>
-          <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" />
+          {/* <hr className="h-1.5 w-36 bg-brownCust mb-5 inline-block animate__ animate__fadeInDown animate__slow wow animated" /> */}
           <div className="animate__ animate__fadeInDown animate__slow wow animated">
             <p className="mb-5 hidden">
               In publishing and graphic design, Lorem ipsum is a placeholder
@@ -107,7 +107,7 @@ const LetsContact = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-5xl mx-auto mt-10">
+        <div className="max-w-5xl mx-auto mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="contact-info order-2 md:order-1 mt-5 md:mt-0">
               <ul>
