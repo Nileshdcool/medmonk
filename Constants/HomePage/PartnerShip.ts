@@ -37,9 +37,7 @@ export const offersToPartners: OfferToPartnerType[] = [
   },
   {
     heading: "Collaboration",
-    description: `Medmonk's automated system enables instant financial
-        assistance and patient enrollment into the hub, all within a
-        remarkable timeframe of under three seconds.`,
+    description: `Medmonk works in tandem with brand teams, harmonizing marketing, financial planning, and sales approaches to meet brand objectives and provide enhanced patient experience.`,
     logo: "/assets/customization1.png",
   }
 ];
