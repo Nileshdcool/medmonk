@@ -27,7 +27,7 @@ export const partners: PartnershipType[] = [
 export const offersToPartners: OfferToPartnerType[] = [
   {
     heading: "Speed",
-    description: `Medmonk's automated system enables instant patient enrollment into the hub. all within a remarkable timeframe of under three seconds.`,
+    description: `Medmonk's automated system enables instant patient enrollment into the hub, all within a remarkable timeframe of under three seconds.`,
     logo: "/assets/speed.png",
   },
   {
