@@ -4,6 +4,7 @@ import { z } from "zod";
 
 export const ContactUsSchema = z.object({
   FirstName: z.string().min(1, ValidationErrors.FirstNameRequired),
+  LastName: z.string().min(1, ValidationErrors.LastNameRequired),
   Email: z.string().email(ValidationErrors.InvalidEmail),
   PhoneNumber: z
     .string()
