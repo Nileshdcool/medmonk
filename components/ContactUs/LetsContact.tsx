@@ -196,7 +196,7 @@ const LetsContact = () => {
                           htmlFor="lname"
                           className="block mb-1 text-sm text-gray-600 dark:text-gray-400 font-semibold"
                         >
-                          Last Name
+                          Last Name<span className="text-red-600">*</span>
                         </label>
                         <input
                           type="text"

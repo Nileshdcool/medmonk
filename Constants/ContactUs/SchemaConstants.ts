@@ -1,5 +1,6 @@
 export const ValidationErrors = {
   FirstNameRequired: "First name is required",
+  LastNameRequired: "Last name is required",
   InvalidEmail: "Invalid email address",
   PhoneNumberRequired: "Phone number must be 10 digits",
   ContactNumberAllowedCharacters: "Contact number must contain only digits.",
