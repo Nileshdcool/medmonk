@@ -101,7 +101,7 @@ const journeyPaths: string[] = [
   "Medmonk's technology achived SOC 2 certification in 2015",
   //"Digitized copay process in 2014, connecting to over 98% of US pharmacies",
   "Medmonk contracted with 98% of US pharmacies Buy & Bill",
-  "Launched complete automated medical benefit cpay solution in 2017",
+  "Launched complete automated medical benefit copay solution in 2017",
   "Launched fully automated PAP solution in 2018",
   "Launched a hub service solution for multiple brands in 2018",
   "Medmonk launched its 10th client's program in 2019",
