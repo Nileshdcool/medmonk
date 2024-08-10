@@ -78,7 +78,7 @@ class SlideSlider extends Component<SlideSliderProps, SlideSliderState> {
                       slidesToShow={2}
                       arrows={false}
                       slidesToScroll={1}
-                      focusOnSelect={true}
+                      //focusOnSelect={true}
                       ref={this.thumbSliderRef}
                       beforeChange={this.beforeSlideChange}
                       asNavFor={this.mainSliderRef.current as Slider}
