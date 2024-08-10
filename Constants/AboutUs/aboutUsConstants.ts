@@ -17,9 +17,9 @@ const teamMembers: TeamMember[] = [
     degree: "RPh, MBA.",
     position: "Chief Executive Officer",
     description:
-      "After over a decade of strategic innovation and business growth at Medmonk, of Ashar recently transitioned from Chief Business Development Officer to Chief Executive Officer...",
+      "After over a decade of strategic innovation and business growth at Medmonk, Ashar recently transitioned from Chief Business Development Officer to Chief Executive Officer...",
     descriptionParagraphs: [
-      "After over a decade of strategic innovation and business growth at Medmonk, of Ashar recently transitioned from Chief Business Development Officer to Chief Executive Officer. Passionate about revolutionizing access and affordability, Ashar leads Medmonk, a technology-driven company specializing in patient support services for the treatment of complex chronic rare diseases. As a dedicated pharmacist, Ashar consistently places patients first, ensuring that all strategies and initiatives enhance both patient and provider experiences.",
+      "After over a decade of strategic innovation and business growth at Medmonk, Ashar recently transitioned from Chief Business Development Officer to Chief Executive Officer. Passionate about revolutionizing access and affordability, Ashar leads Medmonk, a technology-driven company specializing in patient support services for the treatment of complex chronic rare diseases. As a dedicated pharmacist, Ashar consistently places patients first, ensuring that all strategies and initiatives enhance both patient and provider experiences.",
       "As the visionary founder and CEO of Premier Specialty Infusion (PSI), Ashar transformed the specialty infusion services landscape nationwide. Previously, he co-founded and led Envoy Innovations, empowering healthcare providers with cutting-edge technology to analyze treatment outcomes. At Walgreens/OptionCare, he led the Immunoglobulin Program to national prominence following the acquisition of Rx Solutions, where Ashar served as CEO/President and guided it into becoming the fastest-growing specialty injectable provider. Early leadership roles at Crescent Healthcare and Apria Healthcare provided a strong foundation in operational and strategic expertise.",
       "In addition to leadership roles, Ashar has authored numerous publications related to treatment modalities for complex chronic therapies, further contributing to the field. Combining visionary thinking and industry expertise, Ashar consistently delivers exceptional results and advances specialty drug therapy delivery, always with a patient-first approach.",
     ],
@@ -40,10 +40,10 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "SOMAIRA PUNJWANI",
-    title: "Chief Medical Officer & Co-Founder, Medmonk",
+    title: "Chief Medical Officer",
     image: "/assets/aboutUs/leadership/Somaira.jpg",
     degree: "PharmD",
-    position: "Chief Medical Officer & Co-Founder, Medmonk",
+    position: "Chief Medical Officer",
     description:
       "Somaira Punjwani, co-founder of Medmonk, brings over 15 years of pharmacy experience to the organization. Holding a Doctorate in Pharmaceutical Sciences, she has dedicated...",
     descriptionParagraphs: [
