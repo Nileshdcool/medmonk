@@ -47,7 +47,7 @@ const JobList: React.FC = () => {
   return (
     <div className="p-6 max-w-4xl mx-auto">
       <h1 className="text-4xl text-brownCust font-bold mb-6 text-center">
-        WE ARE HIRING!
+       Job Listings
       </h1>
       <div className="mb-4">
         <input
