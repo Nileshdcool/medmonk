@@ -98,7 +98,7 @@ const journeyPaths: string[] = [
   "Incubated by Y Combinator in Silicon Valley",
   "Digitized copay process in 2014, connecting to over 98% of US pharmacies",
   "Medmonk launched its 1st client’s copay program in 2014",
-  "Medmonk's technology achived SOC 2 certification in 2015",
+  "Medmonk's technology achieved SOC 2 certification in 2015",
   //"Digitized copay process in 2014, connecting to over 98% of US pharmacies",
   "Medmonk contracted with 98% of US pharmacies Buy & Bill",
   "Launched complete automated medical benefit copay solution in 2017",
